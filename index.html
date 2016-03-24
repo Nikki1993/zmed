@@ -9,8 +9,8 @@
     <meta name="theme-color" content="#2196f3">
 
     <!-- Bower CSS files -->
-    <link rel="stylesheet" href="/bower_components/angular-material/angular-material.min.css" />
-    <link rel="stylesheet" href="/bower_components/angular/angular-csp.css" />
+    <link rel="stylesheet" href="/bower_components/angular-material/angular-material.min.css"/>
+    <link rel="stylesheet" href="/bower_components/angular/angular-csp.css"/>
 
     <!-- User CSS/favicon files -->
     <link rel="stylesheet" href="/CSS/styles.min.css">
@@ -30,14 +30,22 @@
 
   </head>
   <body ng-cloak>
-    <md-toolbar md-whiteframe="6" class="nav-toolbar">
+    <md-toolbar md-whiteframe="4" class="nav-toolbar">
       <nav class="md-toolbar-tools nav-main">
         <md-button class="nav-z-logo" href="" aria-label="Logo"></md-button>
         <ul>
-          <li class="left-list"><md-button class="toolbar-button-text">Main</md-button></li>
-          <li class="left-list"><md-button class="toolbar-button-text">Products</md-button></li>
-          <li class="left-list"><md-button class="toolbar-button-text">About Us</md-button></li>
-          <li class="left-list"><md-button class="toolbar-button-text">Reach Us</md-button></li>
+          <li class="left-list">
+            <md-button class="toolbar-button-text">Main</md-button>
+          </li>
+          <li class="left-list">
+            <md-button class="toolbar-button-text">Products</md-button>
+          </li>
+          <li class="left-list">
+            <md-button class="toolbar-button-text">About Us</md-button>
+          </li>
+          <li class="left-list">
+            <md-button class="toolbar-button-text">Reach Us</md-button>
+          </li>
         </ul>
       </nav>
     </md-toolbar>
@@ -45,9 +53,56 @@
     <header class="header-background-placeholder">
       <h1 class="z-logo header-text">
         Number One Distributor
-        <br />
+        <br/>
         In Russia
       </h1>
     </header>
+    <div layout="column">
+      <h1 class="md-display-1 center-text">Our Products</h1>
+      <md-content>
+        <md-tabs md-dynamic-height md-border-bottom md-stretch-tabs="always">
+          <md-tab label="one">
+            <md-content class="md-padding tab-content"></md-content>
+          </md-tab>
+          <md-tab label="one">
+            <md-content class="md-padding tab-content"></md-content>
+          </md-tab>
+          <md-tab label="one">
+            <md-content class="md-padding tab-content"></md-content>
+          </md-tab>
+          <md-tab label="one">
+            <md-content class="md-padding tab-content"></md-content>
+          </md-tab>
+          <md-tab label="one">
+            <md-content class="md-padding tab-content"></md-content>
+          </md-tab>
+          <md-tab label="one">
+            <md-content class="md-padding tab-content"></md-content>
+          </md-tab>
+        </md-tabs>
+      </md-content>
+      <h1 class="md-display-1 center-text">About Us</h1>
+      <md-content class="md-padding">
+        <div layout="row">
+          <div flex="80">
+            <h3 class="md-title">ООО "Z-Med" осуществляет поставки имплантатов и инструментов для оперативного лечения повреждений опорно-двигательного аппарата человека.</h3>
+            <p class="md-body-2">
+              Мы ставим перед собой задачу обеспечить хирургов проверенными временем, максимально безопасными и надежными технологиями для лечения переломов костей и их последствий, заболеваний суставов, травм и дегенеративных изменений позвоночника. В руках специалистов эти технологии обеспечивают максимальную предсказуемость результатов лечения и сокращают сроки реабилитации пациентов после высокотехнологичных хирургических операций. Тесное сотрудничество с профессиональным медицинским сообществом — важнейшая составляющая нашего успеха.
+            </p>
+            <p class="md-body-2">
+              Наши преимущества:
+            </p>
+            <md-list class="md-body-2">
+              <md-list-item>Сотрудники нашей компании работают на рынке услуг более 10 лет</md-list-item>
+              <md-list-item>Бесплатная профессиональная консультация клиентов</md-list-item>
+              <md-list-item>Организация образовательных программ совместно с нашими партнерами на территории России и за рубежом</md-list-item>
+              <md-list-item>Более 140 постоянных партнеров на территории РФ</md-list-item>
+              <md-list-item>Оперативная доставка по всей России</md-list-item>
+            </md-list>
+          </div>
+          <div flex></div>
+        </div>
+      </md-content>
+    </div>
   </body>
 </html>

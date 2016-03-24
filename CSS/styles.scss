@@ -1,3 +1,5 @@
+$background: #eee;
+
 .header-background-placeholder {
   background-image: url('../IMG/placeholder.png');
   background-position: bottom, center;
@@ -37,7 +39,6 @@
 .nav-toolbar {
   height: 56px;
   min-height: 56px;
-  position: fixed;
 }
 
 .nav-main {
@@ -63,5 +64,13 @@
     font-size: 16px;
     font-weight: bold;
   }
+}
 
+.center-text {
+  text-align: center;
+}
+
+.tab-content {
+  background-color: $background;
+  min-height: 200px;
 }
