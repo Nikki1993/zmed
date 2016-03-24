@@ -8,6 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#2196f3">
 
+    <!-- CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <!-- Bower CSS files -->
     <link rel="stylesheet" href="/bower_components/angular-material/angular-material.min.css"/>
     <link rel="stylesheet" href="/bower_components/angular/angular-csp.css"/>
@@ -58,33 +61,33 @@
       </h1>
     </header>
     <div layout="column">
-      <h1 class="md-display-1 center-text">Our Products</h1>
-      <md-content>
+      <h1 class="md-display-2 center-text">Our Products</h1>
+      <md-content class="md-padding">
         <md-tabs md-dynamic-height md-border-bottom md-stretch-tabs="always">
-          <md-tab label="one">
-            <md-content class="md-padding tab-content"></md-content>
+          <md-tab label="one" class="tab-size">
+            <md-content class="tab-content md-padding"></md-content>
           </md-tab>
-          <md-tab label="one">
-            <md-content class="md-padding tab-content"></md-content>
+          <md-tab label="one" class="material-tab">
+            <md-content class="tab-content md-padding"></md-content>
           </md-tab>
-          <md-tab label="one">
-            <md-content class="md-padding tab-content"></md-content>
+          <md-tab label="one" class="material-tab">
+            <md-content class="tab-content md-padding"></md-content>
           </md-tab>
-          <md-tab label="one">
-            <md-content class="md-padding tab-content"></md-content>
+          <md-tab label="one" class="material-tab">
+            <md-content class="tab-content md-padding"></md-content>
           </md-tab>
-          <md-tab label="one">
-            <md-content class="md-padding tab-content"></md-content>
+          <md-tab label="one" class="material-tab">
+            <md-content class="tab-content md-padding"></md-content>
           </md-tab>
-          <md-tab label="one">
-            <md-content class="md-padding tab-content"></md-content>
+          <md-tab label="one" class="material-tab">
+            <md-content class="tab-content md-padding"></md-content>
           </md-tab>
         </md-tabs>
       </md-content>
-      <h1 class="md-display-1 center-text">About Us</h1>
+      <h1 class="md-display-2 center-text">About Us</h1>
       <md-content class="md-padding">
-        <div layout="row">
-          <div flex="80">
+        <div layout="row" layout-xs="column">
+          <div flex="70">
             <h3 class="md-title">ООО "Z-Med" осуществляет поставки имплантатов и инструментов для оперативного лечения повреждений опорно-двигательного аппарата человека.</h3>
             <p class="md-body-2">
               Мы ставим перед собой задачу обеспечить хирургов проверенными временем, максимально безопасными и надежными технологиями для лечения переломов костей и их последствий, заболеваний суставов, травм и дегенеративных изменений позвоночника. В руках специалистов эти технологии обеспечивают максимальную предсказуемость результатов лечения и сокращают сроки реабилитации пациентов после высокотехнологичных хирургических операций. Тесное сотрудничество с профессиональным медицинским сообществом — важнейшая составляющая нашего успеха.
@@ -94,13 +97,73 @@
             </p>
             <md-list class="md-body-2">
               <md-list-item>Сотрудники нашей компании работают на рынке услуг более 10 лет</md-list-item>
+              <md-divider></md-divider>
               <md-list-item>Бесплатная профессиональная консультация клиентов</md-list-item>
+              <md-divider></md-divider>
               <md-list-item>Организация образовательных программ совместно с нашими партнерами на территории России и за рубежом</md-list-item>
+              <md-divider></md-divider>
               <md-list-item>Более 140 постоянных партнеров на территории РФ</md-list-item>
+              <md-divider></md-divider>
               <md-list-item>Оперативная доставка по всей России</md-list-item>
+              <md-divider></md-divider>
             </md-list>
           </div>
-          <div flex></div>
+          <div flex="33"></div>
+        </div>
+      </md-content>
+      <md-content class="md-padding">
+        <h1 class="md-display-2 center-text">Reach Us</h1>
+        <div layout="row" layout-xs="column">
+          <div flex>
+            <h3 class="center-text">Contact Details</h3>
+            <div layout="column">
+              <div flex>
+                <div layout="row">
+                  <md-button class="md-fab md-primary" aria-label="Phone" href="tel:+74952300584" aria-label="+74952300584">
+                    <md-icon md-font-icon="material-icons">phone</md-icon>
+                  </md-button>
+                  <md-button class="md-primary action-button" href="tel:+74952300584" aria-label="+74952300584">+7 495 230 05 84</md-button>
+                </div>
+              </div>
+              <div flex>
+                <div layout="row">
+                  <md-button class="md-fab md-primary" aria-label="Email" href="mailto:info@zm5.ru" aria-label="info@zm5.ru">
+                    <md-icon md-font-icon="material-icons">email</md-icon>
+                  </md-button>
+                  <md-button class="md-primary action-button" href="mailto:info@zm5.ru" aria-label="info@zm5.ru">info@zm5.ru</md-button>
+                </div>
+              </div>
+              <div flex>
+                <div layout="row">
+                  <md-button class="md-fab md-primary" aria-label="Maps" href="https://goo.gl/maps/smkX6U8Txqw" aria-label="https://goo.gl/maps/smkX6U8Txqw" target="_blank">
+                    <md-icon md-font-icon="material-icons">navigation</md-icon>
+                  </md-button>
+                  <md-button class="md-primary action-button" href="https://goo.gl/maps/smkX6U8Txqw" aria-label="https://goo.gl/maps/smkX6U8Txqw">Address</md-button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div flex>
+            <h3 class="center-text">Contact Form</h3>
+            <form name="contactForm">
+              <md-input-container class="md-block">
+                <label>Name</label>
+                <input/>
+              </md-input-container>
+              <md-input-container class="md-block">
+                <label>Email</label>
+                <input/>
+              </md-input-container>
+              <md-input-container class="md-block">
+                <label>Message</label>
+                <textarea rows="5"></textarea>
+              </md-input-container>
+              <div layout-fill>
+                <md-button class="md-raised md-primary">Send</md-button>
+                <md-button class="md-raised md-warn button-right">Clear</md-button>
+              </div>
+            </form>
+          </div>
         </div>
       </md-content>
     </div>

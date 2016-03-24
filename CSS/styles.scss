@@ -70,7 +70,20 @@ $background: #eee;
   text-align: center;
 }
 
+.material-tab {
+  min-width: 80px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .tab-content {
-  background-color: $background;
   min-height: 200px;
+}
+
+.button-right {
+  float: right;
+}
+
+.action-button {
+  display: flex;
 }
