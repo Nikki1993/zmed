@@ -1,7 +1,7 @@
 $background: #eee;
 
-.header-background-placeholder {
-  background-image: url('../IMG/placeholder.png');
+.header-background {
+  background-image: url('../IMG/header-background.png');
   background-position: bottom, center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -19,12 +19,13 @@ $background: #eee;
 }
 
 .z-logo {
-  background-image: url('../IMG/logo.png');
+  background-image: url('../IMG/favicon.png');
   background-position: top, center;
   background-repeat: no-repeat;
-  height: 76px;
+  background-size: contain;
+  height: 100px;
   left: 0;
-  position: absolute;
+  position: relative;
   right: 0;
   top: 80px;
 }
