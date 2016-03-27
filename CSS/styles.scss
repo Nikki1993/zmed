@@ -3,10 +3,6 @@ $background-header-text: #fff;
 $background-gradient-start: #0143a3;
 $background-gradient-end: #0273d4;
 
-.block {
-  display: block;
-}
-
 .background-color {
   background: linear-gradient($background-gradient-start, $background-gradient-end);
   background-color: $background-gradient-start;
@@ -25,7 +21,7 @@ $background-gradient-end: #0273d4;
     font-weight: bold;
     margin: 24px auto 40px;
     opacity: 1;
-    padding-top: 224px;
+    padding-top: 270px;
     position: relative;
   }
 
@@ -37,7 +33,7 @@ $background-gradient-end: #0273d4;
     left: 0;
     position: absolute;
     right: 0;
-    top: 0;
+    top: 50px;
   }
 }
 
@@ -59,6 +55,7 @@ $background-gradient-end: #0273d4;
 .nav-toolbar {
   height: 56px;
   min-height: 56px;
+  position: fixed;
 }
 
 .nav-main {
