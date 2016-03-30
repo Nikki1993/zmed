@@ -1,7 +1,7 @@
 {
   "information": [{
     "tabName": "Hip",
-    "heading": "",
+    "heading": "Hello Finland",
     "subHeading": "",
     "image": "../IMG/favicon.png"
   }, {
@@ -21,8 +21,8 @@
     "image": "../IMG/favicon.png"
   }, {
     "tabName": "Shoulder",
-    "heading": "",
-    "subHeading": "",
+    "heading": "Continuum Acetabular System",
+    "subHeading": "Система для реконструкции вертлужной впадины Continuum предоставляет хирургам-ортопедам, занимающимся лечением большого числа пациентов, возможность гибкого принятия решений. Возможность выбрать протез в соответствии с индивидуальными особенностями пациента.",
     "image": "../IMG/favicon.png"
   }, {
     "tabName": "Spine",
