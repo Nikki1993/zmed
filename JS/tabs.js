@@ -11,14 +11,10 @@
   function boneController($http) {
     var vm = this;
 
-    vm.test = "test";
-
     vm.info = [];
 
     $http.get('../JSON/data.json').then(function(response) {
       console.log("Loaded data.json");
-      // console.log(JSON.stringify(response));       // TODO remove
-
       vm.info = response.data.information;
     });
   };
