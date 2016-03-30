@@ -33,7 +33,8 @@
   <!-- User Scripts -->
   <script src="../JS/angular-module.js"></script>
   <script src="../JS/tabs.js"></script>
-  <script src="../JS/scripts.js"></script>
+  <script src="../JS/menu-bar.js"></script>
+  <!-- <script src="../JS/scripts.js"></script> -->
 
 </head>
 
@@ -42,18 +43,7 @@
     <nav class="md-toolbar-tools nav-main">
       <md-button class="nav-z-logo" href="" aria-label="Logo"></md-button>
       <ul>
-        <li class="left-list">
-          <md-button class="toolbar-button-text">Main</md-button>
-        </li>
-        <li class="left-list">
-          <md-button class="toolbar-button-text">Products</md-button>
-        </li>
-        <li class="left-list">
-          <md-button class="toolbar-button-text">About Us</md-button>
-        </li>
-        <li class="left-list">
-          <md-button class="toolbar-button-text">Reach Us</md-button>
-        </li>
+        <menu-bar ng-repeat="data in menuCtrl.menuItems"></menu-bar>
       </ul>
     </nav>
   </md-toolbar>
@@ -70,7 +60,7 @@
     <md-content class="tab-content" layout="column" flex layout-padding>
       <h1 class="md-display-2 center-text">Our Products</h1>
       <md-tabs flex md-dynamic-height md-border-bottom md-swipe-content="true" md-stretch-tabs="always">
-        <bone-tab ng-repeat="data in bone.info"></bone-tab>                                   <!-- CUSTOM TABS -->
+        <bone-tab ng-repeat="data in boneCtrl.info"></bone-tab>                                   <!-- CUSTOM TABS -->
       </md-tabs>
     </md-content>
     <md-content layout="column" layout-padding>

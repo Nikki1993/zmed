@@ -13,7 +13,7 @@
 
     vm.info = [];
 
-    $http.get('../JSON/data.json').then(function(response) {
+    $http.get('../JSON/tab-data.json').then(function(response) {
       console.log("Loaded data.json");
       vm.info = response.data.information;
     });
@@ -25,8 +25,7 @@
       priority: 1001,
       templateUrl: '../TEMPLATES/tabs.html',
       controller: 'boneController',
-      controllerAs: 'bone'
+      controllerAs: 'boneCtrl'
     };
   };
-
 })();
