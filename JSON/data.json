@@ -1,31 +1,31 @@
 {
   "information": [{
-    "tab": "bones",
-    "heading": "Hello Hello",
-    "subHeading": "",
-    "image": "../IMG/favicon.png"
-  }, {
-    "tab": "bones",
+    "tabName": "Bones",
     "heading": "",
     "subHeading": "",
     "image": "../IMG/favicon.png"
   }, {
-    "tab": "bones",
+    "tabName": "Bones",
     "heading": "",
     "subHeading": "",
     "image": "../IMG/favicon.png"
   }, {
-    "tab": "bones",
+    "tabName": "Bones",
     "heading": "",
     "subHeading": "",
     "image": "../IMG/favicon.png"
   }, {
-    "tab": "bones",
+    "tabName": "Bones",
     "heading": "",
     "subHeading": "",
     "image": "../IMG/favicon.png"
   }, {
-    "tab": "bones",
+    "tabName": "Bones",
+    "heading": "",
+    "subHeading": "",
+    "image": "../IMG/favicon.png"
+  }, {
+    "tabName": "Bones",
     "heading": "",
     "subHeading": "",
     "image": "../IMG/favicon.png"

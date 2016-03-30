@@ -101,6 +101,10 @@ $background-gradient-end: #0273d4;
   display: flex;
 }
 
+.tab-content {
+  min-height: 610px;
+}
+
 .card-tab {
   max-width: 700px;
 }

@@ -1,30 +1,36 @@
 (function() {
+  'use strict'
+
   angular
     .module('webApp')
-    .controller('showcaseController', showcaseController)
-    .directive('boneShowcaseTab', boneShowcaseTab);
+    .controller('boneController', boneController)
+    .directive('boneTab', boneTab);
 
-  showcaseController.$inject = ['$http'];
+  boneController.$inject = ['$http'];
 
-  function showcaseController($http) {
+  function boneController($http) {
     var vm = this;
+
+    vm.test = "test";
 
     vm.info = [];
 
-    $http.get('../JSON/data.json').success(function(response) {
+    $http.get('../JSON/data.json').then(function(response) {
       console.log("Loaded data.json");
-      console.log(JSON.stringify(response));       // TODO remove
+      // console.log(JSON.stringify(response));       // TODO remove
 
       vm.info = response.data.information;
     });
   };
 
-  function boneShowcaseTab($http) {
+  function boneTab() {
     return {
-      restrict: 'E',
+      restrict: 'EA',
+      priority: 1001,
       templateUrl: '../TEMPLATES/tabs.html',
-      controller: 'showcaseController',
-      controllerAs: 'tabs'
+      controller: 'boneController',
+      controllerAs: 'bone'
     };
   };
+
 })();
