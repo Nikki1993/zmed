@@ -1,4 +1,4 @@
-$background: #eee;
+$background: #fff;
 $background-header-text: #fff;
 $background-gradient-start: #0143a3;
 $background-gradient-end: #0273d4;
@@ -93,14 +93,18 @@ $background-gradient-end: #0273d4;
   padding-right: 0;
 }
 
-.tab-content {
-  min-height: 200px;
-}
-
 .button-right {
   float: right;
 }
 
 .action-button {
   display: flex;
+}
+
+.card-tab {
+  max-width: 700px;
+}
+
+.card-bg {
+  background-color: $background;
 }

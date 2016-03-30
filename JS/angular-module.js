@@ -12,7 +12,9 @@
       })
       .accentPalette('red')
       .warnPalette('deep-orange')
-      .backgroundPalette('grey');
+      .backgroundPalette('grey', {
+        'default': '100'
+      });
   };
 
 })();
