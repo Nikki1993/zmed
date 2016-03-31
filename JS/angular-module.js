@@ -3,7 +3,10 @@
 
   angular
     .module('webApp', ['ngMaterial'])
-    .config(themeConfiguration);
+    .config(themeConfiguration)
+    .controller('mainController', mainController);
+
+    mainController.$inject = ['$mdSidenav'];
 
   function themeConfiguration($mdThemingProvider) {
     $mdThemingProvider.theme('default')
@@ -15,6 +18,26 @@
       .backgroundPalette('grey', {
         'default': '100'
       });
+  };
+
+  function mainController($mdSidenav) {
+    var vm = this;
+
+    vm.isSideNavOpen = false;
+
+    vm.openLeftMenu = function() {
+      if (vm.isSideNavOpen === false) {
+        $mdSidenav('left').toggle();
+        vm.isSideNavOpen = true;
+      };
+    };
+
+    vm.closeLeftMenu = function() {
+      if (vm.isSideNavOpen === true) {
+        $mdSidenav('left').toggle();
+        vm.isSideNavOpen = false;
+      };
+    }
   };
 
 })();
