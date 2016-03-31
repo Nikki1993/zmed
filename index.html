@@ -1,166 +1,157 @@
 <!DOCTYPE html>
 <html ng-app="webApp">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="description" content="Ltd. Z-Med carries out deliveries of implants and instruments for the surgical treatment of injuries.">
-  <meta name="author" content="Nikki Kononov">
-  <meta name="keywords" content="implants, instruments, medical, health care, endoprosthesis, treatment">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#2196f3">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Ltd. Z-Med carries out deliveries of implants and instruments for the surgical treatment of injuries.">
+    <meta name="author" content="Nikki Kononov">
+    <meta name="keywords" content="implants, instruments, medical, health care, endoprosthesis, treatment">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2196f3">
 
-  <!-- CDN -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <!-- Bower CSS files -->
-  <link rel="stylesheet" href="/bower_components/angular-material/angular-material.min.css" />
-  <link rel="stylesheet" href="/bower_components/angular/angular-csp.css" />
+    <!-- Bower CSS files -->
+    <link rel="stylesheet" href="/bower_components/angular-material/angular-material.min.css"/>
+    <link rel="stylesheet" href="/bower_components/angular/angular-csp.css"/>
 
-  <!-- User CSS/favicon files -->
-  <link rel="stylesheet" href="/CSS/styles.min.css">
-  <link rel="icon" href="/IMG/favicon.png">
+    <!-- User CSS/favicon files -->
+    <link rel="stylesheet" href="/CSS/styles.min.css">
+    <link rel="icon" href="/IMG/favicon.png">
 
-  <title>Z-med</title>
+    <title>Z-med</title>
 
-  <!-- Bower Scripts -->
-  <script src="/bower_components/angular/angular.min.js"></script>
-  <script src="/bower_components/angular-aria/angular-aria.min.js"></script>
-  <script src="/bower_components/angular-animate/angular-animate.min.js"></script>
-  <script src="/bower_components/angular-material/angular-material.min.js"></script>
-  <script src="/bower_components/angular-messages/angular-messages.min.js"></script>
-  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bower Scripts -->
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <script src="/bower_components/angular-aria/angular-aria.min.js"></script>
+    <script src="/bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="/bower_components/angular-material/angular-material.min.js"></script>
+    <script src="/bower_components/angular-messages/angular-messages.min.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
 
-  <!-- User Scripts -->
-  <script src="../JS/angular-module.js"></script>
-  <script src="../JS/tabs.js"></script>
-  <script src="../JS/menu-bar.js"></script>
-  <!-- <script src="../JS/scripts.js"></script> -->
+    <!-- User Scripts -->
+    <script src="../JS/angular-module.js"></script>
+    <script src="../JS/tabs.js"></script>
+    <script src="../JS/menu-bar.js"></script>
+    <!-- <script src="../JS/scripts.js"></script> -->
 
-</head>
-
-<body ng-cloak>
-  <md-toolbar md-whiteframe="4" class="nav-toolbar">
-    <nav class="md-toolbar-tools nav-main">
-      <md-button class="nav-z-logo" href="" aria-label="Logo"></md-button>
-      <ul>
-        <menu-bar ng-repeat="data in menuCtrl.menuItems"></menu-bar>
-      </ul>
-    </nav>
-  </md-toolbar>
-  <header class="background-color">
-    <div class="background-header">
-      <h1 class="z-logo header-text">
+  </head>
+  <body ng-cloak>
+    <md-toolbar md-whiteframe="4" class="nav-toolbar">
+      <nav class="md-toolbar-tools nav-main">
+        <md-button class="nav-z-logo" href="" aria-label="Logo"></md-button>
+        <ul>
+          <menu-bar ng-repeat="data in menuCtrl.menuItems"></menu-bar>
+        </ul>
+      </nav>
+    </md-toolbar>
+    <header class="background-color">
+      <div class="background-header">
+        <h1 class="z-logo header-text">
           Number One Distributor
           <br/>
           In Russia
         </h1>
-    </div>
-  </header>
-  <div layout="column" flex>
-    <md-content class="tab-content" layout="column" flex layout-padding>
-      <h1 class="md-display-2 center-text">Featured Products</h1>
-      <md-tabs flex md-dynamic-height md-border-bottom md-swipe-content="true" md-stretch-tabs="always">
-        <bone-tab ng-repeat="data in boneCtrl.info"></bone-tab>                                   <!-- CUSTOM TABS -->
-      </md-tabs>
-    </md-content>
-    <md-content layout="column" layout-padding>
-      <h1 class="md-display-2 center-text">About Us</h1>
-      <div layout="row" layout-xs="column">
-        <div flex>
-          <h3 class="md-title">ООО "Z-Med" осуществляет поставки имплантатов и инструментов для оперативного лечения повреждений опорно-двигательного аппарата человека.</h3>
-          <p class="md-body-2">
-            Мы ставим перед собой задачу обеспечить хирургов проверенными временем, максимально безопасными и надежными технологиями для лечения переломов костей и их последствий, заболеваний суставов, травм и дегенеративных изменений позвоночника. В руках специалистов
-            эти технологии обеспечивают максимальную предсказуемость результатов лечения и сокращают сроки реабилитации пациентов после высокотехнологичных хирургических операций. Тесное сотрудничество с профессиональным медицинским сообществом — важнейшая
-            составляющая нашего успеха.
-          </p>
-          <p class="md-body-2">
-            Наши преимущества:
-          </p>
-          <md-list class="md-body-2">
-            <md-list-item>Сотрудники нашей компании работают на рынке услуг более 10 лет</md-list-item>
-            <md-divider></md-divider>
-            <md-list-item>Бесплатная профессиональная консультация клиентов</md-list-item>
-            <md-divider></md-divider>
-            <md-list-item>Организация образовательных программ совместно с нашими партнерами на территории России и за рубежом</md-list-item>
-            <md-divider></md-divider>
-            <md-list-item>Более 140 постоянных партнеров на территории РФ</md-list-item>
-            <md-divider></md-divider>
-            <md-list-item>Оперативная доставка по всей России</md-list-item>
-            <md-divider></md-divider>
-          </md-list>
-        </div>
       </div>
-    </md-content>
-    <md-content layout="column" layout-padding>
-      <h1 class="md-display-2 center-text">Reach Us</h1>
-      <div layout="row" layout-xs="column">
-        <div flex layout="column">
-          <md-card class="card-bg" flex>
-            <md-toolbar>
-              <div class="md-toolbar-tools md-primary">
-                <h3 class="center-text">Contact Details</h3>
-              </div>
-            </md-toolbar>
-            <div layout-padding>
-              <div flex>
-                <div layout="row">
+    </header>
+    <div layout="column" flex>
+      <md-content class="tab-content" layout="column" flex layout-padding>
+        <h1 class="md-display-2 center-text">Featured Products</h1>
+        <md-tabs flex md-dynamic-height md-border-bottom md-swipe-content="true" md-stretch-tabs="always">
+          <bone-tab ng-repeat="data in boneCtrl.info"></bone-tab>
+        </md-tabs>
+      </md-content>
+      <md-content layout="column" layout-padding>
+        <h1 class="md-display-2 center-text">About Us</h1>
+        <div layout="row" layout-xs="column">
+          <div flex>
+            <h3 class="md-title">Re-do</h3>
+            <p class="md-body-2">
+              Potato Potato Potato
+            </p>
+            <p class="md-body-2">
+              Our Potatos
+            </p>
+            <md-list class="md-body-2">
+              <md-list-item>Potato</md-list-item>
+              <md-divider></md-divider>
+              <md-list-item>Potato</md-list-item>
+              <md-divider></md-divider>
+              <md-list-item>Potato</md-list-item>
+              <md-divider></md-divider>
+              <md-list-item>Potato</md-list-item>
+              <md-divider></md-divider>
+              <md-list-item>Potato</md-list-item>
+              <md-divider></md-divider>
+            </md-list>
+          </div>
+        </div>
+      </md-content>
+      <md-content layout="column" layout-padding>
+        <h1 class="md-display-2 center-text">Reach Us</h1>
+        <div layout="row" layout-xs="column">
+          <div flex layout="column">
+            <md-card class="card-bg" flex>
+              <md-toolbar>
+                <div class="md-toolbar-tools md-primary">
+                  <h3 class="center-text">Contact Details</h3>
+                </div>
+              </md-toolbar>
+              <div layout-padding>
+                <div layout="row" flex>
                   <md-button class="md-fab md-primary" aria-label="Phone" href="tel:+74952300584" aria-label="+74952300584">
                     <md-icon md-font-icon="material-icons">phone</md-icon>
                   </md-button>
                   <md-button class="md-primary action-button" href="tel:+74952300584" aria-label="+74952300584">+7 495 230 05 84</md-button>
                 </div>
-              </div>
-              <div flex>
-                <div layout="row">
+                <div layout="row" flex>
                   <md-button class="md-fab md-primary" aria-label="Email" href="mailto:info@zm5.ru" aria-label="info@zm5.ru">
                     <md-icon md-font-icon="material-icons">email</md-icon>
                   </md-button>
                   <md-button class="md-primary action-button" href="mailto:info@zm5.ru" aria-label="info@zm5.ru">info@zm5.ru</md-button>
                 </div>
-              </div>
-              <div flex>
-                <div layout="row">
+                <div layout="row" flex>
                   <md-button class="md-fab md-primary" aria-label="Maps" href="https://goo.gl/maps/smkX6U8Txqw" aria-label="https://goo.gl/maps/smkX6U8Txqw" target="_blank">
                     <md-icon md-font-icon="material-icons">navigation</md-icon>
                   </md-button>
                   <md-button class="md-primary action-button" href="https://goo.gl/maps/smkX6U8Txqw" aria-label="https://goo.gl/maps/smkX6U8Txqw">Address</md-button>
                 </div>
               </div>
-            </div>
-          </md-card>
-        </div>
-        <div flex>
-          <md-card class="card-bg" flex>
-            <md-toolbar>
-              <div class="md-toolbar-tools md-primary">
-                <h3 class="center-text">Contact Form</h3>
-              </div>
-            </md-toolbar>
-            <div layout-padding>
-              <form name="contactForm">
-                <md-input-container class="md-block">
-                  <label>Name</label>
-                  <input/>
-                </md-input-container>
-                <md-input-container class="md-block">
-                  <label>Email</label>
-                  <input/>
-                </md-input-container>
-                <md-input-container class="md-block">
-                  <label>Message</label>
-                  <textarea rows="5"></textarea>
-                </md-input-container>
-                <div layout-fill>
-                  <md-button class="md-raised md-primary">Send</md-button>
-                  <md-button class="md-raised md-accent button-right">Clear</md-button>
+            </md-card>
+          </div>
+          <div flex>
+            <md-card class="card-bg" flex>
+              <md-toolbar>
+                <div class="md-toolbar-tools md-primary">
+                  <h3 class="center-text">Contact Form</h3>
                 </div>
-              </form>
-            </div>
-          </md-card>
+              </md-toolbar>
+              <div layout-padding>
+                <form name="contactForm">
+                  <md-input-container class="md-block">
+                    <label>Name</label>
+                    <input/>
+                  </md-input-container>
+                  <md-input-container class="md-block">
+                    <label>Email</label>
+                    <input/>
+                  </md-input-container>
+                  <md-input-container class="md-block">
+                    <label>Message</label>
+                    <textarea rows="5"></textarea>
+                  </md-input-container>
+                  <div layout-fill>
+                    <md-button class="md-raised md-primary">Send</md-button>
+                    <md-button class="md-raised md-accent button-right">Clear</md-button>
+                  </div>
+                </form>
+              </div>
+            </md-card>
+          </div>
         </div>
-      </div>
-    </md-content>
-  </div>
-</body>
+      </md-content>
+    </div>
+  </body>
 
 </html>
