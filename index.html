@@ -35,8 +35,11 @@
     <script src="../JS/menu-bar.js"></script>
 
   </head>
-  <body ng-controller="mainController as mainCtrl" md-is-open="mainCtrl.isSideNavOpen" md-swipe-right="mainCtrl.openLeftMenu()" md-swipe-left="mainCtrl.closeLeftMenu()" ng-cloak>
-    <md-toolbar md-whiteframe="4" class="nav-toolbar">
+  <body ng-controller="mainController as mainCtrl" md-is-open="mainCtrl.isSideNavOpen" md-swipe-right="mainCtrl.openLeftMenu()" md-swipe-left="mainCtrl.closeLeftMenu()" layout="column" ng-cloak>
+    <md-sidenav layout="column" class="md-sidenav-left" md-component-id="left">
+      <menu-bar ng-repeat="data in menuCtrl.menuItems"></menu-bar>
+    </md-sidenav>
+    <md-toolbar md-whiteframe="4" class="nav-toolbar" md-scroll-shrink>
       <nav class="md-toolbar-tools nav-main">
         <md-button hide-lg hide-gt-lg ng-click="mainCtrl.openLeftMenu()"><md-icon aria-label="Open side navigation" md-font-icon="material-icons">menu</md-icon></md-button>
         <md-button class="nav-z-logo" href="" aria-label="Logo"></md-button>
@@ -45,19 +48,16 @@
         </ul>
       </nav>
     </md-toolbar>
-    <md-sidenav layout="column" class="md-sidenav-left" md-component-id="left">
-      <menu-bar ng-repeat="data in menuCtrl.menuItems"></menu-bar>
-    </md-sidenav>
-    <header class="background-color">
-      <div class="background-header">
-        <h1 class="z-logo header-text">
-          Number One Distributor
-          <br/>
-          In Russia
-        </h1>
-      </div>
-    </header>
-    <div layout="column" flex>
+    <md-content layout-fill flex>
+      <header class="background-color">
+        <div class="background-header">
+          <h1 class="z-logo header-text">
+            Number One Distributor
+            <br/>
+            In Russia
+          </h1>
+        </div>
+      </header>
       <md-content class="tab-content" layout="column" flex layout-padding>
         <h1 class="md-display-2 center-text">Featured Products</h1>
         <md-tabs flex md-dynamic-height md-border-bottom md-swipe-content="true" md-stretch-tabs="always">
@@ -153,7 +153,7 @@
           </div>
         </div>
       </md-content>
-    </div>
+    </md-content>
   </body>
 
 </html>
