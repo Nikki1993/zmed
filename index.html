@@ -44,13 +44,13 @@
       <nav class="md-toolbar-tools nav-main">
         <md-button hide-lg hide-gt-lg ng-click="mainCtrl.openLeftMenu()"><md-icon aria-label="Open side navigation" md-font-icon="material-icons">menu</md-icon></md-button>
         <md-button class="nav-z-logo" href="" aria-label="Logo"></md-button>
-        <ul hide show-lg show-gt-lg>
+        <ul du-scroll-container="scroll-container" hide show-lg show-gt-lg>
           <menu-bar ng-repeat="data in menuCtrl.menuItems"></menu-bar>
         </ul>
       </nav>
     </md-toolbar>
-    <md-content id="main" layout-fill flex>
-      <header class="background-color">
+    <md-content id="scroll-container" layout-fill flex>
+      <header id="main" class="background-color">
         <div class="background-header">
           <h1 class="z-logo header-text">
             Number One Distributor
