@@ -2,6 +2,8 @@ $background: #fff;
 $background-header-text: #fff;
 $background-gradient-start: #0143a3;
 $background-gradient-end: #0273d4;
+$background-sidenav: #106cc8;
+$background-sidenav-content: rgba(0, 0, 0, 0);
 
 .background-color {
   background: linear-gradient($background-gradient-start, $background-gradient-end);
@@ -112,8 +114,17 @@ $background-gradient-end: #0273d4;
   background-color: $background;
 }
 
-.sidenav-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.sidenav-settings {
+
+  background: $background-sidenav;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sidenav-transparency {
+    background: $background-sidenav-content;
+  }
 }
