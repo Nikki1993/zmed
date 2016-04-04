@@ -1,5 +1,5 @@
 # Zmed
-Website for russian endoprosthesis distributor.
+WIP
 
 Written with AngularJS + Angular Material.
 
