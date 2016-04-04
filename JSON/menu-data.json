@@ -1,11 +1,15 @@
 {
   "items": [{
-    "name": "Main"
+    "name": "Main",
+    "link": "main"
   }, {
-    "name": "Products"
+    "name": "Products",
+    "link": "products"
   }, {
-    "name": "About Us"
+    "name": "About Us",
+    "link": "about"
   }, {
-    "name": "Reach Us"
+    "name": "Reach Us",
+    "link": "reach"
   }]
 }
