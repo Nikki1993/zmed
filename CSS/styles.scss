@@ -2,7 +2,9 @@ $background: #fff;
 $background-header-text: #fff;
 $background-gradient-start: #0143a3;
 $background-gradient-end: #0273d4;
+
 $background-sidenav: #106cc8;
+$background-sidenav-gradient-start: #185694;
 $background-sidenav-content: rgba(0, 0, 0, 0);
 
 .background-color {
@@ -72,6 +74,7 @@ $background-sidenav-content: rgba(0, 0, 0, 0);
 }
 
 .left-list {
+  color: $background-header-text;
   float: left;
   font-size: 16px;
   font-weight: 400;
@@ -124,7 +127,19 @@ $background-sidenav-content: rgba(0, 0, 0, 0);
     padding: 0;
   }
 
+  .sidenav-button-text {
+    font-size: 16px;
+    text-align: left;
+  }
+
   .sidenav-transparency {
     background: $background-sidenav-content;
+  }
+
+  .sidenav-background-color {
+    background: linear-gradient($background-sidenav-gradient-start, $background-sidenav);
+    background-color: $background-sidenav;
+    color: $background-header-text;
+    text-align: center;
   }
 }
