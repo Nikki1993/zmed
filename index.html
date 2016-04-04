@@ -37,8 +37,10 @@
 
   </head>
   <body ng-controller="mainController as mainCtrl" md-is-open="mainCtrl.isSideNavOpen" layout="column" ng-cloak>
-    <md-sidenav layout="column" class="md-sidenav-left" md-component-id="left">
-      <menu-bar ng-repeat="data in menuCtrl.menuItems"></menu-bar>
+    <md-sidenav class="md-sidenav-left" md-component-id="left">
+      <ul layout="column" du-scroll-container="scroll-container" class="sidenav-ul">
+        <menu-bar ng-repeat="data in menuCtrl.menuItems"></menu-bar>
+      </ul>
     </md-sidenav>
     <md-toolbar md-whiteframe="4" class="nav-toolbar" md-scroll-shrink>
       <nav class="md-toolbar-tools nav-main">

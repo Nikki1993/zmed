@@ -27,18 +27,8 @@
         vm.isSideNavOpen = false;
 
         vm.openLeftMenu = function() {
-            if (vm.isSideNavOpen === false) {
-                $mdSidenav('left').toggle();
-                vm.isSideNavOpen = true;
-            };
+          $mdSidenav('left').toggle();
         };
-
-        vm.closeLeftMenu = function() {
-            if (vm.isSideNavOpen === true) {
-                $mdSidenav('left').toggle();
-                vm.isSideNavOpen = false;
-            };
-        }
     };
 
 })();
