@@ -1,14 +1,14 @@
 <md-tab label="{{data.tabName}}" class="material-tab">
-  <md-content class="md-padding" layout="column" layout-align="center center">
+  <md-content layout="column" class="md-padding" layout-align="center center">
     <md-card class="card-tab card-bg">
-      <md-card-title>
+      <md-card-title layout="column" layout-gt-xs="row">
+        <md-card-title-media>
+          <img class="md-media-lg" ng-src="{{data.image}}" />
+        </md-card-title-media>
         <md-card-title-text>
           <span class="md-headline">{{data.heading}}</span>
           <span class="md-subhead">{{data.subHeading}}</span>
         </md-card-title-text>
-        <md-card-title-media>
-          <img class="md-media-lg" ng-src="{{data.image}}" />
-        </md-card-title-media>
       </md-card-title>
       <md-card-actions>
         <md-button class="md-raised md-primary">See More</md-button>
