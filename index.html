@@ -28,12 +28,12 @@
     <script src="/bower_components/angular-animate/angular-animate.min.js"></script>
     <script src="/bower_components/angular-material/angular-material.min.js"></script>
     <script src="/bower_components/angular-messages/angular-messages.min.js"></script>
+    <script src="/bower_components/angular-scroll/angular-scroll.min.js"></script>
 
     <!-- User Scripts -->
     <script src="../JS/angular-module.js"></script>
     <script src="../JS/tabs.js"></script>
     <script src="../JS/menu-bar.js"></script>
-    <script src="../JS/jscripts.js"></script>
 
   </head>
   <body ng-controller="mainController as mainCtrl" md-is-open="mainCtrl.isSideNavOpen" layout="column" ng-cloak>
@@ -49,8 +49,8 @@
         </ul>
       </nav>
     </md-toolbar>
-    <md-content layout-fill flex>
-      <header id="main" class="background-color">
+    <md-content id="main" layout-fill flex>
+      <header class="background-color">
         <div class="background-header">
           <h1 class="z-logo header-text">
             Number One Distributor
@@ -59,14 +59,14 @@
           </h1>
         </div>
       </header>
-      <md-content class="tab-content" layout="column" flex layout-padding>
-        <h1 id="products" class="md-display-2 center-text">Featured Products</h1>
+      <md-content id="products" class="tab-content" layout="column" flex layout-padding>
+        <h1 class="md-display-2 center-text">Featured Products</h1>
         <md-tabs flex md-dynamic-height md-border-bottom md-swipe-content="true" md-stretch-tabs="always">
           <bone-tab ng-repeat="data in boneCtrl.info"></bone-tab>
         </md-tabs>
       </md-content>
-      <md-content layout="column" layout-padding>
-        <h1 id="about" class="md-display-2 center-text">About Us</h1>
+      <md-content id="about" layout="column" layout-padding>
+        <h1 class="md-display-2 center-text">About Us</h1>
         <div layout="row" layout-xs="column">
           <div flex>
             <h3 class="md-title">Re-do</h3>
@@ -91,8 +91,8 @@
           </div>
         </div>
       </md-content>
-      <md-content layout="column" layout-padding>
-        <h1 id="reach" class="md-display-2 center-text">Reach Us</h1>
+      <md-content id="reach" layout="column" layout-padding>
+        <h1 class="md-display-2 center-text">Reach Us</h1>
         <div layout="row" layout-xs="column">
           <div flex layout="column">
             <md-card class="card-bg" flex>
@@ -155,6 +155,7 @@
         </div>
       </md-content>
     </md-content>
+
   </body>
 
 </html>
