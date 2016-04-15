@@ -10,10 +10,12 @@
           <span class="md-subhead">{{data.subHeading}}</span>
         </md-card-title-text>
       </md-card-title>
-      <md-card-actions>
-        <md-button class="md-raised md-primary">See More</md-button>
-        <md-button class="md-raised md-accent">Full List</md-button>
-        <md-button class="md-raised md-primary button-right">Email</md-button>
+      <md-card-actions layout="row">
+        <md-button class="md-raised md-accent" ng-click="boneCtrl.showMore($event)">Full List</md-button>
+        <span flex></span>
+        <md-button class="md-raised md-primary" href="mailto:info@zm5.ru" aria-label="info@zm5.ru">
+          Email
+        </md-button>
       </md-card-actions>
     </md-card>
   </md-content>
