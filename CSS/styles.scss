@@ -87,8 +87,12 @@ $background-sidenav-content: rgba(0, 0, 0, 0);
   }
 }
 
-.center-text {
+.center-content {
   text-align: center;
+}
+
+.center-elements {
+  margin: 0 auto;
 }
 
 .md-tab {
@@ -115,6 +119,18 @@ $background-sidenav-content: rgba(0, 0, 0, 0);
 
 .card-bg {
   background-color: $background;
+}
+
+.card-height {
+  min-height: 320px;
+}
+
+.card-title-padding {
+  padding-top: 30px;
+}
+
+.about-card {
+  padding-bottom: 0;
 }
 
 .sidenav-settings {

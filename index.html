@@ -34,13 +34,14 @@
   <script src="../JS/angular-module.js"></script>
   <script src="../JS/tabs.js"></script>
   <script src="../JS/menu-bar.js"></script>
+  <script src="../JS/about-card.js"></script>
 
 </head>
 
 <body ng-controller="mainController as mainCtrl" md-is-open="mainCtrl.isSideNavOpen" layout="column" ng-cloak>
   <md-sidenav class="md-sidenav-left sidenav-settings" md-component-id="left">
     <header class="sidenav-background-color">
-      <img src="../IMG/logo-full-150.png" />
+      <img src="../IMG/logo-full-150.png" alt="Z-med Logo"/>
     </header>
     <md-content class="sidenav-transparency" flex>
       <ul layout="column" class="test" du-scroll-container="scroll-container">
@@ -70,62 +71,50 @@
       </div>
     </header>
     <md-content id="products" class="tab-content" layout="column" flex layout-padding>
-      <h1 class="md-display-2 center-text">Featured Products</h1>
+      <h1 class="md-display-2 center-content">Featured Products</h1>
       <md-tabs flex md-dynamic-height md-border-bottom md-swipe-content="true" md-stretch-tabs="always">
         <bone-tab ng-repeat="data in boneCtrl.info"></bone-tab>
       </md-tabs>
     </md-content>
     <md-content id="about" layout="column" layout-padding>
-      <h1 class="md-display-2 center-text">About Us</h1>
+      <h1 class="md-display-2 center-content">About Us</h1>
       <div layout="row" layout-xs="column">
         <div flex>
-          <h3 class="md-title">Re-do</h3>
-          <p class="md-body-2">
-            Potato Potato Potato
+          <h3 class="md-title center-content">Zmed L.T.D. is number one distributor of the endoprosthesis in Russia, aiming to deliver parts in fast, timely and reliable manner!</h3>
+          <p class="md-body-2 center-content">
+            As a number one distributor in Russia, we aim to also deliver greatest experience in addition to fast deliver of goods through:
           </p>
-          <p class="md-body-2">
-            Our Potatos
-          </p>
-          <md-list class="md-body-2">
-            <md-list-item>Potato</md-list-item>
-            <md-divider></md-divider>
-            <md-list-item>Potato</md-list-item>
-            <md-divider></md-divider>
-            <md-list-item>Potato</md-list-item>
-            <md-divider></md-divider>
-            <md-list-item>Potato</md-list-item>
-            <md-divider></md-divider>
-            <md-list-item>Potato</md-list-item>
-            <md-divider></md-divider>
-          </md-list>
+          <div class="center-elements" layout="row" layout-xs="column" layout-sm="column">
+            <about-card flex="33" flex-xs="100" flex-sm="100" class="center-content" ng-repeat="data in aboutCardCtrl.info"></about-card>
+          </div>
         </div>
       </div>
     </md-content>
     <md-content id="reach" layout="column" layout-padding>
-      <h1 class="md-display-2 center-text">Reach Us</h1>
+      <h1 class="md-display-2 center-content">Reach Us</h1>
       <div layout="row" layout-xs="column">
         <div flex layout="column">
           <md-card class="card-bg" flex>
             <md-toolbar>
               <div class="md-toolbar-tools md-primary">
-                <h3 class="center-text">Contact Details</h3>
+                <h3 class="center-content">Contact Details</h3>
               </div>
             </md-toolbar>
             <div layout-padding>
               <div layout="row" flex>
-                <md-button class="md-fab md-primary" aria-label="Phone" href="tel:+74952300584" aria-label="+74952300584">
+                <md-button class="md-fab md-primary" href="tel:+74952300584" aria-label="+74952300584">
                   <md-icon md-font-icon="material-icons">phone</md-icon>
                 </md-button>
                 <md-button class="md-primary action-button" href="tel:+74952300584" aria-label="+74952300584">+7 495 230 05 84</md-button>
               </div>
               <div layout="row" flex>
-                <md-button class="md-fab md-primary" aria-label="Email" href="mailto:info@zm5.ru" aria-label="info@zm5.ru">
+                <md-button class="md-fab md-primary" href="mailto:info@zm5.ru" aria-label="info@zm5.ru">
                   <md-icon md-font-icon="material-icons">email</md-icon>
                 </md-button>
                 <md-button class="md-primary action-button" href="mailto:info@zm5.ru" aria-label="info@zm5.ru">info@zm5.ru</md-button>
               </div>
               <div layout="row" flex>
-                <md-button class="md-fab md-primary" aria-label="Maps" href="https://goo.gl/maps/smkX6U8Txqw" aria-label="https://goo.gl/maps/smkX6U8Txqw" target="_blank">
+                <md-button class="md-fab md-primary" href="https://goo.gl/maps/smkX6U8Txqw" aria-label="https://goo.gl/maps/smkX6U8Txqw" target="_blank">
                   <md-icon md-font-icon="material-icons">navigation</md-icon>
                 </md-button>
                 <md-button class="md-primary action-button" href="https://goo.gl/maps/smkX6U8Txqw" aria-label="https://goo.gl/maps/smkX6U8Txqw">Address</md-button>
@@ -137,7 +126,7 @@
           <md-card class="card-bg" flex>
             <md-toolbar>
               <div class="md-toolbar-tools md-primary">
-                <h3 class="center-text">Contact Form</h3>
+                <h3 class="center-content">Contact Form</h3>
               </div>
             </md-toolbar>
             <div layout-padding>
