@@ -17,7 +17,11 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "^1.5.2",
-    "angular-material": "^1.0.6"
+    "angular": "^1.5.4",
+    "angular-material": "^1.0.7",
+    "angular-scroll": "^1.0.0"
+  },
+  "resolutions": {
+    "angular": "^1.5.4"
   }
 }
