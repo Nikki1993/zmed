@@ -6,6 +6,7 @@ $background-gradient-end: #0273d4;
 $background-sidenav: #106cc8;
 $background-sidenav-gradient-start: #185694;
 $background-sidenav-content: rgba(0, 0, 0, 0);
+$background-transparent-content: rgba(0, 0, 0, .75);
 
 .test {
   background-color: $background-gradient-end;
@@ -170,20 +171,18 @@ $background-sidenav-content: rgba(0, 0, 0, 0);
 
 md-input-container {
   .md-errors-spacer {
+    // scss-lint:disable ImportantRule
     min-height: 0 !important;
   }
 }
 
 .dialog-settings {
-  width: 80%;
+  min-height: 80%;
+  min-width: 80%;
 
   md-dialog-actions {
     padding-left: 0;
   }
-}
-
-.product-icon {
-  height: 125px;
 }
 
 // credits to http://plnkr.co/edit/fFIFFrG7AO63CZeDT4kz?p=preview
@@ -211,4 +210,18 @@ md-input-container {
   to {
     opacity: 0;
   }
+}
+
+.product-icon {
+  height: 125px;
+}
+
+.product-description {
+  background: $background-transparent-content;
+  color: $background-header-text;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
