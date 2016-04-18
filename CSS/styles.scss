@@ -12,6 +12,10 @@ $background-transparent-content: rgba(0, 0, 0, .75);
   background-color: $background-gradient-end;
 }
 
+.placeholder-image {
+  height: 200px;
+}
+
 .background-color {
   background: linear-gradient($background-gradient-start, $background-gradient-end);
   background-color: $background-gradient-start;

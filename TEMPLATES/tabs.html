@@ -1,22 +1,15 @@
 <md-tab label="{{data.tabName}}" class="material-tab">
-  <md-content layout="column" class="md-padding" layout-align="center center">
+  <md-content layout="column" layout-padding layout-align="center center">
     <md-card class="card-tab card-bg">
-      <md-card-title layout="column" layout-gt-xs="row">
-        <md-card-title-media>
-          <img class="md-media-lg" ng-src="{{data.image}}"/>
-        </md-card-title-media>
-        <md-card-title-text>
-          <span class="md-headline">{{data.heading}}</span>
-          <span class="md-subhead">{{data.subHeading}}</span>
-        </md-card-title-text>
-      </md-card-title>
-      <!-- <md-card-actions layout="row">
-        <md-button class="md-raised md-accent" ng-click="boneCtrl.showMore($event)">Full List</md-button>
-        <span flex></span>
-        <md-button class="md-raised md-primary" href="mailto:info@zm5.ru" aria-label="info@zm5.ru">
-          Email
-        </md-button>
-      </md-card-actions> -->
+      <img ng-src="{{data.image}}" class="md-card-image placeholder-image" alt="Product Image">
+      <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">{{data.heading}}</span>
+          </md-card-title-text>
+        </md-card-title>
+      <md-card-content>
+        {{data.description}}
+      </md-card-content>
     </md-card>
   </md-content>
 </md-tab>

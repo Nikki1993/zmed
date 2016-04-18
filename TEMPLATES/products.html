@@ -7,7 +7,7 @@
           <span flex></span>
           <md-icon md-font-set="material-icons">search</md-icon>
           <md-input-container class="md-block">
-            <label>Search for products</label>
+            <label>Search</label>
             <input type="text" ng-model="search" class="md-input" aria-label="Search text field"></md-input-container>
           <md-button class="md-icon-button" ng-click="boneCtrl.cancel()">
             <md-icon md-font-set="material-icons" aria-label="Close dialog">close</md-icon>
@@ -16,13 +16,13 @@
       </md-toolbar>
       <md-dialog-content class="dialog-size" flex layout-padding>
         <md-grid-list md-cols="12" md-gutter="12px" md-row-height="1:1">
-          <md-grid-tile ng-repeat="products in boneCtrl.products | filter: search" class="test repeated-item" md-colspan="3" md-rowspan="3" data-product-tag="{{products.tag}}" ng-mouseover="option=true" ng-mouseout="option=false">
-            <img class="product-icon" ng-src="{{products.icon}}"/>
+          <md-grid-tile ng-repeat="product in boneCtrl.products | filter: search" class="test repeated-item" md-colspan="3" md-rowspan="3" data-product-tag="{{product.tag}}" ng-mouseover="option=true" ng-mouseout="option=false">
+            <img class="product-icon" ng-src="{{product.icon}}" alt="{{product.name}}"/>
             <md-content ng-show="option" class="product-description" layout-padding flex>
-              {{products.description}}
+              {{product.description}}
             </md-content>
             <md-grid-tile-footer ng-hide="option">
-              <h3 class="center-content md-title">{{products.name}}</h3>
+              <h3 class="center-content md-title">{{product.name}}</h3>
             </md-grid-tile-footer>
           </md-grid-tile>
         </md-grid-list>
