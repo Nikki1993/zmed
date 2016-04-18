@@ -24,8 +24,6 @@
 
     var vm = this;
 
-    vm.isSideNavOpen = false;
-
     vm.openLeftMenu = function() {
       $mdSidenav('left').toggle();
     };

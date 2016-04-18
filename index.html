@@ -2,12 +2,14 @@
 <html ng-app="webApp">
 
   <head>
+    <!-- Meta tags used to describe key parts of the website, such as keywords, description, theme-color for Chrome browser, etc -->
     <meta charset="utf-8">
     <meta name="description" content="Ltd. Z-Med carries out deliveries of implants and instruments for the surgical treatment of injuries.">
     <meta name="author" content="Nikki Kononov">
     <meta name="keywords" content="implants, instruments, medical, health care, endoprosthesis, treatment">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#2196f3">
+    <!-- You can change this value to match a specific color, set as HEX code -->
 
     <!-- CDN -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -20,6 +22,7 @@
     <link rel="stylesheet" href="/CSS/styles.min.css">
     <link rel="icon" href="/IMG/favicon.png">
 
+    <!-- Title displayed at the browser tab -->
     <title>Z-med</title>
 
     <!-- Bower Scripts -->
@@ -44,8 +47,9 @@
         <img src="../IMG/logo-full-150.png" alt="Z-med Logo"/>
       </header>
       <md-content class="sidenav-transparency" flex>
-        <ul layout="column" class="test" du-scroll-container="scroll-container">
+        <ul layout="column" du-scroll-container="scroll-container">
           <menu-bar ng-repeat="data in menuCtrl.menuItems"></menu-bar>
+          <!-- Menu Bar element that shows up on mobile devices -->
         </ul>
       </md-content>
     </md-sidenav>
@@ -57,6 +61,7 @@
         <md-button hide show-lg show-gt-lg class="nav-z-logo" href="" aria-label="Logo"></md-button>
         <ul du-scroll-container="scroll-container" hide show-lg show-gt-lg>
           <menu-bar ng-repeat="data in menuCtrl.menuItems"></menu-bar>
+          <!-- Menu Bar element that shows up on desktop/high resolution devices -->
         </ul>
       </nav>
     </md-toolbar>
@@ -75,6 +80,32 @@
         <md-tabs flex md-dynamic-height md-border-bottom md-swipe-content="true" md-stretch-tabs="always">
           <bone-tab ng-repeat="data in boneCtrl.info"></bone-tab>
         </md-tabs>
+        <div ng-controller="boneController as boneCtrl" layout="row">
+          <span flex-gt="20" flex-gt-lg="20"></span>
+          <md-fab-toolbar md-direction="left" flex>
+            <md-fab-trigger>
+              <md-button aria-label="Toggle Actions" class="md-fab md-raised md-primary">
+                <md-tooltip class="md-body-1" md-direction="left">
+                  Settings Menu
+                </md-tooltip>
+                <md-icon icon-font-set="material-icons">settings</md-icon>
+              </md-button>
+            </md-fab-trigger>
+            <md-toolbar>
+              <md-fab-actions class="md-toolbar-tools">
+                <md-button class="md-icon-button" href="mailto:info@zm5.ru" aria-label="Send an email to info@zm5.ru" class="md-icon-button" ng-mouseover="labelEmail=true" ng-mouseout="labelEmail=false">
+                  <md-icon icon-font-set="material-icons">email</md-icon>
+                </md-button>
+                <md-button class="md-icon-button" ng-click="boneCtrl.showMore($event)" aria-label="See full list" class="md-icon-button" ng-mouseover="labelList=true" ng-mouseout="labelList=false">
+                  <md-icon icon-font-set="material-icons">view_list</md-icon>
+                </md-button>
+                <label ng-show="labelEmail">Send an Email About The Product</label>
+                <label ng-show="labelList">View All Products</label>
+              </md-fab-actions>
+            </md-toolbar>
+          </md-fab-toolbar>
+          <span flex-gt="20" flex-gt-lg="20"></span>
+        </div>
       </md-content>
       <md-content id="about" layout="column" layout-padding>
         <h1 class="md-display-2 center-content no-margin">About Us</h1>
@@ -93,7 +124,7 @@
       <md-content id="reach" layout="column" layout-padding>
         <h1 class="md-display-2 center-content">Reach Us</h1>
         <div layout="row" layout-xs="column">
-          <div flex layout="column">
+          <div layout="row" flex>
             <md-card class="card-bg" flex>
               <md-toolbar>
                 <div class="md-toolbar-tools md-primary">
@@ -122,7 +153,7 @@
               </div>
             </md-card>
           </div>
-          <div flex>
+          <div layout="row" flex>
             <md-card class="card-bg" flex>
               <md-toolbar>
                 <div class="md-toolbar-tools md-primary">
