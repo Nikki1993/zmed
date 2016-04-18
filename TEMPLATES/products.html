@@ -1,15 +1,30 @@
-<md-dialog aria-label="Z-med Products" ng-cloak>
+<md-dialog class="dialog-settings" aria-label="Z-med Products" ng-cloak>
   <form>
     <md-toolbar>
       <div class="md-toolbar-tools">
         <h2>Products</h2>
         <span flex></span>
+
+          <md-icon md-font-set="material-icons">search</md-icon>
+          <md-input-container class="md-block">
+            <label>Search for products</label>
+            <input type="text" ng-model="search" class="md-input" aria-label="Search text field"></md-input-container>
+
         <md-button class="md-icon-button" ng-click="boneCtrl.cancel()">
           <md-icon md-font-set="material-icons" aria-label="Close dialog">close</md-icon>
         </md-button>
       </div>
     </md-toolbar>
-    <md-dialog-content layout-padding></md-dialog-content>
+    <md-dialog-content layout-padding>
+      <md-grid-list md-cols="12" md-gutter="12px" md-row-height="1:1">
+        <md-grid-tile ng-repeat="products in boneCtrl.products | filter: search" class="test repeated-item" md-colspan="3" md-rowspan="3" data-product-tag="{{products.tag}}">
+          <img class="product-icon" ng-src="{{products.icon}}"/>
+          <md-grid-tile-footer>
+            <h3 class="center-content md-title">{{products.name}}</h3>
+          </md-grid-tile-footer>
+        </md-grid-tile>
+      </md-grid-list>
+    </md-dialog-content>
     <md-dialog-actions layout="row">
       <md-button class="md-primary md-raised" href="" target="_blank" ng-click="boneCtrl.cancel()">
         close

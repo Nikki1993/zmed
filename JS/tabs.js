@@ -18,6 +18,13 @@
       vm.info = response.data.information;
     });
 
+    vm.products = [];
+
+    $http.get('../JSON/products.json').then(function(response) {
+      console.log("Loaded products.json");
+      vm.products = response.data.product;
+    });
+
     vm.customFullScreen = $mdMedia('xs') || $mdMedia('sm');
 
     vm.showMore = function(ev) {

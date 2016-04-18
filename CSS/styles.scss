@@ -7,6 +7,10 @@ $background-sidenav: #106cc8;
 $background-sidenav-gradient-start: #185694;
 $background-sidenav-content: rgba(0, 0, 0, 0);
 
+.test {
+  background-color: $background-gradient-end;
+}
+
 .background-color {
   background: linear-gradient($background-gradient-start, $background-gradient-end);
   background-color: $background-gradient-start;
@@ -161,5 +165,50 @@ $background-sidenav-content: rgba(0, 0, 0, 0);
     background-color: $background-sidenav;
     color: $background-header-text;
     text-align: center;
+  }
+}
+
+md-input-container {
+  .md-errors-spacer {
+    min-height: 0 !important;
+  }
+}
+
+.dialog-settings {
+  width: 80%;
+
+  md-dialog-actions {
+    padding-left: 0;
+  }
+}
+
+.product-icon {
+  height: 125px;
+}
+
+// credits to http://plnkr.co/edit/fFIFFrG7AO63CZeDT4kz?p=preview
+
+.repeated-item.ng-enter,
+.repeated-item.ng-move {
+  opacity: 0;
+  transition: 1s ease all;
+}
+
+.repeated-item.ng-enter.ng-enter-active,
+.repeated-item.ng-move.ng-move-active {
+  opacity: 1;
+}
+
+.repeated-item.ng-leave {
+  animation: 1s ease my_animation;
+}
+
+@keyframes my_animation {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
   }
 }
