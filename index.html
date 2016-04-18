@@ -48,10 +48,10 @@
         <img src="../IMG/logo-full-150.png" alt="Z-med Logo"/>
       </header>
       <md-content class="sidenav-transparency" flex>
-        <ul layout="column" du-scroll-container="scroll-container">
-          <menu-bar ng-repeat="data in menuCtrl.menuItems"></menu-bar>
+        <section layout="column" layout-align="start center" du-scroll-container="scroll-container">
+          <menu-bar-side ng-repeat="data in menuCtrl.menuItems"></menu-bar-side>
           <!-- Menu Bar element that shows up on mobile devices -->
-        </ul>
+        </section>
       </md-content>
     </md-sidenav>
     <md-toolbar md-whiteframe="4" class="nav-toolbar" md-scroll-shrink>
@@ -60,28 +60,29 @@
           <md-icon aria-label="Open side navigation" md-font-icon="material-icons">menu</md-icon>
         </md-button>
         <md-button hide show-lg show-gt-lg class="nav-z-logo" href="" aria-label="Logo"></md-button>
-        <ul du-scroll-container="scroll-container" hide show-lg show-gt-lg>
+        <section layout="row" layout-align="center center" du-scroll-container="scroll-container" hide show-lg show-gt-lg>
           <menu-bar ng-repeat="data in menuCtrl.menuItems"></menu-bar>
           <!-- Menu Bar element that shows up on desktop/high resolution devices -->
-        </ul>
+        </section>
       </nav>
     </md-toolbar>
     <md-content id="scroll-container" layout-fill flex>
       <header id="main" class="background-color">
         <div class="background-header">
-          <h1 class="z-logo header-text">
+          <h1 class="z-logo header-text md-display-1">
             Number One Distributor
             <br/>
             In Russia
           </h1>
         </div>
       </header>
-      <md-content id="products" class="tab-content" layout="column" flex layout-padding>
+      <md-content id="products" class="tab-content" layout="column" layout-align="center stretch" layout-padding>
         <h1 class="md-display-2 center-content">Featured Products</h1>
         <md-tabs flex md-dynamic-height md-border-bottom md-swipe-content="true" md-stretch-tabs="always">
           <bone-tab ng-repeat="data in boneCtrl.info"></bone-tab>
+          <!--Information about featured products -->
         </md-tabs>
-        <div ng-controller="boneController as boneCtrl" layout="row">
+        <div ng-controller="boneController as boneCtrl" flex layout="row">
           <span flex-gt="20" flex-gt-lg="20"></span>
           <md-fab-toolbar md-direction="left" flex>
             <md-fab-trigger>
@@ -108,7 +109,7 @@
           <span flex-gt="20" flex-gt-lg="20"></span>
         </div>
       </md-content>
-      <md-content id="about" layout="column" layout-padding>
+      <md-content id="about" layout="column" layout-align="center center" layout-padding>
         <h1 class="md-display-2 center-content no-margin">About Us</h1>
         <div layout="row" layout-xs="column">
           <div flex>
@@ -122,14 +123,14 @@
           </div>
         </div>
       </md-content>
-      <md-content id="reach" layout="column" layout-padding>
+      <md-content id="reach" layout="column" layout-align="center stretch" layout-padding>
         <h1 class="md-display-2 center-content">Reach Us</h1>
         <div layout="row" layout-xs="column">
           <div layout="row" flex>
             <md-card class="card-bg" flex>
               <md-toolbar>
                 <div class="md-toolbar-tools md-primary">
-                  <h3 class="center-content">Contact Details</h3>
+                  <h3 class="center-content md-headline">Contact Details</h3>
                 </div>
               </md-toolbar>
               <div layout-padding>
@@ -158,7 +159,7 @@
             <md-card class="card-bg" flex>
               <md-toolbar>
                 <div class="md-toolbar-tools md-primary">
-                  <h3 class="center-content">Contact Form</h3>
+                  <h3 class="center-content md-headline">Contact Form</h3>
                 </div>
               </md-toolbar>
               <div layout-padding>

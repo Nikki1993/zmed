@@ -4,7 +4,8 @@
   angular
     .module('webApp')
     .controller('menuBarController', menuBarController)
-    .directive('menuBar', menuBar);
+    .directive('menuBar', menuBar)
+    .directive('menuBarSide', menuBarSide)
 
   menuBarController.$inject = ['$http'];
 
@@ -28,4 +29,14 @@
       controllerAs: 'menuCtrl',
     };
   };
+
+  function menuBarSide() {
+    return {
+      restrict: 'EA',
+      priority: 1001,
+      templateUrl: '../TEMPLATES/menu-bar.html',
+      controller: 'menuBarController',
+      controllerAs: 'menuCtrl',
+    };
+  }
 })();

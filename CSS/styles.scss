@@ -59,8 +59,6 @@ $background-transparent-content: rgba(0, 0, 0, .75);
 }
 
 .header-text {
-  font-size: 24px;
-  font-weight: 400;
   padding-top: 100px;
   text-align: center;
 }
@@ -79,20 +77,6 @@ $background-transparent-content: rgba(0, 0, 0, .75);
     li {
       margin: 0;
     }
-  }
-}
-
-.left-list {
-  color: $background-header-text;
-  float: left;
-  font-size: 16px;
-  font-weight: 400;
-  padding-left: 16px;
-  text-transform: uppercase;
-
-  .toolbar-button-text {
-    font-size: 16px;
-    font-weight: bold;
   }
 }
 
