@@ -3,10 +3,7 @@
 
   angular
     .module('webApp', ['ngMaterial', 'duScroll'])
-    .config(themeConfiguration)
-    .controller('mainController', mainController);
-
-  mainController.$inject = ['$mdSidenav'];
+    .config(themeConfiguration);
 
   function themeConfiguration($mdThemingProvider) {
     $mdThemingProvider.theme('default')
@@ -19,14 +16,4 @@
         'default': '100'
       });
   };
-
-  function mainController($mdSidenav) {
-
-    var vm = this;
-
-    vm.openLeftMenu = function() {
-      $mdSidenav('left').toggle();
-    };
-  };
-
 })();

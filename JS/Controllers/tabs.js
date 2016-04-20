@@ -3,25 +3,25 @@
 
   angular
     .module('webApp')
-    .controller('boneController', boneController)
-    .directive('boneTab', boneTab);
+    .controller('tabsController', tabsController);
 
-  boneController.$inject = ['$http', '$mdDialog', '$mdMedia', '$scope'];
+  tabsController.$inject = ['JsonData', '$mdDialog', '$mdMedia', '$scope'];
 
-  function boneController($http, $mdDialog, $mdMedia, $scope) {
+  function tabsController(JsonData, $mdDialog, $mdMedia, $scope) {
     var vm = this;
 
+    vm.pathToJson = ['../JSON/tabs.json', '../JSON/products.json'] ;
     vm.info = [];
 
-    $http.get('../JSON/tab-data.json').then(function(response) {
-      console.log("Loaded data.json");
+    JsonData.all(vm.pathToJson[0]).then(function(response) {
+      console.log(vm.pathToJson[0]);
       vm.info = response.data.information;
     });
 
     vm.products = [];
 
-    $http.get('../JSON/products.json').then(function(response) {
-      console.log("Loaded products.json");
+    JsonData.all(vm.pathToJson[1]).then(function(response) {
+      console.log(vm.pathToJson[1]);
       vm.products = response.data.product;
     });
 
@@ -31,8 +31,8 @@
       var useFullScreen = ($mdMedia('sm') || $mdMedia('xs')) && vm.customFullscreen;
 
       $mdDialog.show({
-        controller: boneController,
-        controllerAs: 'boneCtrl',
+        controller: tabsController,
+        controllerAs: 'tabsCtrl',
         templateUrl: '../TEMPLATES/products.html',
         parent: angular.element(document.body),
         targetEvent: ev,
@@ -50,15 +50,5 @@
     vm.cancel = function() {
       $mdDialog.cancel();
     }
-  };
-
-  function boneTab() {
-    return {
-      restrict: 'EA',
-      priority: 1001,
-      templateUrl: '../TEMPLATES/tabs.html',
-      controller: 'boneController',
-      controllerAs: 'boneCtrl'
-    };
   };
 })();

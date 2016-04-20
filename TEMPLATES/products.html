@@ -9,14 +9,14 @@
           <md-input-container class="md-block">
             <label>Search</label>
             <input type="text" ng-model="search" class="md-input" aria-label="Search text field"></md-input-container>
-          <md-button class="md-icon-button" ng-click="boneCtrl.cancel()">
+          <md-button class="md-icon-button" ng-click="tabsCtrl.cancel()">
             <md-icon md-font-set="material-icons" aria-label="Close dialog">close</md-icon>
           </md-button>
         </div>
       </md-toolbar>
       <md-dialog-content class="dialog-size" flex layout-padding>
         <md-grid-list md-cols="12" md-gutter="12px" md-row-height="1:1">
-          <md-grid-tile ng-repeat="product in boneCtrl.products | filter: search" class="test repeated-item" md-colspan="3" md-rowspan="3" data-product-tag="{{product.tag}}" ng-mouseover="option=true" ng-mouseout="option=false">
+          <md-grid-tile ng-repeat="product in tabsCtrl.products | filter: search" class="test repeated-item" md-colspan="3" md-rowspan="3" data-product-tag="{{product.tag}}" ng-mouseover="option=true" ng-mouseout="option=false">
             <img class="product-icon" ng-src="{{product.icon}}" alt="{{product.name}}"/>
             <md-content ng-show="option" class="product-description" layout-padding flex>
               {{product.description}}
@@ -30,7 +30,7 @@
     </div>
   </form>
   <md-dialog-actions flex="nogrow" layout-margin layout="row">
-    <md-button class="md-primary md-raised" href="" target="_blank" ng-click="boneCtrl.cancel()">
+    <md-button class="md-primary md-raised" href="" target="_blank" ng-click="tabsCtrl.cancel()">
       close
     </md-button>
     <span flex></span>

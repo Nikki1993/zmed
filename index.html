@@ -35,10 +35,18 @@
     <script src="/bower_components/angular-scroll/angular-scroll.min.js"></script>
 
     <!-- User Scripts -->
-    <script src="../JS/angular-module.js"></script>
-    <script src="../JS/tabs.js"></script>
-    <script src="../JS/menu-bar.js"></script>
-    <script src="../JS/about-card.js"></script>
+    <!-- Angular main app.js and http service load -->
+    <script src="../JS/app.js"></script>
+    <script src="../JS/Services/json.js"></script>
+    <!-- Angular Directives -->
+    <script src="../JS/Directives/about.js"></script>
+    <script src="../JS/Directives/navigation.js"></script>
+    <script src="../JS/Directives/tabs.js"></script>
+    <!-- Angular Controllers -->
+    <script src="../JS/Controllers/app.js"></script>
+    <script src="../JS/Controllers/tabs.js"></script>
+    <script src="../JS/Controllers/navigation.js"></script>
+    <script src="../JS/Controllers/about.js"></script>
 
   </head>
 
@@ -49,7 +57,7 @@
       </header>
       <md-content class="sidenav-transparency" flex>
         <section layout="column" layout-align="start center" du-scroll-container="scroll-container">
-          <menu-bar-side ng-repeat="data in menuCtrl.menuItems"></menu-bar-side>
+          <menu-bar-side ng-repeat="data in navCtrl.menuItems"></menu-bar-side>
           <!-- Menu Bar element that shows up on mobile devices -->
         </section>
       </md-content>
@@ -61,7 +69,7 @@
         </md-button>
         <md-button hide show-lg show-gt-lg class="nav-z-logo" href="" aria-label="Logo"></md-button>
         <section layout="row" layout-align="center center" du-scroll-container="scroll-container" hide show-lg show-gt-lg>
-          <menu-bar ng-repeat="data in menuCtrl.menuItems"></menu-bar>
+          <menu-bar ng-repeat="data in navCtrl.menuItems"></menu-bar>
           <!-- Menu Bar element that shows up on desktop/high resolution devices -->
         </section>
       </nav>
@@ -79,10 +87,10 @@
       <md-content id="products" class="tab-content" layout="column" layout-align="center stretch" layout-padding>
         <h1 class="md-display-2 center-content">Featured Products</h1>
         <md-tabs flex md-dynamic-height md-border-bottom md-swipe-content="true" md-stretch-tabs="always">
-          <bone-tab ng-repeat="data in boneCtrl.info"></bone-tab>
-          <!--Information about featured products -->
+          <bone-tab ng-repeat="data in tabsCtrl.info"></bone-tab>
+          <!--Information about about products -->
         </md-tabs>
-        <div ng-controller="boneController as boneCtrl" flex layout="row">
+        <div ng-controller="tabsController" flex layout="row">
           <span flex-gt="20" flex-gt-lg="20"></span>
           <md-fab-toolbar md-direction="left" flex>
             <md-fab-trigger>
@@ -98,7 +106,7 @@
                 <md-button class="md-icon-button" href="mailto:info@zm5.ru" aria-label="Send an email to info@zm5.ru" class="md-icon-button" ng-mouseover="labelEmail=true" ng-mouseout="labelEmail=false">
                   <md-icon icon-font-set="material-icons">email</md-icon>
                 </md-button>
-                <md-button class="md-icon-button" ng-click="boneCtrl.showMore($event)" aria-label="See full list of products" class="md-icon-button" ng-mouseover="labelList=true" ng-mouseout="labelList=false">
+                <md-button class="md-icon-button" ng-click="tabsCtrl.showMore($event)" aria-label="See full list of products" class="md-icon-button" ng-mouseover="labelList=true" ng-mouseout="labelList=false">
                   <md-icon icon-font-set="material-icons">view_list</md-icon>
                 </md-button>
                 <label ng-show="labelEmail">Send an Email About The Product</label>
