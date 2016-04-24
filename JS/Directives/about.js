@@ -11,7 +11,7 @@
       priority: 1001,
       templateUrl: '../TEMPLATES/about.html',
       controller: 'aboutCardController',
-      controllerAs: 'aboutCardCtrla'
+      controllerAs: 'aboutCardCtrl'
     };
   };
 })();
