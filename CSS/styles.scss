@@ -213,3 +213,15 @@ md-input-container {
   top: 0;
   width: 100%;
 }
+
+@media screen and (max-width: 960px) {
+  .background-header {
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .background-header {
+    height: 500px;
+  }
+}

@@ -15,8 +15,21 @@
         </div>
       </md-toolbar>
       <md-dialog-content class="dialog-size" flex layout-padding>
-        <md-grid-list md-cols="12" md-gutter="12px" md-row-height="1:1">
-          <md-grid-tile ng-repeat="product in tabsCtrl.products | filter: search" class="test repeated-item" md-colspan="3" md-rowspan="3" data-product-tag="{{product.tag}}" ng-mouseover="option=true" ng-mouseout="option=false">
+        <md-grid-list md-cols="1" md-cols-sm="4" md-cols-md="9" md-cols-gt-md="12" md-gutter-sm="4px" md-gutter-md="4px" md-gutter-gt-md="8px" md-row-height="1:1">
+          <md-grid-tile
+            ng-repeat="product in tabsCtrl.products | filter: search"
+            class="test repeated-item"
+            md-colspan="1"
+            md-rowspan="1"
+            md-colspan-sm="2"
+            md-rowspan-sm="2"
+            md-colspan-md="3"
+            md-rowspan-md="3"
+            md-colspan-gt-md="3"
+            md-rowspan-gt-md="3"
+            data-product-tag="{{product.tag}}"
+            ng-mouseover="option=true"
+            ng-mouseout="option=false">
             <img class="product-icon" ng-src="{{product.icon}}" alt="{{product.name}}"/>
             <md-content ng-show="option" class="product-description" layout-padding flex>
               {{product.description}}

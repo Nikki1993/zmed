@@ -25,10 +25,7 @@
       vm.products = response.data.product;
     });
 
-    vm.customFullScreen = $mdMedia('xs') || $mdMedia('sm');
-
     vm.showMore = function(ev) {
-      var useFullScreen = ($mdMedia('sm') || $mdMedia('xs')) && vm.customFullscreen;
 
       $mdDialog.show({
         controller: tabsController,
@@ -37,11 +34,11 @@
         parent: angular.element(document.body),
         targetEvent: ev,
         clickOutsideToClose: true,
-        fullscreen: useFullScreen
+        fullscreen: 'true'
       });
 
       $scope.$watch(function() {
-        return $mdMedia('xs') || $mdMedia('sm');
+        return $mdMedia('sm') || $mdMedia('xs');
       }, function(wantsFullScreen) {
         vm.customFullscreen = (wantsFullScreen === true);
       });
