@@ -44,8 +44,17 @@
       });
     };
 
+    vm.showDescription = function() {
+      if(vm.option) {
+        vm.option = false;
+      }
+      else {
+        vm.option = true;
+      }
+    };
+
     vm.cancel = function() {
       $mdDialog.cancel();
-    }
+    };
   };
 })();

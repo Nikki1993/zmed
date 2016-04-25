@@ -4,7 +4,9 @@
       <div class="md-toolbar-tools">
         <h2>Products</h2>
         <span flex></span>
-        <md-icon md-font-set="material-icons">search</md-icon>
+        <md-button class="md-icon-button" ng-click="tabsCtrl.cancel()">
+          <md-icon md-font-set="material-icons" aria-label="Close dialog">help</md-icon>
+        </md-button>
         <md-button class="md-icon-button" ng-click="tabsCtrl.cancel()">
           <md-icon md-font-set="material-icons" aria-label="Close dialog">close</md-icon>
         </md-button>
@@ -32,8 +34,7 @@
           md-colspan-gt-md="3"
           md-rowspan-gt-md="3"
           data-product-tag="{{product.tag}}"
-          ng-mouseover="option=true"
-          ng-mouseout="option=false"
+          ng-click="option=option == false ? true : false"
           ng-mouseenter="option=true"
           ng-mouseleave="option=false">
           <img class="product-icon" ng-src="{{product.icon}}" alt="{{product.name}}"/>
