@@ -12,14 +12,15 @@
         </md-button>
       </div>
     </md-toolbar>
-    <div layout="row" layout-padding flex="none">
+    <div layout="row" flex="none">
       <span flex-gt-sm="20"></span>
-      <md-input-container layout-align="center center" flex-gt-sm="60" flex="100" class="md-block">
+      <md-input-container flex-gt-sm="60" flex="100" class="md-block">
         <label>Search</label>
         <input type="text" ng-model="search" class="md-input" ng-focus="focus=true;blur=false;" ng-blur="blur=true;focus=false;" aria-label="Search for products textfield" blur-on-enter>
       </md-input-container>
       <span flex-gt-sm="20"></span>
     </div>
+    <md-divider></md-divider>
     <md-dialog-content class="dialog-size" flex layout-padding>
       <md-grid-list md-cols="1" md-cols-sm="4" md-cols-md="9" md-cols-gt-md="12" md-gutter-sm="4px" md-gutter-md="4px" md-gutter-gt-md="8px" md-row-height="1:1">
         <md-grid-tile
