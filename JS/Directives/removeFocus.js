@@ -7,8 +7,12 @@
 
   function blurOnEnter() {
     return function(scope, elem, attrs) {
-      elem.bind('blur', function() {
-        scope.$apply(attrs.ngBlur);
+      elem.bind('keydown keypress', function(e) {
+        if (e.which === 13) {
+          e.preventDefault();
+          elem.blur();
+          scope.$apply(attrs.ngBlur);
+        }
       });
     }
   };

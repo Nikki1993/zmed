@@ -1,53 +1,51 @@
 <md-dialog class="dialog-settings" aria-label="Z-med Products" layout="column" ng-cloak>
   <form flex="90">
-    <div layout="column">
-      <md-toolbar>
-        <div class="md-toolbar-tools">
-          <h2>Products</h2>
-          <span flex></span>
-          <md-icon md-font-set="material-icons">search</md-icon>
-          <md-button class="md-icon-button" ng-click="tabsCtrl.cancel()">
-            <md-icon md-font-set="material-icons" aria-label="Close dialog">close</md-icon>
-          </md-button>
-        </div>
-      </md-toolbar>
-      <div layout="row">
-        <span flex="20"></span>
-        <md-input-container layout-align="center center" flex="60" class="md-block">
-          <label>Search</label>
-          <input type="text" ng-model="search" class="md-input" aria-label="Search for products textfield" blur-on-enter>
-        </md-input-container>
-        <span flex="20"></span>
+    <md-toolbar flex="nogrow">
+      <div class="md-toolbar-tools">
+        <h2>Products</h2>
+        <span flex></span>
+        <md-icon md-font-set="material-icons">search</md-icon>
+        <md-button class="md-icon-button" ng-click="tabsCtrl.cancel()">
+          <md-icon md-font-set="material-icons" aria-label="Close dialog">close</md-icon>
+        </md-button>
       </div>
-      <md-dialog-content class="dialog-size" flex layout-padding>
-        <md-grid-list md-cols="1" md-cols-sm="4" md-cols-md="9" md-cols-gt-md="12" md-gutter-sm="4px" md-gutter-md="4px" md-gutter-gt-md="8px" md-row-height="1:1">
-          <md-grid-tile
-            ng-repeat="product in tabsCtrl.products | filter: search"
-            class="test repeated-item"
-            md-colspan="1"
-            md-rowspan="1"
-            md-colspan-sm="2"
-            md-rowspan-sm="2"
-            md-colspan-md="3"
-            md-rowspan-md="3"
-            md-colspan-gt-md="3"
-            md-rowspan-gt-md="3"
-            data-product-tag="{{product.tag}}"
-            ng-mouseover="option=true"
-            ng-mouseout="option=false"
-            ng-mouseenter="option=true"
-            ng-mouseleave="option=false">
-            <img class="product-icon" ng-src="{{product.icon}}" alt="{{product.name}}"/>
-            <md-content ng-show="option" class="product-description" layout-padding flex>
-              {{product.description}}
-            </md-content>
-            <md-grid-tile-footer ng-hide="option">
-              <h3 class="center-content md-title">{{product.name}}</h3>
-            </md-grid-tile-footer>
-          </md-grid-tile>
-        </md-grid-list>
-      </md-dialog-content>
+    </md-toolbar>
+    <div layout="row" layout-padding flex="noshrink">
+      <span flex-gt-sm="20"></span>
+      <md-input-container layout-align="center center" flex-gt-sm="60" flex="100" class="md-block">
+        <label>Search</label>
+        <input type="text" ng-model="search" class="md-input" ng-focus="focus=true;blur=false;" ng-blur="blur=true;focus=false;" aria-label="Search for products textfield" blur-on-enter>
+      </md-input-container>
+      <span flex-gt-sm="20"></span>
     </div>
+    <md-dialog-content class="dialog-size" flex layout-padding>
+      <md-grid-list md-cols="1" md-cols-sm="4" md-cols-md="9" md-cols-gt-md="12" md-gutter-sm="4px" md-gutter-md="4px" md-gutter-gt-md="8px" md-row-height="1:1">
+        <md-grid-tile
+          ng-repeat="product in tabsCtrl.products | filter: search"
+          class="test repeated-item"
+          md-colspan="1"
+          md-rowspan="1"
+          md-colspan-sm="2"
+          md-rowspan-sm="2"
+          md-colspan-md="3"
+          md-rowspan-md="3"
+          md-colspan-gt-md="3"
+          md-rowspan-gt-md="3"
+          data-product-tag="{{product.tag}}"
+          ng-mouseover="option=true"
+          ng-mouseout="option=false"
+          ng-mouseenter="option=true"
+          ng-mouseleave="option=false">
+          <img class="product-icon" ng-src="{{product.icon}}" alt="{{product.name}}"/>
+          <md-content ng-show="option" class="product-description" layout-padding flex>
+            {{product.description}}
+          </md-content>
+          <md-grid-tile-footer ng-hide="option">
+            <h3 class="center-content md-title">{{product.name}}</h3>
+          </md-grid-tile-footer>
+        </md-grid-tile>
+      </md-grid-list>
+    </md-dialog-content>
   </form>
   <md-dialog-actions flex="nogrow" layout-margin layout="row">
     <md-button class="md-primary md-raised" href="" target="_blank" ng-click="tabsCtrl.cancel()">

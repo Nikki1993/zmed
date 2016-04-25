@@ -10,7 +10,7 @@
   function tabsController(JsonData, $mdDialog, $mdMedia, $scope) {
     var vm = this;
 
-    vm.pathToJson = ['../JSON/tabs.json', '../JSON/products.json'] ;
+    vm.pathToJson = ['../JSON/tabs.json', '../JSON/products.json'];
     vm.info = [];
 
     JsonData.all(vm.pathToJson[0]).then(function(response) {
