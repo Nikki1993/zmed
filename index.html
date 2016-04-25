@@ -28,6 +28,7 @@
 
     <!-- Bower Scripts -->
     <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="../bower_components/angular-translate/angular-translate.min.js"></script>
     <script src="../bower_components/angular-aria/angular-aria.min.js"></script>
     <script src="../bower_components/angular-animate/angular-animate.min.js"></script>
     <script src="../bower_components/angular-material/angular-material.min.js"></script>
@@ -75,21 +76,21 @@
           <menu-bar ng-repeat="data in navCtrl.menuItems"></menu-bar>
           <!-- Menu Bar element that shows up on desktop/high resolution devices -->
         </section>
+        <md-button class="md-raised md-warn" ng-click="mainCtrl.changeLanguage('ru')">Translate to Russian</md-button>
+        <md-button class="md-raised md-warn" ng-click="mainCtrl.changeLanguage('en')">Translate to English</md-button>
       </nav>
     </md-toolbar>
     <md-content id="scroll-container" layout-fill flex>
       <header id="main" class="background-color">
         <div class="background-header">
-          <h1 class="z-logo header-text md-display-1">
-            Number One Distributor
-            <br/>
-            In Russia
+          <h1 class="z-logo header-text md-display-1" translate>
+            TITLE
           </h1>
         </div>
       </header>
       <md-content id="products" class="tab-content" layout="column" layout-align="center stretch" layout-padding>
         <h1 class="md-display-2 center-content">Featured Products</h1>
-        <label show-sm show-xs class="md-title center-content">Swipe Left/Right to switch tabs</label>
+        <label hide show-sm show-xs class="md-title center-content">Swipe Left/Right to switch tabs</label>
         <md-tabs flex md-dynamic-height md-border-bottom md-swipe-content="true" md-stretch-tabs="always">
           <bone-tab ng-repeat="data in tabsCtrl.info"></bone-tab>
           <!--Information about about products -->

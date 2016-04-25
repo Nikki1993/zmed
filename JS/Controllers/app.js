@@ -5,14 +5,18 @@
     .module('webApp')
     .controller('mainController', mainController);
 
-    mainController.$inject = ['$mdSidenav'];
+  mainController.$inject = ['$mdSidenav', '$translate'];
 
-    function mainController($mdSidenav) {
+  function mainController($mdSidenav, $translate) {
 
-        var vm = this;
+    var vm = this;
 
-        vm.openLeftMenu = function() {
-            $mdSidenav('left').toggle();
-        };
+    vm.changeLanguage = function(key) {
+      $translate.use(key);
     };
+
+    vm.openLeftMenu = function() {
+      $mdSidenav('left').toggle();
+    };
+  };
 })();
