@@ -2,7 +2,7 @@
   'use strict'
 
   angular
-    .module('webApp', ['ngMaterial', 'duScroll'])
+    .module('webApp', ['ngMaterial', 'duScroll', 'ngMessages'])
     .config(themeConfiguration);
 
   function themeConfiguration($mdThemingProvider) {
