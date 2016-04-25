@@ -10,7 +10,7 @@
   function aboutCardController(JsonData) {
     var vm = this;
 
-    vm.pathToJson = '../JSON/featured.json';
+    vm.pathToJson = '../JSON/about.json';
     vm.info = [];
 
     JsonData.all(vm.pathToJson).then(function(response) {
