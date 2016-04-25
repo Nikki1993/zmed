@@ -8,7 +8,7 @@ $background-sidenav-gradient-start: #185694;
 $background-sidenav-content: rgba(0, 0, 0, 0);
 $background-transparent-content: rgba(0, 0, 0, .75);
 
-.test {
+.list-background {
   background-color: $background-gradient-end;
 }
 
@@ -20,6 +20,11 @@ $background-transparent-content: rgba(0, 0, 0, .75);
   background: linear-gradient($background-gradient-start, $background-gradient-end);
   background-color: $background-gradient-start;
   color: $background-header-text;
+}
+
+.nav-logo-size {
+  height: 56px;
+  width: 150px;
 }
 
 .background-header {
@@ -68,15 +73,33 @@ $background-transparent-content: rgba(0, 0, 0, .75);
   min-height: 56px;
 }
 
-.nav-main {
+.sidenav-settings {
+
+  background: $background-sidenav;
+
+  .side-align-override {
+    margin: 0 auto;
+  }
+
+  .md-button {
+    color: $background-header-text;
+    font-size: 18px;
+    text-align: left;
+  }
+
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+  }
 
-    li {
-      margin: 0;
-    }
+  .sidenav-button-text {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .sidenav-transparency {
+    background: $background-sidenav-content;
   }
 }
 
@@ -96,10 +119,6 @@ $background-transparent-content: rgba(0, 0, 0, .75);
   min-width: 80px;
   padding-left: 0;
   padding-right: 0;
-}
-
-.button-right {
-  float: right;
 }
 
 .action-button {
@@ -128,33 +147,6 @@ $background-transparent-content: rgba(0, 0, 0, .75);
 
 .about-card {
   padding-bottom: 0;
-}
-
-.sidenav-settings {
-
-  background: $background-sidenav;
-
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .sidenav-button-text {
-    font-size: 16px;
-    text-align: left;
-  }
-
-  .sidenav-transparency {
-    background: $background-sidenav-content;
-  }
-
-  .sidenav-background-color {
-    background: linear-gradient($background-sidenav-gradient-start, $background-sidenav);
-    background-color: $background-sidenav;
-    color: $background-header-text;
-    text-align: center;
-  }
 }
 
 md-input-container {

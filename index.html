@@ -54,12 +54,12 @@
   </head>
 
   <body ng-controller="mainController as mainCtrl" md-is-open="mainCtrl.isSideNavOpen" layout="column" ng-cloak>
-    <md-sidenav class="md-sidenav-left sidenav-settings" md-component-id="left">
-      <header class="sidenav-background-color">
-        <img src="../IMG/logo-full-150.png" alt="Z-med Logo"/>
+    <md-sidenav class="md-sidenav-left sidenav-settings" layout="column" md-component-id="left">
+      <header layout-margin class="center-content">
+        <img class="nav-logo-size" src="../IMG/logo-full-150.png" alt="Z-med Logo"/>
       </header>
       <md-content class="sidenav-transparency" flex>
-        <section layout="column" layout-align="start center" du-scroll-container="scroll-container">
+        <section layout="column" du-scroll-container="scroll-container">
           <menu-bar-side ng-repeat="data in navCtrl.menuItems"></menu-bar-side>
           <!-- Menu Bar element that shows up on mobile devices -->
         </section>
@@ -70,7 +70,7 @@
         <md-button hide-lg hide-gt-lg ng-click="mainCtrl.openLeftMenu()">
           <md-icon aria-label="Open side navigation" md-font-icon="material-icons">menu</md-icon>
         </md-button>
-        <md-button hide show-lg show-gt-lg class="nav-z-logo" href="" aria-label="Logo"></md-button>
+        <md-button hide show-lg show-gt-lg class="nav-z-logo" aria-label="Logo"></md-button>
         <section layout="row" layout-align="center center" du-scroll-container="scroll-container" hide show-lg show-gt-lg>
           <menu-bar ng-repeat="data in navCtrl.menuItems"></menu-bar>
           <!-- Menu Bar element that shows up on desktop/high resolution devices -->

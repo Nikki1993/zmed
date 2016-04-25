@@ -1,1 +1,13 @@
-<md-button du-smooth-scroll href="#{{data.link}}" class="" aria-label="{{data.name}}">{{data.name}}</md-button>
+<div layout="row" flex>
+  <div flex="10" flex-offset="5" layout-padding>
+    <md-button layout-fill du-smooth-scroll href="#{{data.link}}" class="button-side-align" aria-label="{{data.name}}">
+      <md-icon md-font-set="material-icons">{{data.icon}}</md-icon>
+    </md-button>
+  </div>
+  <div flex="90" flex-offset="15" layout-padding class="side-align-override">
+    <md-button layout-fill du-smooth-scroll href="#{{data.link}}" class="button-side-align" aria-label="{{data.name}}">
+      {{data.name}}
+    </md-button>
+  </div>
+</div>
+<md-divider></md-divider>
