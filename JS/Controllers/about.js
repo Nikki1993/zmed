@@ -20,6 +20,6 @@
 
     vm.getImageAlt = function(id) {
       return 'information.' + id + '.imageAlt';
-    }
+    };
   };
 })();
