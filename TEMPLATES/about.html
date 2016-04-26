@@ -1,7 +1,7 @@
 <md-card class="card-bg card-height">
   <md-card-title layout="column" class="about-card">
     <md-card-title-media class="center-elements">
-      <img translate class="md-media-lg" ng-src="{{'information.'}}{{$index}}{{'.image'}}" alt=""{{'information.'}}{{$index}}{{'.imageAlt'}}""/>
+      <img class="md-media-lg" ng-src="{{aboutCardCtrl.getImageUrl($index) | translate}}" alt="{{aboutCardCtrl.getImageAlt($index) | translate}}"/>
     </md-card-title-media>
     <md-card-title-text>
       <div class="md-headline card-title-padding" translate="{{'information.'}}{{$index}}{{'.heading'}}"></div>
