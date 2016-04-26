@@ -20,18 +20,12 @@
 
   function translateConfiguration($translateProvider) {
 
-    var translationsEN = {
-      TITLE: 'Number One Distributor <br /> In Russia'
-    };
+    $translateProvider.useStaticFilesLoader({
+      prefix: '../JSON/locale-',
+      suffix: '.json'
+    });
 
-    var translationsRU = {
-      TITLE: 'Номер один дистрибутор <br /> в России'
-    };
-
-    $translateProvider.determinePreferredLanguage();
-
-    $translateProvider.translations('en', translationsEN);
-    $translateProvider.translations('ru', translationsRU);
+    $translateProvider.preferredLanguage('en');
     $translateProvider.fallbackLanguage('en');
   };
 })();

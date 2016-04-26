@@ -18,5 +18,12 @@
     vm.openLeftMenu = function() {
       $mdSidenav('left').toggle();
     };
+
+    var originatorEv;
+
+    vm.openMenu = function($mdOpenMenu, ev) {
+      originatorEv = ev;
+      $mdOpenMenu(ev);
+    };
   };
 })();
