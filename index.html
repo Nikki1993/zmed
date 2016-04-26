@@ -117,8 +117,8 @@
           <div flex>
             <h3 class="md-title center-content" translate="ABOUT_HEADER"></h3>
             <p class="md-body-2 center-content" translate="ABOUT_CONTENT"></p>
-            <div class="center-elements" layout="column" layout-gt-sm="row" ng-init="items=[0, 1, 2]">
-              <about-card flex="33" flex-xs="100" flex-sm="100" class="center-content" ng-repeat="item in items"></about-card>
+            <div class="center-elements" layout="column" layout-gt-sm="row">
+              <about-card flex="33" flex-xs="100" flex-sm="100" class="center-content" ng-repeat="item in aboutCardCtrl.setObjectCount(aboutCardCtrl.count) track by $index"></about-card>
             </div>
           </div>
         </div>
