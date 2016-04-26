@@ -5,16 +5,15 @@
     .module('webApp')
     .controller('aboutCardController', aboutCardController);
 
-  aboutCardController.$inject = ['JsonData'];
+  aboutCardController.$inject = ['JsonData', '$translate'];
 
-  function aboutCardController(JsonData) {
+  function aboutCardController(JsonData, $translate) {
     var vm = this;
 
-    vm.pathToJson = '../JSON/about.json';
+    vm.pathToJson = '../JSON/about-en.json';
     vm.info = [];
 
     JsonData.all(vm.pathToJson).then(function(response) {
-      console.log(vm.pathToJson);
       vm.info = response.data.information;
     });
   };

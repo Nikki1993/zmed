@@ -1,0 +1,18 @@
+{
+  "information": [{
+    "heading": "Reliability",
+    "content": "Our partners have been working on the market for over 10 years",
+    "image": "../IMG/shield.svg",
+    "imageAlt": "Reliability Image"
+  }, {
+    "heading": "Professionalism",
+    "content": "We are ready to provide profesional opinion for our clients to ensure the right choice",
+    "image": "../IMG/people.svg",
+    "imageAlt": "Professionalism Image"
+  }, {
+    "heading": "Development",
+    "content": "Organization of educational programs in collaboration with our partners",
+    "image": "../IMG/cogwheel.svg",
+    "imageAlt": "Development Image"
+  }]
+}

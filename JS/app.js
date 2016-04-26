@@ -20,9 +20,16 @@
 
   function translateConfiguration($translateProvider) {
 
+    $translateProvider.useSanitizeValueStrategy(null);
+
     $translateProvider.useStaticFilesLoader({
-      prefix: '../JSON/locale-',
-      suffix: '.json'
+      files: [{
+        prefix: '../JSON/locale-',
+        suffix: '.json'
+      }, {
+        prefix: '../JSON/about-',
+        suffix: '.json'
+      }]
     });
 
     $translateProvider.preferredLanguage('en');
