@@ -1,13 +1,12 @@
 <md-card class="card-bg card-height">
   <md-card-title layout="column" class="about-card">
     <md-card-title-media class="center-elements">
-      <img class="md-media-lg" ng-src="{{data.image}}" alt="{{data.imageAlt}}"/>
+      <img translate class="md-media-lg" ng-src="{{'information.'}}{{$index}}{{'.image'}}" alt=""{{'information.'}}{{$index}}{{'.imageAlt'}}""/>
     </md-card-title-media>
     <md-card-title-text>
-      <div class="md-headline card-title-padding">{{data.heading}}</div>
+      <div class="md-headline card-title-padding" translate="{{'information.'}}{{$index}}{{'.heading'}}"></div>
     </md-card-title-text>
   </md-card-title>
-  <md-card-content>
-    {{data.content}}
+  <md-card-content translate="{{'information.'}}{{$index}}{{'.content'}}">
   </md-card-content>
 </md-card>

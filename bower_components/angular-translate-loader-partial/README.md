@@ -1,6 +1,6 @@
-# angular-translate-loader-static-files (bower shadow repository)
+# angular-translate-loader-partial (bower shadow repository)
 
-This is the _Bower shadow_ repository for *angular-translate-loader-static-files*.
+This is the _Bower shadow_ repository for *angular-translate-loader-partial*.
 
 ## Bugs and issues
 
@@ -11,18 +11,18 @@ Please file any issues and bugs in our main repository at [angular-translate/ang
 ### via Bower
 
 ```bash
-$ bower install angular-translate-loader-static-files
+$ bower install angular-translate-loader-partial
 ```
 
 ### via NPM
 
 ```bash
-$ npm install angular-translate-loader-static-files
+$ npm install angular-translate-loader-partial
 ```
 
 ### via cdnjs
 
-Please have a look at https://cdnjs.com/libraries/angular-translate-loader-static-files for specific versions.
+Please have a look at https://cdnjs.com/libraries/angular-translate-loader-partial for specific versions.
 
 ## License
 

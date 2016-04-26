@@ -18,19 +18,15 @@
       });
   };
 
-  function translateConfiguration($translateProvider) {
+  function translateConfiguration($translateProvider, $translatePartialLoaderProvider) {
 
     $translateProvider.useSanitizeValueStrategy(null);
 
-    $translateProvider.useStaticFilesLoader({
-      files: [{
-        prefix: '../JSON/locale-',
-        suffix: '.json'
-      }, {
-        prefix: '../JSON/about-',
-        suffix: '.json'
-      }]
+    $translateProvider.useLoader('$translatePartialLoader', {
+      urlTemplate: '../JSON/{part}-{lang}.json'
     });
+
+    $translatePartialLoaderProvider.addPart('locale');
 
     $translateProvider.preferredLanguage('en');
     $translateProvider.fallbackLanguage('en');

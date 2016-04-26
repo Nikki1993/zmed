@@ -5,16 +5,15 @@
     .module('webApp')
     .controller('aboutCardController', aboutCardController);
 
-  aboutCardController.$inject = ['JsonData', '$translate'];
+  aboutCardController.$inject = ['$translatePartialLoader', '$translate'];
 
-  function aboutCardController(JsonData, $translate) {
+  function aboutCardController($translatePartialLoader, $translate) {
+
     var vm = this;
 
-    vm.pathToJson = '../JSON/about-en.json';
     vm.info = [];
 
-    JsonData.all(vm.pathToJson).then(function(response) {
-      vm.info = response.data.information;
-    });
+    $translatePartialLoader.addPart('about');
+    $translate.refresh();
   };
 })();
