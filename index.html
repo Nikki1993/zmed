@@ -104,7 +104,7 @@
         <h1 class="md-display-2 center-content" translate="FEATURED"></h1>
         <label hide show-sm show-xs class="md-title center-content" translate="SWIPE_FUNCTIONALITY"></label>
         <md-tabs flex md-dynamic-height md-border-bottom md-swipe-content="true" md-stretch-tabs="always">
-          <bone-tab ng-repeat="data in tabsCtrl.info"></bone-tab>
+          <bone-tab ng-repeat="item in tabsCtrl.count track by $index"></bone-tab>
           <!--Information about about products -->
         </md-tabs>
         <div ng-controller="tabsController" flex layout="row" layout-align="center center">

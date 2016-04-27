@@ -8,22 +8,11 @@
   tabsController.$inject = ['$translatePartialLoader', '$translate', 'JsonData', '$mdDialog', '$mdMedia', '$scope'];
 
   function tabsController($translatePartialLoader, $translate, JsonData, $mdDialog, $mdMedia, $scope) {
+
     var vm = this;
 
-    vm.pathToJson = ['../JSON/tabs.json', '../JSON/products.json'];
-    vm.info = [];
-
-    JsonData.all(vm.pathToJson[0]).then(function(response) {
-      console.log(vm.pathToJson[0]);
-      vm.info = response.data.information;
-    });
-
-    vm.products = [];
-
-    JsonData.all(vm.pathToJson[1]).then(function(response) {
-      console.log(vm.pathToJson[1]);
-      vm.products = response.data.product;
-    });
+    vm.pathToJson = ['../JSON/tabs-en.json', '../JSON/products-en.json'];
+    vm.name = [];
 
     vm.showMore = function(ev) {
 
@@ -56,5 +45,41 @@
     vm.cancel = function() {
       $mdDialog.cancel();
     };
+
+    JsonData.all(vm.pathToJson[0]).then(function(response) {
+      vm.namespace = Object.keys(response.data);
+      vm.count = JsonData.setObjectCount(Object.keys(response.data[vm.namespace]).length);
+
+      console.log('vm.namespace from tabs = ' + vm.namespace);
+
+      for (var property in vm.namespace) {
+        if (vm.namespace.hasOwnProperty(property)) {
+          vm.name = Object.keys(response.data[vm.namespace][property]);
+          console.log(vm.name);
+        };
+      };
+    });
+
+    vm.getContent = function(index, keyVal) {
+      return vm.namespace + '.' + index + '.' + vm.name[keyVal];
+    }
+
+    JsonData.all(vm.pathToJson[1]).then(function(response) {
+      vm.namespaceProducts = Object.keys(response.data);
+      vm.countProducts = JsonData.setObjectCount(Object.keys(response.data[vm.namespaceProducts]).length);
+
+      console.log('vm.namespaceProducts from tabs = ' + vm.namespaceProducts);
+
+      for (var property in vm.namespaceProducts) {
+        if (vm.namespaceProducts.hasOwnProperty(property)) {
+          vm.nameProducts = Object.keys(response.data[vm.namespaceProducts][property]);
+          console.log(vm.nameProducts);
+        };
+      };
+    });
+
+    vm.getContentProducts = function(index, keyVal) {
+      return vm.namespaceProducts + '.' + index + '.' + vm.nameProducts[keyVal];
+    }
   };
 })();

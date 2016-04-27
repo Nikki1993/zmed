@@ -1,14 +1,14 @@
-<md-tab label="{{data.tabName}}" class="material-tab">
+<md-tab label="{{tabsCtrl.getContent($index, 0) | translate}}" class="material-tab">
   <md-content layout="column" layout-padding layout-align="center center">
     <md-card class="card-tab card-bg">
-      <img ng-src="{{data.image}}" class="md-card-image placeholder-image" alt="Product Image">
+      <img ng-src="{{tabsCtrl.getContent($index, 3) | translate}}" class="md-card-image placeholder-image" alt="Product Image">
       <md-card-title>
           <md-card-title-text>
-            <span class="md-headline">{{data.heading}}</span>
+            <span class="md-headline">{{tabsCtrl.getContent($index, 1) | translate}}</span>
           </md-card-title-text>
         </md-card-title>
       <md-card-content>
-        {{data.description}}
+        {{tabsCtrl.getContent($index, 2) | translate}}
       </md-card-content>
     </md-card>
   </md-content>

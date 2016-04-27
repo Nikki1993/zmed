@@ -27,8 +27,10 @@
     });
 
     $translatePartialLoaderProvider.addPart('locale');
-    $translatePartialLoaderProvider.addPart('about');
     $translatePartialLoaderProvider.addPart('navigation');
+    $translatePartialLoaderProvider.addPart('tabs');
+    $translatePartialLoaderProvider.addPart('products');
+    $translatePartialLoaderProvider.addPart('about');
 
     $translateProvider.preferredLanguage('en');
     $translateProvider.fallbackLanguage('en');
