@@ -5,9 +5,9 @@
     .module('webApp')
     .controller('tabsController', tabsController);
 
-  tabsController.$inject = ['JsonData', '$mdDialog', '$mdMedia', '$scope'];
+  tabsController.$inject = ['$translatePartialLoader', '$translate', 'JsonData', '$mdDialog', '$mdMedia', '$scope'];
 
-  function tabsController(JsonData, $mdDialog, $mdMedia, $scope) {
+  function tabsController($translatePartialLoader, $translate, JsonData, $mdDialog, $mdMedia, $scope) {
     var vm = this;
 
     vm.pathToJson = ['../JSON/tabs.json', '../JSON/products.json'];

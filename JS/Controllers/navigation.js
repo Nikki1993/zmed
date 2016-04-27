@@ -11,19 +11,6 @@
 
     var vm = this;
 
-    vm.namespace = 'items.';
-    vm.name = ['.image', '.imageAlt'];
-
-    vm.pathToJson = '../JSON/navigation-en.json';
-    vm.menuItems = [];
-
-    JsonData.all(vm.pathToJson).then(function(response) {
-      console.log(vm.pathToJson);
-      vm.menuItems = response.data.items;
-    });
-
-    var vm = this;
-
     vm.name = [];
 
     vm.pathToJson = '../JSON/navigation-en.json';
