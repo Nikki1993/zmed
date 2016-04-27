@@ -7,6 +7,6 @@
       <div class="md-headline card-title-padding" translate="{{'information.'}}{{$index}}{{'.heading'}}"></div>
     </md-card-title-text>
   </md-card-title>
-  <md-card-content translate="{{'information.'}}{{$index}}{{'.content'}}">
+  <md-card-content translate>{{aboutCardCtrl.getContent($index)}}
   </md-card-content>
 </md-card>
