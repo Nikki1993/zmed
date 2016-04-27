@@ -27,6 +27,7 @@
     });
 
     $translatePartialLoaderProvider.addPart('locale');
+    $translatePartialLoaderProvider.addPart('about');
 
     $translateProvider.preferredLanguage('en');
     $translateProvider.fallbackLanguage('en');

@@ -11,25 +11,22 @@
 
     var vm = this;
 
+    vm.namespace = 'information.';
+    vm.name = ['.image', '.imageAlt'];
+
     vm.pathToJson = '../JSON/about-en.json';
 
-    $translatePartialLoader.addPart('about');
-    $translate.refresh();
 
     JsonData.all(vm.pathToJson).then(function(response) {
-      vm.count = Object.keys(response.data.information).length;
+      vm.count = JsonData.setObjectCount(Object.keys(response.data.information).length) ;
     });
 
-    vm.setObjectCount = function(n) {
-      return new Array(n);
-    }
-
     vm.getImageUrl = function(id) {
-      return 'information.' + id + '.image';
+      return vm.namespace + id + vm.name[0];
     };
 
     vm.getImageAlt = function(id) {
-      return 'information.' + id + '.imageAlt';
+      return vm.namespace + id + vm.name[1];
     };
   };
 })();

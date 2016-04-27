@@ -14,6 +14,9 @@
           method: "GET",
           url: path
         });
+      },
+      setObjectCount: function(n) {
+        return new Array(n);
       }
     };
   };
