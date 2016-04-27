@@ -16,8 +16,8 @@
     vm.pathToJson = '../JSON/about-en.json';
 
     JsonData.all(vm.pathToJson).then(function(response) {
-      vm.count = JsonData.setObjectCount(Object.keys(response.data.information).length);
       vm.namespace = Object.keys(response.data);
+      vm.count = JsonData.setObjectCount(Object.keys(response.data[vm.namespace]).length);
 
       console.log('vm.namespace = ' + vm.namespace);
 

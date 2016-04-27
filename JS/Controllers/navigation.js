@@ -14,12 +14,37 @@
     vm.namespace = 'items.';
     vm.name = ['.image', '.imageAlt'];
 
-    vm.pathToJson = '../JSON/navigation.json';
+    vm.pathToJson = '../JSON/navigation-en.json';
     vm.menuItems = [];
 
     JsonData.all(vm.pathToJson).then(function(response) {
       console.log(vm.pathToJson);
       vm.menuItems = response.data.items;
     });
+
+    var vm = this;
+
+    vm.name = [];
+
+    vm.pathToJson = '../JSON/navigation-en.json';
+
+    JsonData.all(vm.pathToJson).then(function(response) {
+      vm.namespace = Object.keys(response.data);
+      vm.count = JsonData.setObjectCount(Object.keys(response.data[vm.namespace]).length);
+
+      console.log('vm.namespace = ' + vm.namespace);
+
+      for (var property in vm.namespace) {
+        if (vm.namespace.hasOwnProperty(property)) {
+          vm.name = Object.keys(response.data[vm.namespace][property]);
+          console.log(vm.name);
+        };
+      };
+    });
+
+    vm.getContent = function(index, keyVal) {
+      return vm.namespace + '.' + index + '.' + vm.name[keyVal];
+    }
+
   };
 })();

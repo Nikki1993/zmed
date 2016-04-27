@@ -28,6 +28,7 @@
 
     $translatePartialLoaderProvider.addPart('locale');
     $translatePartialLoaderProvider.addPart('about');
+    $translatePartialLoaderProvider.addPart('navigation');
 
     $translateProvider.preferredLanguage('en');
     $translateProvider.fallbackLanguage('en');

@@ -74,7 +74,7 @@
         </md-button>
         <md-button hide show-lg show-gt-lg class="nav-z-logo" aria-label="Logo"></md-button>
         <section layout="row" layout-align="center center" du-scroll-container="scroll-container" hide show-lg show-gt-lg>
-          <menu-bar ng-repeat="data in navCtrl.menuItems"></menu-bar>
+          <menu-bar ng-repeat="item in navCtrl.count track by $index"></menu-bar>
           <!-- Menu Bar element that shows up on desktop/high resolution devices -->
         </section>
         <span flex></span>
