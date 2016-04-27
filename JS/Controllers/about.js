@@ -17,25 +17,20 @@
 
     JsonData.all(vm.pathToJson).then(function(response) {
       vm.count = JsonData.setObjectCount(Object.keys(response.data.information).length);
-      vm.namespace = Object.keys(response.data)[0] + '.';
+      vm.namespace = Object.keys(response.data);
 
-      for (var property in Object.keys(response.data.information)[0]) {
-        if (Object.keys(response.data.information)[0].hasOwnProperty(property)) {
-          vm.name = Object.keys(response.data.information[property]);
+      console.log('vm.namespace = ' + vm.namespace);
+
+      for (var property in vm.namespace) {
+        if (vm.namespace.hasOwnProperty(property)) {
+          vm.name = Object.keys(response.data[vm.namespace][property]);
+          console.log(vm.name);
         };
       };
     });
 
-    vm.getContent = function(id) {
-      return vm.namespace + id + '.' + vm.name[1];
+    vm.getContent = function(index, keyVal) {
+      return vm.namespace + '.' + index + '.' + vm.name[keyVal];
     }
-
-    vm.getImageUrl = function(id) {
-      return vm.namespace + id + '.' + vm.name[2];
-    };
-
-    vm.getImageAlt = function(id) {
-      return vm.namespace + id + '.' + vm.name[3];
-    };
   };
 })();
