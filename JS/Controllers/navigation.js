@@ -5,10 +5,14 @@
     .module('webApp')
     .controller('navigationController', navigationController);
 
-  navigationController.$inject = ['JsonData'];
+  navigationController.$inject = ['$translatePartialLoader', '$translate', 'JsonData'];
 
-  function navigationController(JsonData) {
+  function navigationController($translatePartialLoader, $translate, JsonData) {
+
     var vm = this;
+
+    vm.namespace = 'items.';
+    vm.name = ['.image', '.imageAlt'];
 
     vm.pathToJson = '../JSON/navigation.json';
     vm.menuItems = [];

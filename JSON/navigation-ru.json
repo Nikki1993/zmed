@@ -1,0 +1,19 @@
+{
+  "items": [{
+    "name": "Главная",
+    "link": "main",
+    "icon": "home"
+  }, {
+    "name": "Изделия",
+    "link": "products",
+    "icon": "shopping_cart"
+  }, {
+    "name": "О Нас",
+    "link": "about",
+    "icon": "info"
+  }, {
+    "name": "Контакты",
+    "link": "reach",
+    "icon": "contacts"
+  }]
+}

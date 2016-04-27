@@ -1,17 +1,17 @@
 {
   "information": [{
-    "heading": "Reliability",
-    "content": "RUSSIAN RUSSIAN PARTNERRS",
+    "heading": "Надежность",
+    "content": "Наши партнеры работают на рынке более 10 лет",
     "image": "../IMG/shield.svg",
     "imageAlt": "Reliability Image"
   }, {
-    "heading": "Professionalism",
-    "content": "RUSSIAN RUSSIAN We are ready to provide profesional opinion for our clients to ensure the right choice",
+    "heading": "Профессионализм",
+    "content": "Мы предоставляем профессиональное мнение нашим клиентам по любым вопросам.",
     "image": "../IMG/people.svg",
     "imageAlt": "Professionalism Image"
   }, {
-    "heading": "Development",
-    "content": "RUSSIAN RUSSIAN Organization of educational programs in collaboration with our partners",
+    "heading": "Развитие",
+    "content": "Организация обучающих програм вместе с нашими партнерами.",
     "image": "../IMG/cogwheel.svg",
     "imageAlt": "Development Image"
   }]
