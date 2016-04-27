@@ -62,7 +62,7 @@
       </header>
       <md-content class="sidenav-transparency" flex>
         <section layout="column" du-scroll-container="scroll-container">
-          <menu-bar-side ng-repeat="data in navCtrl.menuItems"></menu-bar-side>
+          <menu-bar-side ng-repeat="item in navCtrl.count track by $index"></menu-bar-side>
           <!-- Menu Bar element that shows up on mobile devices -->
         </section>
       </md-content>

@@ -1,12 +1,12 @@
 <div layout="row" flex>
   <div flex="10" flex-offset="5" layout-padding>
-    <md-button layout-fill du-smooth-scroll href="#{{data.link}}" class="button-side-align" aria-label="{{data.name}}">
-      <md-icon md-font-set="material-icons">{{data.icon}}</md-icon>
+    <md-button layout-fill du-smooth-scroll href="#{{navCtrl.getContent($index, 1) | translate}}" class="button-side-align" aria-label="{{navCtrl.getContent($index, 0) | translate}}">
+      <md-icon md-font-set="material-icons">{{navCtrl.getContent($index, 2) | translate}}</md-icon>
     </md-button>
   </div>
   <div flex="90" flex-offset="15" layout-padding class="side-align-override">
-    <md-button layout-fill du-smooth-scroll href="#{{data.link}}" class="button-side-align" aria-label="{{data.name}}">
-      {{data.name}}
+    <md-button layout-fill du-smooth-scroll href="#{{navCtrl.getContent($index, 1) | translate}}" class="button-side-align" aria-label="{{navCtrl.getContent($index, 0) | translate}}">
+      {{navCtrl.getContent($index, 0) | translate}}
     </md-button>
   </div>
 </div>
