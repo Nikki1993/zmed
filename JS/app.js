@@ -32,7 +32,7 @@
     $translatePartialLoaderProvider.addPart('products');
     $translatePartialLoaderProvider.addPart('about');
 
-    $translateProvider.preferredLanguage('en');
+    $translateProvider.preferredLanguage('ru');
     $translateProvider.fallbackLanguage('en');
   };
 })();
