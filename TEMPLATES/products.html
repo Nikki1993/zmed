@@ -24,7 +24,7 @@
     <md-dialog-content class="dialog-size" flex layout-padding>
       <md-grid-list md-cols="1" md-cols-sm="4" md-cols-md="9" md-cols-gt-md="12" md-gutter-sm="4px" md-gutter-md="4px" md-gutter-gt-md="8px" md-row-height="1:1">
         <md-grid-tile
-          ng-repeat="items in tabsCtrl.countProducts track by $index"
+          ng-repeat="items in tabsCtrl.dataArray | filter : search track by $index"
           class="list-background repeated-item"
           md-colspan="1"
           md-rowspan="1"

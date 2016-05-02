@@ -11,8 +11,7 @@
 
     var vm = this;
 
-    vm.pathToJson = ['../JSON/tabs-en.json', '../JSON/products-en.json'];
-    vm.name = [];
+    vm.pathToJson = ['../JSON/tabs-en.json', '../JSON/products-en.json', '..JSON/products-ru.json'];
 
     vm.showMore = function(ev) {
 
@@ -46,6 +45,8 @@
       $mdDialog.cancel();
     };
 
+    vm.data = [];
+
     JsonData.all(vm.pathToJson[0]).then(function(response) {
       vm.namespace = Object.keys(response.data);
       vm.count = JsonData.setObjectCount(Object.keys(response.data[vm.namespace]).length);
@@ -67,6 +68,8 @@
     JsonData.all(vm.pathToJson[1]).then(function(response) {
       vm.namespaceProducts = Object.keys(response.data);
       vm.countProducts = JsonData.setObjectCount(Object.keys(response.data[vm.namespaceProducts]).length);
+
+      vm.dataArray = response.data[vm.namespaceProducts];
 
       console.log('vm.namespaceProducts from tabs = ' + vm.namespaceProducts);
 
