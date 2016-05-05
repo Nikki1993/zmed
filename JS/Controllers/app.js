@@ -1,5 +1,5 @@
 (function() {
-  'use strict'
+  'use strict';
 
   angular
     .module('webApp')
@@ -25,5 +25,5 @@
       originatorEv = ev;
       $mdOpenMenu(ev);
     };
-  };
+  }
 })();

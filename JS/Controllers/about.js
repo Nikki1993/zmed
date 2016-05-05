@@ -1,5 +1,5 @@
 (function() {
-  'use strict'
+  'use strict';
 
   angular
     .module('webApp')
@@ -25,12 +25,12 @@
         if (vm.namespace.hasOwnProperty(property)) {
           vm.name = Object.keys(response.data[vm.namespace][property]);
           console.log(vm.name);
-        };
-      };
+        }
+      }
     });
 
     vm.getContent = function(index, keyVal) {
       return vm.namespace + '.' + index + '.' + vm.name[keyVal];
     }
-  };
+  }
 })();

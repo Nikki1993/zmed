@@ -1,5 +1,5 @@
 (function() {
-  'use strict'
+  'use strict';
 
   angular
     .module('webApp')
@@ -19,5 +19,5 @@
         return new Array(n);
       }
     };
-  };
+  }
 })();

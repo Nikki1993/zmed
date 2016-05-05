@@ -1,5 +1,5 @@
 (function() {
-  'use strict'
+  'use strict';
 
   angular
     .module('webApp', ['ngMaterial', 'duScroll', 'ngMessages', 'ngclipboard', 'pascalprecht.translate'])
@@ -16,8 +16,7 @@
       .backgroundPalette('grey', {
         'default': '100'
       });
-  };
-
+  }
   function translateConfiguration($translateProvider, $translatePartialLoaderProvider) {
 
     $translateProvider.useSanitizeValueStrategy(null);
@@ -34,5 +33,5 @@
 
     $translateProvider.preferredLanguage('ru');
     $translateProvider.fallbackLanguage('en');
-  };
+  }
 })();

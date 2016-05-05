@@ -1,5 +1,5 @@
 (function() {
-  'use strict'
+  'use strict';
 
   angular
     .module('webApp')
@@ -14,9 +14,8 @@
         controller: 'navigationController',
         controllerAs: 'navCtrl',
       };
-    };
-
-    function menuBarSide() {
+    }
+  function menuBarSide() {
       return {
         restrict: 'EA',
         priority: 1001,

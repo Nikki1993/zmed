@@ -1,5 +1,5 @@
 (function() {
-  'use strict'
+  'use strict';
 
   angular
     .module('webApp')
@@ -57,13 +57,13 @@
         if (vm.namespace.hasOwnProperty(property)) {
           vm.name = Object.keys(response.data[vm.namespace][property]);
           console.log(vm.name);
-        };
-      };
+        }
+      }
     });
 
     vm.getContent = function(index, keyVal) {
       return vm.namespace + '.' + index + '.' + vm.name[keyVal];
-    }
+    };
 
     JsonData.all(vm.pathToJson[1]).then(function(response) {
       vm.namespaceProducts = Object.keys(response.data);
@@ -77,12 +77,12 @@
         if (vm.namespaceProducts.hasOwnProperty(property)) {
           vm.nameProducts = Object.keys(response.data[vm.namespaceProducts][property]);
           console.log(vm.nameProducts);
-        };
-      };
+        }
+      }
     });
 
     vm.getContentProducts = function(index, keyVal) {
       return vm.namespaceProducts + '.' + index + '.' + vm.nameProducts[keyVal];
     }
-  };
+  }
 })();

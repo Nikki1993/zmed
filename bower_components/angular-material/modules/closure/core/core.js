@@ -3669,9 +3669,9 @@ function InterimElementProvider() {
           dimBackground: true
         }
       }
-    };
+    }
   }
-  MdButtonInkRipple.$inject = ["$mdInkRipple"];;
+  MdButtonInkRipple.$inject = ["$mdInkRipple"];
 })();
 
 (function() {
@@ -3704,9 +3704,9 @@ function InterimElementProvider() {
         dimBackground: false,
         fitRipple: true
       }, options));
-    };
+    }
   }
-  MdCheckboxInkRipple.$inject = ["$mdInkRipple"];;
+  MdCheckboxInkRipple.$inject = ["$mdInkRipple"];
 })();
 
 (function() {
@@ -3740,9 +3740,9 @@ function InterimElementProvider() {
         outline: false,
         rippleSize: 'full'
       }, options));
-    };
+    }
   }
-  MdListInkRipple.$inject = ["$mdInkRipple"];;
+  MdListInkRipple.$inject = ["$mdInkRipple"];
 })();
 
 /**
@@ -4243,9 +4243,9 @@ function attrNoDirective () {
         outline: false,
         rippleSize: 'full'
       }, options));
-    };
+    }
   }
-  MdTabInkRipple.$inject = ["$mdInkRipple"];;
+  MdTabInkRipple.$inject = ["$mdInkRipple"];
 })();
 
 angular.module('material.core.theming.palette', [])
@@ -5524,9 +5524,7 @@ function AnimateDomUtils($mdUtil, $q, $timeout, $mdConstant, $animateCss) {
     }
 
   };
-};
-
-
+}
 "use strict";
 
 if (angular.version.minor >= 4) {
@@ -5817,7 +5815,7 @@ if (angular.version.minor >= 4) {
 
       function computeTimings(element) {
         var node = getDomNode(element);
-        var cs = $window.getComputedStyle(node)
+        var cs = $window.getComputedStyle(node);
         var tdr = parseMaxTime(cs[prop('transitionDuration')]);
         var adr = parseMaxTime(cs[prop('animationDuration')]);
         var tdy = parseMaxTime(cs[prop('transitionDelay')]);

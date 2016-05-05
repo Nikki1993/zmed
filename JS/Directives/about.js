@@ -1,5 +1,5 @@
 (function() {
-  'use strict'
+  'use strict';
 
   angular
     .module('webApp')
@@ -13,5 +13,5 @@
       controller: 'aboutCardController',
       controllerAs: 'aboutCardCtrl'
     };
-  };
+  }
 })();

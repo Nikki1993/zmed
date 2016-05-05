@@ -1,5 +1,5 @@
 (function() {
-  'use strict'
+  'use strict';
 
   angular
     .module('webApp')
@@ -15,7 +15,7 @@
         }
       });
     }
-  };
+  }
 })();
 
 // Credits http://jsfiddle.net/nq6fgse1/
