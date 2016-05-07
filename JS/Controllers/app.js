@@ -8,7 +8,7 @@
   mainController.$inject = ['$mdSidenav', '$translate', 'JsonData'];
 
   function mainController($mdSidenav, $translate, JsonData) {
-
+    /*jshint validthis: true */
     var vm = this;
 
     vm.changeLanguage = function(key) {

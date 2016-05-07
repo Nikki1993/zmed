@@ -14,7 +14,7 @@
           scope.$apply(attrs.ngBlur);
         }
       });
-    }
+    };
   }
 })();
 
