@@ -5,14 +5,15 @@
     .module('webApp')
     .controller('mainController', mainController);
 
-  mainController.$inject = ['$mdSidenav', '$translate'];
+  mainController.$inject = ['$mdSidenav', '$translate', 'JsonData'];
 
-  function mainController($mdSidenav, $translate) {
+  function mainController($mdSidenav, $translate, JsonData) {
 
     var vm = this;
 
     vm.changeLanguage = function(key) {
       $translate.use(key);
+      JsonData.setPageLang(key);
     };
 
     vm.openLeftMenu = function() {

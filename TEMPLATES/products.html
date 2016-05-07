@@ -2,7 +2,7 @@
   <form flex="90">
     <md-toolbar flex="nogrow">
       <div class="md-toolbar-tools">
-        <h2>Products</h2>
+        <h2 translate="PRODUCTS_TITLE"></h2>
         <span flex></span>
         <md-button class="md-icon-button" ng-click="tabsCtrl.cancel()">
           <md-icon md-font-set="material-icons" aria-label="Close dialog">help</md-icon>
@@ -15,7 +15,7 @@
     <div layout="row" flex="none">
       <span flex-gt-sm="20" flex="10"></span>
       <md-input-container flex-gt-sm="60" flex="80" class="md-block">
-        <label>Search</label>
+        <label translate="PRODUCTS_SEARCH"></label>
         <input type="text" ng-model="search" class="md-input" ng-focus="focus=true;blur=false;" ng-blur="blur=true;focus=false;" aria-label="Search for products textfield" blur-on-enter>
       </md-input-container>
       <span flex-gt-sm="20" flex="10"></span>
@@ -24,7 +24,7 @@
     <md-dialog-content class="dialog-size" flex layout-padding>
       <md-grid-list md-cols="1" md-cols-sm="4" md-cols-md="9" md-cols-gt-md="12" md-gutter-sm="4px" md-gutter-md="4px" md-gutter-gt-md="8px" md-row-height="1:1">
         <md-grid-tile
-          ng-repeat="items in tabsCtrl.dataArray | filter : search track by $index"
+          ng-repeat="items in tabsCtrl.products | filter : search"
           class="list-background repeated-item"
           md-colspan="1"
           md-rowspan="1"
@@ -34,16 +34,16 @@
           md-rowspan-md="3"
           md-colspan-gt-md="3"
           md-rowspan-gt-md="3"
-          data-product-tag="{{tabsCtrl.getContentProducts($index, 3) | translate}}"
+          data-product-tag="{{items.tag}}"
           ng-click="option=option == false ? true : false"
           ng-mouseenter="option=true"
           ng-mouseleave="option=false">
-          <img class="product-icon" ng-src="{{tabsCtrl.getContentProducts($index, 1) | translate}}" alt="{{tabsCtrl.getContentProducts($index, 0) | translate}}"/>
+          <img class="product-icon" ng-src="{{items.icon}}" alt="{{items.name}}"/>
           <md-content ng-show="option" class="product-description" layout-padding flex>
-            {{tabsCtrl.getContentProducts($index, 2) | translate}}
+            {{items.description}}
           </md-content>
           <md-grid-tile-footer ng-hide="option">
-            <h3 class="center-content md-title">{{tabsCtrl.getContentProducts($index, 0) | translate}}</h3>
+            <h3 class="center-content md-title">{{items.name}}</h3>
           </md-grid-tile-footer>
         </md-grid-tile>
       </md-grid-list>

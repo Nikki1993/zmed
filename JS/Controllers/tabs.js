@@ -11,7 +11,7 @@
 
     var vm = this;
 
-    vm.pathToJson = ['../JSON/tabs-en.json', '../JSON/products-en.json', '..JSON/products-ru.json'];
+    vm.pathToJson = ['../JSON/tabs-en.json', '../JSON/products-en.json', '../JSON/products-ru.json'];
 
     vm.showMore = function(ev) {
 
@@ -33,10 +33,9 @@
     };
 
     vm.showDescription = function() {
-      if(vm.option) {
+      if (vm.option) {
         vm.option = false;
-      }
-      else {
+      } else {
         vm.option = true;
       }
     };
@@ -65,24 +64,16 @@
       return vm.namespace + '.' + index + '.' + vm.name[keyVal];
     };
 
-    JsonData.all(vm.pathToJson[1]).then(function(response) {
-      vm.namespaceProducts = Object.keys(response.data);
-      vm.countProducts = JsonData.setObjectCount(Object.keys(response.data[vm.namespaceProducts]).length);
+    vm.products = [];
 
-      vm.dataArray = response.data[vm.namespaceProducts];
-
-      console.log('vm.namespaceProducts from tabs = ' + vm.namespaceProducts);
-
-      for (var property in vm.namespaceProducts) {
-        if (vm.namespaceProducts.hasOwnProperty(property)) {
-          vm.nameProducts = Object.keys(response.data[vm.namespaceProducts][property]);
-          console.log(vm.nameProducts);
-        }
-      }
-    });
-
-    vm.getContentProducts = function(index, keyVal) {
-      return vm.namespaceProducts + '.' + index + '.' + vm.nameProducts[keyVal];
+    if ($translate.use() === 'ru') {
+      JsonData.all(vm.pathToJson[2]).then(function(response) {
+        vm.products = response.data.product;
+      });
+    } else {
+      JsonData.all(vm.pathToJson[1]).then(function(response) {
+        vm.products = response.data.product;
+      });
     }
   }
 })();
