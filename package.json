@@ -1,0 +1,29 @@
+{
+  "name": "zmed",
+  "version": "1.0.0",
+  "description": "Website for Russian distributor",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "imagemin-pngquant": "^5.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^3.0.0",
+    "gulp-ng-annotate": "^2.0.0",
+    "gulp-uglify": "^1.5.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nikki1993/zmed.git"
+  },
+  "author": "Nikki Kononov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nikki1993/zmed/issues"
+  },
+  "homepage": "https://github.com/Nikki1993/zmed#readme"
+}
