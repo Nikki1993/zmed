@@ -1,14 +1,13 @@
 var gulp = require('gulp');
 var concat = require('gulp-concat');
-var sourcemaps = require('gulp-sourcemaps')
+var sourcemaps = require('gulp-sourcemaps');
 var uglify = require('gulp-uglify');
-var ngAnnotate = require('gulp-ng-annotate')
-
-const imagemin = require('gulp-imagemin');
+var ngAnnotate = require('gulp-ng-annotate');
+var imagemin = require('gulp-imagemin');
 
 // Optimize images
 
-gulp.task('default', () => {
+gulp.task('default', function() {
   return gulp.src('IMG/*')
     .pipe(imagemin())
     .pipe(gulp.dest('IMG'));
@@ -23,14 +22,20 @@ gulp.task('js', function() {
     .pipe(ngAnnotate())
     .pipe(uglify())
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('.'))
+    .pipe(gulp.dest('dist/'));
+});
+
+gulp.task('copy', function () {
+  return gulp
+    .src(['index.html', 'JSON/*.json', 'IMG/*', 'CSS/styles.min*', 'TEMPLATES/*'], { base: './' })
+    .pipe(gulp.dest('dist/JS/'));
 });
 
 // after all done, watch for JS changes and add them to webapp.js
 
 gulp.task('watch', ['js'], function() {
-  gulp.watch('JS/**/*.js', ['js'])
+  gulp.watch('JS/**/*.js', ['js']);
   gulp.watch('IMG/*.png', ['images']);
-})
+});
 
-gulp.task('default', ['js', 'watch']);
+gulp.task('default', ['js', 'copy', 'watch']);
