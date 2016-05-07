@@ -9,7 +9,7 @@ var del = require('del');
 // Clean dist folder
 
 gulp.task('default', function () {
-    
+
 });
 
 gulp.task('clean', function () {
@@ -31,7 +31,9 @@ gulp.task('js', function() {
     .pipe(sourcemaps.init())
     .pipe(concat('app.js'))
     .pipe(ngAnnotate())
-    .pipe(uglify())
+    .pipe(uglify({
+      compress: true
+    }))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('dist/JS/'));
 });
