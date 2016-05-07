@@ -4,6 +4,7 @@
   "description": "Website for Russian distributor",
   "main": "gulpfile.js",
   "dependencies": {
+    "del": "^2.2.0",
     "imagemin-pngquant": "^5.0.0"
   },
   "devDependencies": {
