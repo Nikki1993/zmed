@@ -78,7 +78,7 @@ $background-transparent-content: rgba(0, 0, 0, .75);
   background: $background-sidenav;
 
   .side-align-override {
-    margin: 0 auto;
+    justify-content: center;
   }
 
   .md-button {
@@ -103,16 +103,14 @@ $background-transparent-content: rgba(0, 0, 0, .75);
   }
 }
 
-.center-content {
-  text-align: center;
-}
-
 .no-margin {
   margin: 0;
 }
 
-.center-elements {
-  margin: 0 auto;
+.flex-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .md-tab {

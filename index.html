@@ -57,7 +57,7 @@
 
   <body ng-controller="mainController as mainCtrl"  layout="column" ng-cloak>
     <md-sidenav class="md-sidenav-left sidenav-settings" layout="column" md-component-id="left">
-      <header layout-margin class="center-content">
+      <header layout-margin class="flex-center">
         <img class="nav-logo-size" src="../IMG/logo-full-150.png" alt="Z-med Logo"/>
       </header>
       <md-content class="sidenav-transparency" flex>
@@ -101,8 +101,8 @@
         </div>
       </header>
       <md-content id="products" class="tab-content" layout="column" layout-align="center stretch" layout-padding>
-        <h1 class="md-display-2 center-content" translate="FEATURED"></h1>
-        <label hide show-sm show-xs class="md-title center-content" translate="SWIPE_FUNCTIONALITY"></label>
+        <h1 class="md-display-2 flex-center" translate="FEATURED"></h1>
+        <label hide show-sm show-xs class="md-title flex-center" translate="SWIPE_FUNCTIONALITY"></label>
         <md-tabs flex md-dynamic-height md-border-bottom md-swipe-content="true" md-stretch-tabs="always">
           <bone-tab ng-repeat="item in tabsCtrl.count track by $index"></bone-tab>
           <!--Information about about products -->
@@ -112,20 +112,20 @@
         </div>
       </md-content>
       <md-content id="about" layout="column" layout-align="center center" layout-padding>
-        <h1 class="md-display-2 center-content no-margin" translate="ABOUT"></h1>
+        <h1 class="md-display-2 flex-center no-margin" translate="ABOUT"></h1>
         <div layout="row" layout-xs="column">
           <div flex>
-            <h3 class="md-title center-content" translate="ABOUT_HEADER"></h3>
-            <p class="md-body-2 center-content" translate="ABOUT_CONTENT"></p>
-            <div class="center-elements" layout="column" layout-gt-sm="row">
-              <about-card flex="33" flex-xs="100" flex-sm="100" class="center-content" ng-repeat="item in aboutCardCtrl.count track by $index"></about-card>
+            <h3 class="md-title flex-center" translate="ABOUT_HEADER"></h3>
+            <p class="md-body-2 flex-center" translate="ABOUT_CONTENT"></p>
+            <div layout-align="center center" layout="column" layout-gt-sm="row">
+              <about-card flex="33" flex-xs="100" flex-sm="100" ng-repeat="item in aboutCardCtrl.count track by $index"></about-card>
             </div>
           </div>
         </div>
       </md-content>
       <md-content id="reach" layout="column" layout-align="center center" layout-padding>
-        <h1 class="md-display-2 center-content" translate="REACH"></h1>
-        <p class="center-content"translate="REACH_TEXT"></p>
+        <h1 class="md-display-2 flex-center" translate="REACH"></h1>
+        <p translate="REACH_TEXT"></p>
         <div layout="row" layout-xs="column" layout-fill>
           <div layout="column" layout-xs="row" flex layout-align="center center" layout-align-xs="start center">
             <md-button class="md-fab md-primary" href="tel:+74952300584" aria-label="Phone number to call +74952300584" ngclipboard data-clipboard-text="+74952300584">
