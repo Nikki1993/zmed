@@ -13,7 +13,6 @@
 
     vm.changeLanguage = function(key) {
       $translate.use(key);
-      JsonData.setPageLang(key);
     };
 
     vm.openLeftMenu = function() {
