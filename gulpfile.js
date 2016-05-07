@@ -25,6 +25,8 @@ gulp.task('js', function() {
     .pipe(gulp.dest('dist/'));
 });
 
+// Copy paste files that do not require any additional work
+
 gulp.task('copy', function () {
   return gulp
     .src(['index.html', 'JSON/*.json', 'IMG/*', 'CSS/styles.min*', 'TEMPLATES/*'], { base: './' })
