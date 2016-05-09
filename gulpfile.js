@@ -68,6 +68,6 @@ gulp.task('copy', function () {
 
 gulp.task('watch', ['browserSync', 'scss'], function() {
   gulp.watch('CSS/*.scss', ['scss']);
-  gulp.watch(['index.html', 'bower_components/**', 'JSON/**', 'TEMPLATES/**'], ['copy']);
-  gulp.watch(['index.html', 'bower_components/**', 'JSON/**', 'TEMPLATES/**']).on('change', browserSync.reload);
+  gulp.watch(['index.html', 'bower_components/**', 'JSON/**', 'TEMPLATES/**'], ['copy']).on('change', browserSync.reload);
+  gulp.watch('JS/**/*js', ['angularjs']).on('change', browserSync.reload);
 });
