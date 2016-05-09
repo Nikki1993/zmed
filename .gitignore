@@ -1,3 +1,5 @@
 CSS/.sass-cache/
 CSS/*.css.map
 dist/
+bower_components/
+node_modules/
