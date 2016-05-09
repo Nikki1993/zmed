@@ -51,13 +51,9 @@ gulp.task('browserSync', function() {
     server: {
       baseDir: 'dist'
     },
-    reloadDelay: 1500,
+    reloadDelay: 1000,
     port: 8000
   });
-});
-
-gulp.task('bs-reload', function () {
-  return browserSync.reload();
 });
 
 gulp.task('copy', function () {
