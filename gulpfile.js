@@ -9,8 +9,9 @@ var runSequence = require('run-sequence');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var ngAnnotate = require('gulp-ng-annotate');
+var plumber = require('gulp-plumber');
 
-gulp.task('default', function(){
+gulp.task('default', function() {
   runSequence('clean:dist', ['copy', 'images', 'scss', 'angularjs', 'browserSync', 'watch']);
 });
 
@@ -20,6 +21,7 @@ gulp.task('clean:dist', function() {
 
 gulp.task('scss', function() {
   return gulp.src('CSS/*.scss')
+    .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(sass({
       outputStyle: 'compressed'
@@ -32,12 +34,14 @@ gulp.task('scss', function() {
 
 gulp.task('images', function() {
   return gulp.src('IMG/*')
+    .pipe(plumber())
     .pipe(cache(imagemin()))
     .pipe(gulp.dest('dist/IMG'));
 });
 
 gulp.task('angularjs', function() {
   gulp.src(['JS/app.js', 'JS/**/*.js'])
+    .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(concat('app.js'))
     .pipe(ngAnnotate())
@@ -56,9 +60,11 @@ gulp.task('browserSync', function() {
   });
 });
 
-gulp.task('copy', function () {
+gulp.task('copy', function() {
   return gulp
-    .src(['index.html', 'bower_components/**', 'JSON/**', 'TEMPLATES/**'], { base: './' })
+    .src(['index.html', 'bower_components/**', 'JSON/**', 'TEMPLATES/**'], {
+      base: './'
+    })
     .pipe(gulp.dest('dist/'));
 });
 
