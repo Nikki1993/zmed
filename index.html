@@ -43,7 +43,7 @@
 
   </head>
 
-  <body ng-controller="mainController as mainCtrl"  layout="column" ng-cloak>
+  <body ng-controller="mainController as mainCtrl" layout="column" ng-cloak>
     <md-sidenav class="md-sidenav-left sidenav-settings" layout="column" md-component-id="left">
       <header layout-margin class="flex-center">
         <img class="nav-logo-size" src="../IMG/logo-full-150.png" alt="Z-med Logo"/>
@@ -55,7 +55,7 @@
         </section>
       </md-content>
     </md-sidenav>
-    <md-toolbar md-whiteframe="4" class="nav-toolbar" md-scroll-shrink>
+    <md-toolbar md-whiteframe="4" class="nav-toolbar">
       <nav class="md-toolbar-tools nav-main">
         <md-button hide-lg hide-gt-lg ng-click="mainCtrl.openLeftMenu()">
           <md-icon aria-label="Open side navigation" md-font-icon="material-icons">menu</md-icon>
@@ -142,7 +142,6 @@
         </div>
       </md-content>
     </md-content>
-
   </body>
 
 </html>

@@ -12,5 +12,8 @@
   "REACH_TEXT" : "Вы можете связаться с нами с помощью опций ниже. <b>Если вы на домашнем комьютере</b>, то телефонный номер и почтовый адрес, при нажатии на кнопку, будут скопированы.",
   "PRODUCTS_TITLE" : "Продукция Zmed",
   "PRODUCTS_SEARCH" : "Поиск продукции",
-  "CLOSE_ACTION": "Закрыть"
+  "CLOSE_ACTION": "Закрыть",
+  "ATTRIBUTION": "Credits",
+  "WEB_CREATOR": "Nikki Kononov",
+  "IMG_CREATOR": "Hert Niks"
 }
