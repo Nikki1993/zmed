@@ -69,11 +69,13 @@
 
     if ($translate.use() === 'ru') {
       JsonData.all(vm.pathToJson[2]).then(function(response) {
-        vm.products = response.data.product;
+        vm.namespaceProduct = Object.keys(response.data);
+        vm.products = response.data[vm.namespaceProduct];
       });
     } else {
       JsonData.all(vm.pathToJson[1]).then(function(response) {
-        vm.products = response.data.product;
+        vm.namespaceProduct = Object.keys(response.data);
+        vm.products = response.data[vm.namespaceProduct];
       });
     }
   }
