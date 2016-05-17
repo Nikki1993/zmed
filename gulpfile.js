@@ -10,13 +10,18 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var ngAnnotate = require('gulp-ng-annotate');
 var plumber = require('gulp-plumber');
+var gnf = require('gulp-npm-files');
 
 gulp.task('default', function() {
-  runSequence('clean:dist', ['copy', 'images', 'scss', 'angularjs', 'browserSync', 'watch']);
+  runSequence('clean:dist', ['copyNpmDependenciesOnly', 'copy', 'images', 'scss', 'angularjs', 'browserSync', 'watch']);
 });
 
 gulp.task('clean:dist', function() {
   return del.sync(['dist']);
+});
+
+gulp.task('copyNpmDependenciesOnly', function() {
+  gulp.src(gnf(), {base:'./'}).pipe(gulp.dest('./dist'));
 });
 
 gulp.task('scss', function() {
@@ -62,7 +67,10 @@ gulp.task('browserSync', function() {
 
 gulp.task('copy', function() {
   return gulp
-    .src(['index.html', 'bower_components/**', 'JSON/**', 'TEMPLATES/**'], {
+    .src(['index.html',
+    'JSON/**',
+    'TEMPLATES/**'],
+    {
       base: './'
     })
     .pipe(gulp.dest('dist/'));
@@ -70,6 +78,6 @@ gulp.task('copy', function() {
 
 gulp.task('watch', ['browserSync', 'scss'], function() {
   gulp.watch('CSS/*.scss', ['scss']);
-  gulp.watch(['index.html', 'bower_components/**', 'JSON/**', 'TEMPLATES/**'], ['copy']).on('change', browserSync.reload);
+  gulp.watch(['index.html', 'JSON/**', 'TEMPLATES/**'], ['copy']).on('change', browserSync.reload);
   gulp.watch('JS/**/*js', ['angularjs']).on('change', browserSync.reload);
 });
