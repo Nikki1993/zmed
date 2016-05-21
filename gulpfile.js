@@ -11,7 +11,6 @@ var uglify = require('gulp-uglify');
 var ngAnnotate = require('gulp-ng-annotate');
 var plumber = require('gulp-plumber');
 var gnf = require('gulp-npm-files');
-var critical = require('critical');
 
 gulp.task('default', function() {
   runSequence('clean:dist', ['copyNpmDependenciesOnly', 'copy', 'images', 'scss', 'angularjs', 'browserSync', 'watch']);
@@ -81,18 +80,4 @@ gulp.task('watch', ['browserSync', 'scss'], function() {
   gulp.watch('CSS/*.scss', ['scss']);
   gulp.watch(['index.html', 'JSON/**', 'TEMPLATES/**'], ['copy']).on('change', browserSync.reload);
   gulp.watch('JS/**/*js', ['angularjs']).on('change', browserSync.reload);
-});
-
-// has to be execited manually to inline critical css 1920x1080 default
-
-gulp.task('critical', function () {
-    critical.generate({
-        inline: true,
-        base: 'dist/',
-        src: 'index.html',
-        dest: 'dist/index.html',
-        minify: true,
-        width: 1920,
-        height: 1080
-    });
 });

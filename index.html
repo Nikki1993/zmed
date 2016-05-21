@@ -56,17 +56,6 @@
   </head>
 
   <body ng-controller="mainController as mainCtrl" layout="column" ng-cloak>
-    <md-sidenav class="md-sidenav-left sidenav-settings" layout="column" md-component-id="left">
-      <header layout-margin class="flex-center">
-        <img class="nav-logo-size" src="../IMG/logo-full-150.png" alt="Z-med Logo"/>
-      </header>
-      <md-content class="sidenav-transparency" flex>
-        <section layout="column" du-scroll-container="scroll-container">
-          <menu-bar-side ng-repeat="item in navCtrl.count track by $index"></menu-bar-side>
-          <!-- Menu Bar element that shows up on mobile devices -->
-        </section>
-      </md-content>
-    </md-sidenav>
     <md-toolbar md-whiteframe="4" class="nav-toolbar">
       <nav class="md-toolbar-tools nav-main">
         <md-button hide-lg hide-gt-lg ng-click="mainCtrl.openLeftMenu()">
@@ -93,6 +82,17 @@
         </md-menu>
       </nav>
     </md-toolbar>
+    <md-sidenav class="md-sidenav-left sidenav-settings" layout="column" md-component-id="left">
+      <header layout-margin class="flex-center">
+        <img class="nav-logo-size" src="../IMG/logo-full-150.png" alt="Z-med Logo"/>
+      </header>
+      <md-content class="sidenav-transparency" flex>
+        <section layout="column" du-scroll-container="scroll-container">
+          <menu-bar-side ng-repeat="item in navCtrl.count track by $index"></menu-bar-side>
+          <!-- Menu Bar element that shows up on mobile devices -->
+        </section>
+      </md-content>
+    </md-sidenav>
     <md-content id="scroll-container" layout-fill flex>
       <header id="main" class="background-color">
         <div class="background-header">
