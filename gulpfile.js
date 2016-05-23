@@ -11,6 +11,8 @@ var uglify = require('gulp-uglify');
 var ngAnnotate = require('gulp-ng-annotate');
 var plumber = require('gulp-plumber');
 var gnf = require('gulp-npm-files');
+const image = require('gulp-image');
+const pngquant = require('imagemin-pngquant')
 
 gulp.task('default', function() {
   runSequence('clean:dist', ['copyNpmDependenciesOnly', 'copy', 'images', 'scss', 'angularjs', 'browserSync', 'watch']);
@@ -39,9 +41,11 @@ gulp.task('scss', function() {
 
 gulp.task('images', function() {
   return gulp.src('IMG/**')
-    .pipe(plumber())
-    .pipe(cache(imagemin()))
-    .pipe(gulp.dest('dist/IMG'));
+  .pipe(cache(imagemin({
+            progressive: true,
+            use: [pngquant()]
+        })))
+  .pipe(gulp.dest('dist/IMG'));
 });
 
 gulp.task('angularjs', function() {
@@ -68,6 +72,7 @@ gulp.task('browserSync', function() {
 gulp.task('copy', function() {
   return gulp
     .src(['index.html',
+    '.htaccess',
     'JSON/**',
     'TEMPLATES/**'],
     {
