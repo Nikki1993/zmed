@@ -38,7 +38,7 @@ gulp.task('scss', function() {
 });
 
 gulp.task('images', function() {
-  return gulp.src('IMG/*')
+  return gulp.src('IMG/**')
     .pipe(plumber())
     .pipe(cache(imagemin()))
     .pipe(gulp.dest('dist/IMG'));

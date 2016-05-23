@@ -13,7 +13,10 @@ $background-transparent-content: rgba(0, 0, 0, .75);
 }
 
 .placeholder-image {
-  height: 200px;
+  height: auto;
+  max-height: 200px;
+  max-width: 200px;
+  width: auto;
 }
 
 .background-color {

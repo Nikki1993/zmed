@@ -1,28 +1,34 @@
 {
-  "tabs": [{
-    "tabName": "Бедро",
-    "heading": "Heading",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus magna, fringilla eget sollicitudin id, consectetur id risus. Sed non condimentum neque, eget pulvinar magna. Nam posuere, neque nec tempor suscipit, leo magna malesuada tellus, quis elementum tortor ipsum non augue. Cras id auctor sapien, et dictum erat. Vestibulum efficitur lacus ac nisi tempus euismod. Sed turpis lorem, tempor congue ligula a, imperdiet sagittis justo. Curabitur eu sollicitudin nisl. Suspendisse dignissim tincidunt massa nec feugiat.",
-    "image": "../IMG/placeholder.svg"
-  }, {
-    "tabName": "Колено",
-    "heading": "Heading",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus magna, fringilla eget sollicitudin id, consectetur id risus. Sed non condimentum neque, eget pulvinar magna. Nam posuere, neque nec tempor suscipit, leo magna malesuada tellus, quis elementum tortor ipsum non augue. Cras id auctor sapien, et dictum erat. Vestibulum efficitur lacus ac nisi tempus euismod. Sed turpis lorem, tempor congue ligula a, imperdiet sagittis justo. Curabitur eu sollicitudin nisl. Suspendisse dignissim tincidunt massa nec feugiat.",
-    "image": "../IMG/placeholder.svg"
-  }, {
-    "tabName": "Локоть",
-    "heading": "Heading ",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus magna, fringilla eget sollicitudin id, consectetur id risus. Sed non condimentum neque, eget pulvinar magna. Nam posuere, neque nec tempor suscipit, leo magna malesuada tellus, quis elementum tortor ipsum non augue. Cras id auctor sapien, et dictum erat. Vestibulum efficitur lacus ac nisi tempus euismod. Sed turpis lorem, tempor congue ligula a, imperdiet sagittis justo. Curabitur eu sollicitudin nisl. Suspendisse dignissim tincidunt massa nec feugiat.",
-    "image": "../IMG/placeholder.svg"
-  }, {
-    "tabName": "Плечо",
-    "heading": "Heading",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus magna, fringilla eget sollicitudin id, consectetur id risus. Sed non condimentum neque, eget pulvinar magna. Nam posuere, neque nec tempor suscipit, leo magna malesuada tellus, quis elementum tortor ipsum non augue. Cras id auctor sapien, et dictum erat. Vestibulum efficitur lacus ac nisi tempus euismod. Sed turpis lorem, tempor congue ligula a, imperdiet sagittis justo. Curabitur eu sollicitudin nisl. Suspendisse dignissim tincidunt massa nec feugiat.",
-    "image": "../IMG/placeholder.svg"
-  }, {
-    "tabName": "Позвоночник",
-    "heading": "Heading",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus magna, fringilla eget sollicitudin id, consectetur id risus. Sed non condimentum neque, eget pulvinar magna. Nam posuere, neque nec tempor suscipit, leo magna malesuada tellus, quis elementum tortor ipsum non augue. Cras id auctor sapien, et dictum erat. Vestibulum efficitur lacus ac nisi tempus euismod. Sed turpis lorem, tempor congue ligula a, imperdiet sagittis justo. Curabitur eu sollicitudin nisl. Suspendisse dignissim tincidunt massa nec feugiat.",
-    "image": "../IMG/placeholder.svg"
-  }]
+  "tabs": [
+    {
+      "tabName": "Бедро",
+      "heading": "NexGen ® LPS - CR-Flex Gender",
+      "description": "Бедренные импланты Gender Solutions High-Flex сужены, что позволяет хирургу обеспечивать беспрецедентную точность артропластики коленного сустава для женщин",
+      "image": "../IMG/Products/NexGen-LPS-CR-Flex-Gender.jpg"
+    },
+    {
+      "tabName": "Колено",
+      "heading": "NexGen® CR Flex",
+      "description": "NexGen® CR-Flex Усовершенствованный эндопротез коленного сустава NexGen® CR Flex обеспечивает безопасное сгибание до 155 градусов с восстановлением нормальной биомеханики. Особый дизайн CR-Flex помогает поддерживать адекватный тибио-феморальный и феморо-пателлярный контакт при глубоком сгибании.",
+      "image": "../IMG/Products/NexGen-CR-Flex.png"
+    },
+    {
+      "tabName": "Локоть",
+      "heading": "Coonrad Morrey Total Elbow ",
+      "description": "Компания Zimmer предлагает хирургам систему тотальной артропластики локтевого сустава мирового уровня. Тотальный эндопротез локтевого сустава Coonrad/Morrey, применяемый в клинической практике в течение более чем 30 лет, является самой популярной системой эндопротезирования локтевого сустава в мире. Предназначенный для первичного и ревизионного протезирования, а также для использования в случаях посттравматического и ревматоидного артрита, этот имплантат локтевого сустава может быть полностью адаптирован к анатомическим особенностям пациента, что делает процедуру эндопротезирования простой и точной.",
+      "image": "../IMG/Products/Coonrad-Morrey-Total-Elbow.png"
+    },
+    {
+      "tabName": "Плечо",
+      "heading": "Anatomical Shoulder",
+      "description": "Система эндопротезирования Anatomical Shoulder позволяет подбирать имплант плечевого сустава с учетом индивидуальной анатомии пациента. Модульное исполнение и дизайн системы Anatomical Shoulder обеспечивают точную и воспроизводимую реконструкцию плечевого сустава, восстанавливая тем самым нормальную функцию конечности.",
+      "image": "../IMG/Products/Anatomical-Shoulder.png"
+    },
+    {
+      "tabName": "Позвоночник",
+      "heading": "Non-Contact Bridging PP",
+      "description": "NCB - революционная система фиксации переломов, позволяющие совместить компрессию, полиаксиальность и угловую стабильность. Минимальный контакт с надкостницей, максимально бережное отношение к мягким тканям. Максимальная свобода действий, максимальная эффективность.",
+      "image": "../IMG/Products/NCB-PP.png"
+    }
+  ]
 }
