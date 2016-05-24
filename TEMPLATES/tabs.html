@@ -1,7 +1,7 @@
 <md-tab label="{{tabsCtrl.getContent($index, 0) | translate}}" class="material-tab">
   <md-content layout="column" layout-padding layout-align="center center">
     <md-card class="card-tab card-bg">
-      <img ng-src="{{tabsCtrl.getContent($index, 3) | translate}}" class="md-card-image placeholder-image" alt="Product Image">
+      <div class="flex-center"><img ng-src="{{tabsCtrl.getContent($index, 3) | translate}}" class="md-card-image placeholder-image flex-center" alt="Product Image"></div>
       <md-card-title>
           <md-card-title-text>
             <span class="md-headline">{{tabsCtrl.getContent($index, 1) | translate}}</span>
