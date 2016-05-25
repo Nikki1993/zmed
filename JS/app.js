@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('webApp', ['ngMaterial', 'duScroll', 'ngMessages', 'ngclipboard', 'pascalprecht.translate'])
+    .module('webApp', ['ngMaterial', 'duScroll', 'ngMessages', 'ngclipboard', 'pascalprecht.translate', 'angular-inview', 'ngLazyRender'])
     .config(themeConfiguration)
     .config(translateConfiguration);
 
