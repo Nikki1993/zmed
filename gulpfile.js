@@ -1,32 +1,34 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var browserSync = require('browser-sync').create();
-var sourcemaps = require('gulp-sourcemaps');
-var imagemin = require('gulp-imagemin');
-var cache = require('gulp-cache');
-var del = require('del');
-var runSequence = require('run-sequence');
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
-var ngAnnotate = require('gulp-ng-annotate');
-var plumber = require('gulp-plumber');
-var gnf = require('gulp-npm-files');
-const image = require('gulp-image');
-const pngquant = require('imagemin-pngquant')
+/*jshint esversion: 6 */
 
-gulp.task('default', function() {
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const browserSync = require('browser-sync').create();
+const sourcemaps = require('gulp-sourcemaps');
+const imagemin = require('gulp-imagemin');
+const cache = require('gulp-cache');
+const del = require('del');
+const runSequence = require('run-sequence');
+const concat = require('gulp-concat');
+const uglify = require('gulp-uglify');
+const ngAnnotate = require('gulp-ng-annotate');
+const plumber = require('gulp-plumber');
+const gnf = require('gulp-npm-files');
+const image = require('gulp-image');
+const pngquant = require('imagemin-pngquant');
+
+gulp.task('default', () => {
   runSequence('clean:dist', ['copyNpmDependenciesOnly', 'copy', 'images', 'scss', 'angularjs', 'browserSync', 'watch']);
 });
 
-gulp.task('clean:dist', function() {
+gulp.task('clean:dist', () => {
   return del.sync(['dist']);
 });
 
-gulp.task('copyNpmDependenciesOnly', function() {
+gulp.task('copyNpmDependenciesOnly', () => {
   gulp.src(gnf(), {base:'./'}).pipe(gulp.dest('./dist'));
 });
 
-gulp.task('scss', function() {
+gulp.task('scss', () => {
   return gulp.src('CSS/*.scss')
     .pipe(plumber())
     .pipe(sourcemaps.init())
@@ -39,7 +41,7 @@ gulp.task('scss', function() {
     }));
 });
 
-gulp.task('images', function() {
+gulp.task('images', () => {
   return gulp.src('IMG/**')
   .pipe(cache(imagemin({
             progressive: true,
@@ -48,7 +50,7 @@ gulp.task('images', function() {
   .pipe(gulp.dest('dist/IMG'));
 });
 
-gulp.task('angularjs', function() {
+gulp.task('angularjs', () => {
   gulp.src(['JS/app.js', 'JS/**/*.js'])
     .pipe(plumber())
     .pipe(sourcemaps.init())
@@ -59,7 +61,7 @@ gulp.task('angularjs', function() {
     .pipe(gulp.dest('dist/JS'));
 });
 
-gulp.task('browserSync', function() {
+gulp.task('browserSync', () => {
   browserSync.init({
     server: {
       baseDir: 'dist'
@@ -69,7 +71,7 @@ gulp.task('browserSync', function() {
   });
 });
 
-gulp.task('copy', function() {
+gulp.task('copy', () => {
   return gulp
     .src(['index.html',
     '.htaccess',
@@ -81,7 +83,7 @@ gulp.task('copy', function() {
     .pipe(gulp.dest('dist/'));
 });
 
-gulp.task('watch', ['browserSync', 'scss'], function() {
+gulp.task('watch', ['browserSync', 'scss'], () => {
   gulp.watch('CSS/*.scss', ['scss']);
   gulp.watch(['index.html', 'JSON/**', 'TEMPLATES/**'], ['copy']).on('change', browserSync.reload);
   gulp.watch('JS/**/*js', ['angularjs']).on('change', browserSync.reload);
