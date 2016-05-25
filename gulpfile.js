@@ -17,7 +17,7 @@ const image = require('gulp-image');
 const pngquant = require('imagemin-pngquant');
 
 gulp.task('default', () => {
-  runSequence('clean:dist', ['copyNpmDependenciesOnly', 'copy', 'images', 'scss', 'angularjs', 'browserSync', 'watch']);
+  runSequence('clean:dist', 'copyNpmDependenciesOnly', 'copy', 'images', 'angularjs', 'watch');
 });
 
 gulp.task('clean:dist', () => {
@@ -83,7 +83,7 @@ gulp.task('copy', () => {
     .pipe(gulp.dest('dist/'));
 });
 
-gulp.task('watch', ['browserSync', 'scss'], () => {
+gulp.task('watch', ['scss', 'browserSync'], () => {
   gulp.watch('CSS/*.scss', ['scss']);
   gulp.watch(['index.html', 'JSON/**', 'TEMPLATES/**'], ['copy']).on('change', browserSync.reload);
   gulp.watch('JS/**/*js', ['angularjs']).on('change', browserSync.reload);
