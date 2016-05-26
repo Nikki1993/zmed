@@ -194,7 +194,11 @@ md-input-container {
 }
 
 .product-icon {
-  height: 125px;
+  height: auto;
+  max-height: 150px;
+  max-width: 150px;
+  padding-bottom: 60px;
+  width: auto;
 }
 
 .product-description {
