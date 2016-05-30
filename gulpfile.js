@@ -19,6 +19,10 @@ gulp.task('default', () => {
   runSequence('clean:dist', 'copyNpmDependenciesOnly', 'copy', 'images', 'angularjs', 'watch');
 });
 
+gulp.task('build', () =>  {
+  runSequence('clean:dist', 'copyNpmDependenciesOnly', 'copy', 'images', 'angularjs');
+});
+
 gulp.task('clean:dist', () => {
   return del.sync(['dist']);
 });
