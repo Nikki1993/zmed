@@ -20,7 +20,7 @@ gulp.task('default', () => {
 });
 
 gulp.task('build', () =>  {
-  runSequence('clean:dist', 'copyNpmDependenciesOnly', 'copy', 'images', 'angularjs');
+  runSequence('clean:dist', ['copyNpmDependenciesOnly', 'copy', 'images', 'angularjs', 'scss']);
 });
 
 gulp.task('clean:dist', () => {
