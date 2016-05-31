@@ -8,7 +8,7 @@
   navigationController.$inject = ['$translatePartialLoader', '$translate', 'JsonData'];
 
   function navigationController($translatePartialLoader, $translate, JsonData) {
-    /*jshint validthis: true */
+
     var vm = this;
 
     vm.name = [];

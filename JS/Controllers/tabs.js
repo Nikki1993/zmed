@@ -9,8 +9,15 @@
 
   function tabsController($translatePartialLoader, $translate, JsonData, $mdDialog, $mdMedia, $scope) {
 
-    /*jshint validthis: true */
     var vm = this;
+
+    vm.openFilter = function($mdOpenMenu, ev) {
+      $mdOpenMenu(ev);
+    };
+
+    vm.setFilterValue = function(value) {
+      vm.filterVal = value;
+    };
 
     vm.pathToJson = ['../JSON/tabs-en.json', '../JSON/products-en.json', '../JSON/products-ru.json'];
 

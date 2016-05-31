@@ -13,15 +13,26 @@
       <span flex-gt-sm="20" flex="10"></span>
       <md-input-container flex-gt-sm="60" flex="80" class="md-block">
         <label translate="PRODUCTS_SEARCH"></label>
-        <input type="text" ng-model="search" class="md-input" ng-focus="focus=true;blur=false;" ng-blur="blur=true;focus=false;" aria-label="Search for products textfield" blur-on-enter>
+        <input type="text" ng-model="search.$" class="md-input" ng-focus="focus=true;blur=false;" ng-blur="blur=true;focus=false;" aria-label="Search for products textfield" blur-on-enter>
       </md-input-container>
+      <md-menu>
+        <md-button ng-click="tabsCtrl.openFilter($mdOpenMenu, $event)"><md-icon md-font-set="material-icons">filter_list</md-icon></md-button>
+        <md-menu-content width="2">
+          <md-menu-item>
+            <md-button ng-click="tabsCtrl.setFilterValue('Плечо')">Плечо</md-button>
+          </md-menu-item>
+          <md-menu-item>
+            <md-button ng-click="tabsCtrl.setFilterValue('')">All</md-button>
+          </md-menu-item>
+        </md-menu-content>
+      </md-menu>
       <span flex-gt-sm="20" flex="10"></span>
     </div>
     <md-divider></md-divider>
     <md-dialog-content class="dialog-size" flex layout-padding>
       <md-grid-list md-cols="1" md-cols-sm="4" md-cols-md="9" md-cols-gt-md="12" md-gutter-sm="4px" md-gutter-md="4px" md-gutter-gt-md="8px" md-row-height="1:1">
         <md-grid-tile
-          ng-repeat="items in tabsCtrl.products | filter : search"
+          ng-repeat="items in tabsCtrl.products | filter : search | filter : {'tag' : tabsCtrl.filterVal}"
           lazy-repeater="10"
           class="list-background repeated-item"
           md-colspan="1"

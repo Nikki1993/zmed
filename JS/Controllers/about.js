@@ -8,7 +8,7 @@
   aboutCardController.$inject = ['$translatePartialLoader', '$translate', 'JsonData'];
 
   function aboutCardController($translatePartialLoader, $translate, JsonData) {
-    /*jshint validthis: true */
+
     var vm = this;
 
     vm.name = [];
