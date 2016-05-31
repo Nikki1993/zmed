@@ -14,17 +14,29 @@ const gnf = require('gulp-npm-files');
 const image = require('gulp-image');
 const pngquant = require('imagemin-pngquant');
 const webstandards = require('gulp-webstandards');
+const util = require('gulp-util');
+const jsonMinify = require('gulp-json-minify');
 
-gulp.task('default', () => {
-  runSequence('clean:dist', 'copyNpmDependenciesOnly', 'copy', 'images', 'angularjs', 'watch');
+gulp.task('default', (callback) =>  {
+  runSequence('clean:dist', ['json:minify', 'copy', 'images', 'angularjs', 'scss'], 'webstandards', 'copyNpmDependenciesOnly', 'watch', callback);
 });
 
-gulp.task('build', () =>  {
-  runSequence('clean:dist', ['copyNpmDependenciesOnly', 'copy', 'images', 'angularjs', 'scss']);
+gulp.task('build', (callback) => {
+  runSequence('clean:dist', ['json:minify', 'copy', 'images', 'angularjs', 'scss'], 'webstandards', 'copyNpmDependenciesOnly', callback);
 });
 
 gulp.task('clean:dist', () => {
   return del.sync(['dist']);
+});
+
+gulp.task('json:minify', function() {
+    return gulp.src('JSON/*.json')
+        .pipe(jsonMinify())
+        .pipe(gulp.dest('dist/JSON'))
+        .pipe(browserSync.reload({
+          stream: true
+        }))
+        .on('error', util.log);
 });
 
 gulp.task('copyNpmDependenciesOnly', () => {
@@ -61,7 +73,10 @@ gulp.task('angularjs', () => {
     .pipe(ngAnnotate())
     .pipe(uglify())
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('dist/JS'));
+    .pipe(gulp.dest('dist/JS'))
+    .pipe(browserSync.reload({
+      stream: true
+    }));
 });
 
 gulp.task('browserSync', () => {
@@ -78,7 +93,6 @@ gulp.task('copy', () => {
   return gulp
     .src(['index.html',
     '.htaccess',
-    'JSON/**',
     'TEMPLATES/**'],
     {
       base: './'
@@ -88,7 +102,7 @@ gulp.task('copy', () => {
 
 gulp.task('watch', ['scss', 'browserSync'], () => {
   gulp.watch('CSS/*.scss', ['scss']);
-  gulp.watch(['index.html', 'JSON/**', 'TEMPLATES/**'], ['copy']).on('change', browserSync.reload);
+  gulp.watch(['index.html', 'TEMPLATES/**'], ['copy']).on('change', browserSync.reload);
   gulp.watch('JS/**/*js', ['angularjs']).on('change', browserSync.reload);
 });
 
