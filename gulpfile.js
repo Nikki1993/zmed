@@ -58,10 +58,7 @@ gulp.task('scss', () => {
 
 gulp.task('images', () => {
   return gulp.src('IMG/**')
-  .pipe(cache(imagemin({
-            progressive: true,
-            use: [pngquant()]
-        })))
+  .pipe(cache(imagemin()))
   .pipe(gulp.dest('dist/IMG'));
 });
 

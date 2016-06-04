@@ -11,6 +11,14 @@
 
     var vm = this;
 
+    vm.filterOptions = [{
+      name: 'Плечо',
+      tag: 'Плечо'
+    },{
+      name: 'Все',
+      tag: ''
+    }];
+
     vm.openFilter = function($mdOpenMenu, ev) {
       $mdOpenMenu(ev);
     };

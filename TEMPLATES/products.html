@@ -10,23 +10,15 @@
       </div>
     </md-toolbar>
     <div layout="row" flex="none">
-      <span flex-gt-sm="20" flex="10"></span>
-      <md-input-container flex-gt-sm="60" flex="80" class="md-block">
+      <span flex="20" flex-md="10" flex-xs="10"></span>
+      <md-input-container flex="45" flex-md="55" flex-xs="55" class="md-block">
         <label translate="PRODUCTS_SEARCH"></label>
         <input type="text" ng-model="search.$" class="md-input" ng-focus="focus=true;blur=false;" ng-blur="blur=true;focus=false;" aria-label="Search for products textfield" blur-on-enter>
       </md-input-container>
-      <md-menu>
-        <md-button ng-click="tabsCtrl.openFilter($mdOpenMenu, $event)"><md-icon md-font-set="material-icons">filter_list</md-icon></md-button>
-        <md-menu-content width="2">
-          <md-menu-item>
-            <md-button ng-click="tabsCtrl.setFilterValue('Плечо')">Плечо</md-button>
-          </md-menu-item>
-          <md-menu-item>
-            <md-button ng-click="tabsCtrl.setFilterValue('')">All</md-button>
-          </md-menu-item>
-        </md-menu-content>
-      </md-menu>
-      <span flex-gt-sm="20" flex="10"></span>
+      <md-select flex="15" flex-md="25" flex-xs="25" placeholder="{{'FILTER_SELECTION' | translate}}" aria-label="Filter Options" ng-model="search.tag">
+        <md-option ng-value="tags.tag" ng-repeat="tags in tabsCtrl.filterOptions">{{tags.name}}</md-option>
+      </md-select>
+      <span flex="20" flex-md="10" flex-xs="10"></span>
     </div>
     <md-divider></md-divider>
     <md-dialog-content class="dialog-size" flex layout-padding>
@@ -59,7 +51,6 @@
     </md-dialog-content>
   </form>
   <md-dialog-actions flex="nogrow" layout-margin layout="row">
-    <md-button class="md-primary md-raised" href="" target="_blank" ng-click="tabsCtrl.cancel()" aria-label="Close action" translate="CLOSE_ACTION">
-    </md-button>
+    <md-button class="md-primary md-raised" href="" target="_blank" ng-click="tabsCtrl.cancel()" aria-label="Close action" translate="CLOSE_ACTION"></md-button>
   </md-dialog-actions>
 </md-dialog>
