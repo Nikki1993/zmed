@@ -4,7 +4,7 @@
   "description": "Website for Russian distributor",
   "main": "gulpfile.js",
   "devDependencies": {
-    "browser-sync": "^2.12.10",
+    "browser-sync": "^2.12.12",
     "del": "^2.2.0",
     "eslint": "^2.11.1",
     "gulp": "^3.9.1",
