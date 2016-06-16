@@ -12,8 +12,8 @@
     var vm = this;
 
     vm.filterOptions = [{
-      name: 'Плечо',
-      tag: 'Плечо'
+      name: 'Эндопротез',
+      tag: 'Эндопротез'
     },{
       name: 'Все',
       tag: ''
