@@ -15,8 +15,14 @@
       name: 'Эндопротез',
       tag: 'Эндопротез'
     },{
-      name: 'Все',
-      tag: ''
+      name: 'Травма',
+      tag: 'травматология'
+    },{
+      name: 'Спина',
+      tag: 'позвоночник'
+    },{
+      name: 'Спина',
+      tag: 'позвоночник'
     }];
 
     vm.openFilter = function($mdOpenMenu, ev) {
