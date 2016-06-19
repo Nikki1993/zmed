@@ -1,53 +1,316 @@
 {
-  "product": [{
-    "name": "Hip",
-    "icon": "../IMG/placeholder.svg",
-    "description": "",
-    "tag": "Hip"
-  }, {
-    "name": "Knee",
-    "icon": "../IMG/placeholder.svg",
-    "description": "",
-    "tag": "Knee"
-  }, {
-    "name": "Elbow",
-    "icon": "../IMG/placeholder.svg",
-    "description": "",
-    "tag": "Elbow"
-  }, {
-    "name": "Shoulder",
-    "icon": "../IMG/placeholder.svg",
-    "description": "",
-    "tag": "Shoulder"
-  }, {
-    "name": "Spine",
-    "icon": "../IMG/placeholder.svg",
-    "description": "",
-    "tag": "Spine"
-  }, {
-    "name": "Hip",
-    "icon": "../IMG/placeholder.svg",
-    "description": "",
-    "tag": "Hip"
-  }, {
-    "name": "Knee",
-    "icon": "../IMG/placeholder.svg",
-    "description": "",
-    "tag": "Knee"
-  }, {
-    "name": "Elbow",
-    "icon": "../IMG/placeholder.svg",
-    "description": "",
-    "tag": "Elbow"
-  }, {
-    "name": "Shoulder",
-    "icon": "../IMG/placeholder.svg",
-    "description": "",
-    "tag": "Shoulder"
-  }, {
-    "name": "Spine",
-    "icon": "../IMG/placeholder.svg",
-    "description": "",
-    "tag": "Spine"
-  }]
+  "product": [
+    {
+      "name": "Anatomical Shoulder",
+      "icon": "../IMG/Products/Anatomical-Shoulder.png",
+      "description": "The Anatomical Shoulder System allows the shoulder implant to be tailored to the patient's individual anatomy. The modularity and design of the Anatomical Shoulder System provides an accurate and reproducible reconstruction of the glenohumeral joint, thus restoring the normal kinematics of the limb. This can lead to advanced rehabilitation and an expanded range of motion while placing fewer demands on the soft tissues and on the anchoring of the prosthesis.",
+      "tag": "Эндопротез Имплантант Замена сустава Плечевой сустав восстановление естественной подвижности сустава"
+    },
+    {
+      "name": "Anatomical Shoulder Fracture",
+      "icon": "../IMG/Products/Anatomical-Shoulder-Fracture.png",
+      "description": "The Anatomical Shoulder Fracture System treats complex 3- and 4-part fractures of the proximal humerus. With the unique features and anatomical design of this stem, a complex case is now simplified with this specially designed implant for tough fracture cases. The aggressive fracture spikes allow for stable anchoring of the tuberosities to the stem — increasing primary stability. Additionally, the system offers a left and right proximal configuration of the humeral head that optimizes suture hole orientation in order to aid in the repositioning of the tuberosities below the head, restoring the original anatomy.",
+      "tag": "Эндопротез Имплантант Замена сустава Плечевой сустав Посттравматический артрит восстановление естественной подвижности сустава"
+    },
+    {
+      "name": "Anatomical Shoulder Inverse/Reverse System",
+      "icon": "../IMG/Products/Anatomical-Shoulder-Invers-Reverse.png",
+      "description": "With the Anatomical Shoulder System, and now with the innovative Anatomical Shoulder Inverse/Reverse System, Zimmer offers surgeons a complete shoulder solution with the possibility to revise hemi- and total-shoulder arthroplasties with the current implanted cemented or press-fit stems to a reverse shoulder. The Trabecular Metal ™ Technology Reverse Base Plate may be used with the Anatomical Shoulder ™ Inverse/Reverse Stem. Such revision might be necessary in the setting of irreparable rotator cuff tear. This greatly simplifies and shortens revision surgery, since the need to remove a well-fixed stem is eliminated.",
+      "tag": "Эндопротез Имплантант Замена сустава Плечевой сустав Артропластика Вращательная манжета Тантал Трабекулярный металл Высокая вживляемость Наилучшие показатели по врастанию Структура губчатой кости восстановление естественной подвижности сустава"
+    },
+    {
+      "name": "Continuum Acetabular System",
+      "icon": "../IMG/Products/Continuum-Acetabular-System.png",
+      "description": "Zimmer® Continuum Acetabular System provides highly flexible solutions for orthopedic surgeons who treat a wide range of patients. The system combines the biologic ingrowth of Trabecular Metal™ Technology with Zimmer® advanced bearing options. With one of the most comprehensive systems, surgeons have the ability to address variations of anatomy and choose the bearing technology that best meets the needs of each patient.",
+      "tag": "Вертлужная чашка Тазобедренный сустав Эндопротез Вкладыш керамика Тантал Трабекулярный металл Высокая вживляемость Наилучшие показатели по вростанию Бесцементная чашка Замена сустава Структура губчатой кости"
+    },
+    {
+      "name": "Coonrad Morrey Total Elbow",
+      "icon": "../IMG/Products/Coonrad-Morrey-Total-Elbow.png",
+      "description": "For complete patient-matching flexibility, the Coonrad/Morrey Total Elbow is unsurpassed in interchangeability and design. The Coonrad/Morrey Total Elbow has a long-term clinical use for treatments spanning rheumatoid and degenerative arthritis2,5  to trauma reconstruction where less radical procedures are unwarranted.",
+      "tag": "Эндопротез Имплантант Замена сустава Локтевой сустав Ревматоидный артрит локтевого сустава"
+    },
+    {
+      "name": "Maxera Cup",
+      "icon": "../IMG/Products/Maxera-Cup.png",
+      "description": "The Maxera Cup provides a large-head, ceramic-on-ceramic option for the younger and more active patient. The cup is an established hemispherical design that provides increased stability with a familiar surgical technique. The Maxera Cup presents orthopaedic surgeons with a system that offers high range of motion and a low-wear bearing to better enable the restoration of a patient’s active lifestyle.",
+      "tag": "Вертлужная чашка Тазобедренный сустав Эндопротез Керамический компонент Керамическая головка большого диаметра Керамическая пара трения Имплантант Бесцементная чашка Замена сустава"
+    },
+    {
+      "name": "NexGen ® LPS - CR-Flex Gender",
+      "icon": "../IMG/Products/NexGen-LPS-CR-Flex-Gender.jpg",
+      "description": "The Zimmer Gender Solutions NexGen High-Flex Knee Implants compensate for the most important differences between women’s and men’s knees.",
+      "tag": "Женский Эндопротез Коленный сустав Имплантант Замена сустава Сохранения крестообразной связки"
+    },
+    {
+      "name": "NexGen® CR Flex",
+      "icon": "../IMG/Products/NexGen-CR-Flex.png",
+      "description": "This enhancement of the highly successful NexGen® CR Knee safely accommodates flexion up to 1550, while maintaining the kinematic function that allows natural femoral rollback. Specific design features of the CR-Flex Knee help maintain adequate tibiofemoral contact during high flexion and provide greater clearance for the patellar tendon. The option of Minus size femoral components provides an additional means of balancing the flexion and extension gaps, without additional bone loss or soft tissue release.",
+      "tag": "Эндопротез Коленный сустав Имплантант Замена сустава Сохранения крестообразной связки Артропластика"
+    },
+    {
+      "name": "Trilogy",
+      "icon": "../IMG/Products/Trilogy.png",
+      "description": "The Trilogy Acetabular Hip System builds on the success of the Harris-Galante™ Porous and HGP II Cups by combining proven features with new technology designed to inhibit the formation and migration of polyethylene debris. In doing so, Zimmer has provided multiple defense mechanisms against the poly debris that can be associated with osteolysis.",
+      "tag": "Вертлужная чашка Тазобедренный сустав Эндопротез Чашка из титановой сетки Полиэтиленовый вкладыш Более 30 лет имплантаций Имплантант Бесцементная чашка Замена сустава"
+    },
+    {
+      "name": "Trabecular Metal Femoral and Tibial Cone Augments",
+      "icon": "../IMG/Products/tm-ft-cone-aug-hero.png",
+      "description": "The Zimmer Trabecular Metal Tibial Cone offers an optimal combination of material and design. It provides structural support in the area of bone loss and offers an alternative to grafting procedures. This product has an elasticity similar to bone, with an average porosity of up to 80%. Its fully interconnected pores allow uninterrupted pathways for biological in-growth, and its cellular structure resembles bone.",
+      "tag": "Ревизионное протезирование Тантал Трабекулярный металл Высокая вживляемость Наилучшие показатели по врастанию Артроз 4 степени Структура губчатой кости"
+    },
+    {
+      "name": "Modular Acetabular System Trabecular Metal",
+      "icon": "../IMG/Products/module-system-trabecular-metal.png",
+      "description": "The integration of Trabecular Metal Material and modularity into a proven implant design provides a wide variety of shell and liner options to address specific patient needs. The elliptical shape of the cup creates an interference fit with the spherically reamed acetabulum. From the pole of the dome, the interference fit increases until a 2-mm differential is achieved at the face of the cup. This maximizes bone contact and enhances initial stability. A proprietary locking mechanism helps prevent dislocation of the liner from the shell, yet allows easy disassembly without damaging the liner. Liner security is complemented by antirotational tabs, and micromotion is minimized by full congruency between the liner and shell.",
+      "tag": "Вертлужная чашка Тазобедренный сустав Эндопротез Тантал Ревизионная чашка Высокая вживляемость Наилучшие показатели по врастанию Имплантант Бесцементная чашка Замена сустава Структура губчатой кости"
+    },
+    {
+      "name": "Alloclassic Zweymüller",
+      "icon": "../IMG/Products/Alloclassic-Zweymüller.png",
+      "description": "Since 1979, over 500,000 total hip arthroplasties have used the original Alloclassic® Zweymüller® Hip Stem, making this uncemented prosthesis one of the most widely implanted in the world. The straightforward surgical technique and the broad product range are designed to aid surgeons in their goal of providing optimum care for their patients.",
+      "tag": "Бесцементная ножка Тазобедренный сустав Эндопротез Ножка бедренная Имплантант Более 30 лет имплантаций Оригинальный дизайн эндопротеза Замена сустава"
+    },
+    {
+      "name": "Avenir-Muller",
+      "icon": "../IMG/Products/Avenir-Muller.jpg",
+      "description": "The stem reverts to the well-known design of the M.E. Müller Straight Stem, a design that evidentially achieves primary stability very easily. Thanks to the proximal chamfer the stem is very MIS friendly. The HA coating offers excellent secondary stability and the accurate instruments ensure an easy implantation.",
+      "tag": "Тазобедренный сустав Эндопротез Ножка бедренная Имплантант Гидроксиапатитовое напыление Наибольшее число имплантаций в мире Бесцементная ножка Замена сустава"
+    },
+    {
+      "name": "ML Taper",
+      "icon": "../IMG/Products/ML-Taper.png",
+      "description": "The Zimmer® M/L Taper Hip Prosthesis offers a simple alternative for patients with adequate bone stock. The collarless prosthesis optimizes the clinically proven tapered wedge fixation philosophy while providing secure mediolateral stability.  The stem is available in 14 sizes from 4mm–22.5mm, with standard and extended offsets.",
+      "tag": "Тазобедренный сустав Эндопротез Ножка бедренная Имплантант Пористое напыление Бесцементная ножка Замена сустава"
+    },
+    {
+      "name": "Fitmore",
+      "icon": "../IMG/Products/Fitmore.png",
+      "description": "The multiple families of the Fitmore Hip Stem offer a personalized fit with a bone conserving, curved stem geometry for surgeons who prefer an implant that facilitates smaller incisions. The system aims to provide stable reconstruction of each individual's anatomy through its innovative concept of matching stem offset with different medial curvatures. The triple taper design and proximal Ti-Plasma coating enables secure press-fit, while the trapezoidal cross-section provides for rotational stability.",
+      "tag": "Бесцементная ножка Тазобедренный сустав Эндопротез Ножка бедренная Имплантант Сохранение кости Проксимальная фиксация"
+    },
+    {
+      "name": "M.E. Müller",
+      "icon": "../IMG/Products/ME-Muller.png",
+      "description": "Since its creation in 1977, the Original M.E. Müller Straight Stem prosthesis has remained essentially unchanged; very good 20-year results confirm its well-founded concept. In only 26 years (1977–2003), the Original M.E. Müller Straight Stem had been implanted over a million times around the world. The fluted structure of the stem, with the two particularly marked longitudinal grooves A/P in the stem axis, enables very good cement adhesion. The small proximal collar serves to compress the cement, prevents the stem from sinking into the cement, and, together with the fine-blasted surface of the Straight Stem, it achieves a very stable anchorage of the implant.",
+      "tag": "Цементная ножка Тазобедренный сустав Эндопротез Костный цемент Имплантант Замена сустава Более 40 лет имплантаций"
+    },
+    {
+      "name": "Acetabular Revision System Trabecular Metal",
+      "icon": "../IMG/Products/Trabecular-Metal-Revision.png",
+      "description": "The Trabecular Metal Revision Shell provides both initial and long-term stability due to its high coefficient of friction against bone with up to 80% porosity to enable ingrowth.",
+      "tag": "Ревизионное протезирование Тантал Трабекулярный металл Наилучшие показатели по врастанию Костные дефекты Формирование вертлужной впадины Бесцементная фиксация Имплантант"
+    },
+    {
+      "name": "Wagner SL",
+      "icon": "../IMG/Products/Wagner-SL.png",
+      "description": "The Wagner SL Revision Hip is designed to bridge proximal bone defect to gain distal fixation and rotational stability. It features a proven grit-blasted surface and a biocompatible titanium alloy. A tapered, conical implant body and eight longitudinal ribs provide rotational stability and allow for intraoperative anteversion adjustment. Varying implant diameters and lengths are available for a desired patient fit.",
+      "tag": "Бесцементная ножка Тазобедренный сустав Эндопротез Ножка бедренная ревизионная ИмплантантЗамена сустава Ревизионное протезирование"
+    },
+    {
+      "name": "NexGen® LCCK",
+      "icon": "../IMG/Products/NexGen-LCCK.png",
+      "description": "The NexGen LCCK is intended for patients who, in the surgeon's judgment, require additional prosthetic stabilization due to inadequate mediolateral, anteroposterior, and varus/valgus ligament function, and require augmentation and/or stem extensions due to inadequate bone stock. For use when both cruciate ligaments are excised and when greater varus/valgus constraint is required (an LCCK Femoral Component can be used with NexGen LPS Articular Surface, however, less varus/valgus constraint is provided). The NexGen LCCK can be used with augments and stem extensions.",
+      "tag": "Ревизионное протезирование Коленный сустав Имплантант Замена сустава Эндопротез Артропластика"
+    },
+    {
+      "name": "NexGen RH Knee",
+      "icon": "../IMG/Products/NexGen-RH-Knee.png",
+      "description": "The NexGen LCCK is intended for patients who, in the surgeon's judgment, require additional prosthetic stabilization due to inadequate mediolateral, anteroposterior, and varus/valgus ligament function, and require augmentation and/or stem extensions due to inadequate bone stock. For use when both cruciate ligaments are excised and when greater varus/valgus constraint is required (an LCCK Femoral Component can be used with NexGen LPS Articular Surface, however, less varus/valgus constraint is provided). The NexGen LCCK can be used with augments and stem extensions.",
+      "tag": "Ревизионное протезирование Коленный сустав Имплантант Замена сустава Связанный эндопротез Ротационная платформа Артропластика"
+    },
+    {
+      "name": "Система Cable-Ready",
+      "icon": "../IMG/Products/Cable-Ready.png",
+      "description": "Cable-Ready Greater Trochanteric Reattachment",
+      "tag": "витой трос серкляж фиксация большого вертела оскольчатый перелом"
+    },
+    {
+      "name": "System CLS Brevius",
+      "icon": "../IMG/Products/CLS-Brevius.png",
+      "description": "Through independent leg length, offset and version control,CLS Brevius Stem with Kinectiv Technology offers the intraoperative flexibility surgeons need to reconstruct the personalized kinematics of their patients.Its core design is based on the original CLS® Spotorno® Hip Stem showing excellent clinical history with a survival rate of 95% at 20 years1. Optimized stem length also supports surgeons in preserving more boneand facilitates less invasive surgery.",
+      "tag": "Тазобедренный сустав Эндопротез Ножка бедренная Модульный компонент Имплантант Бесцементная ножка Замена сустава"
+    },
+    {
+      "name": "Система NexGen LPS",
+      "icon": "../IMG/Products/NexGen-LPS.png",
+      "description": "The NexGen Complete Knee Solution Legacy Knee Posterior Stabilized (LPS) LPS-Flex Fixed Bearing Knee is designed to accommodate resumption of high-flexion daily activities. Attention to patient selection, surgical technique, implant size, and rehabilitation can help enhance the chances for success. The NexGen Complete Knee Solution LPS-Flex Fixed Bearing Knee can be used with augments and stem extensions.",
+      "tag": "Эндопротез Коленный сустав Имплантант Замена сустава Артропластика"
+    },
+    {
+      "name": "NCB Periprosthetic Femur System",
+      "icon": "../IMG/Products/NCB-Periprosthetic-Femur-System.png",
+      "description": "The NCB (Non-Contact Bridging) Periprosthetic Femur Plate System is a line of polyaxial locking plates for the treatment of femur fractures, particularly periprosthetic femur fractures. Innovative plate designs combined with the polyaxial NCB Locking Plate Technology offer solutions for fixation of particularly complex periprosthetic fractures. The system consists of a Proximal Femur plate, a Distal Femur plate, and a Curved Femur Shaft plate.",
+      "tag": "остеосинтез пластина с угловой стабильностью накостный остеосинтез оскольчатый перелом травматология околосуставной перелом перелом эндопротеза"
+    },
+    {
+      "name": "NCB Polyaxial Locking Plate System for the Distal Lateral Femur",
+      "icon": "../IMG/Products/NCB-Polyaxial-Locking-Plate-System-Distal-Lateral-Femur.jpg",
+      "description": "These next-generation locking plates enhance flexibility during surgery, with polyaxial screw placement (30°)cone and improved angular stability. Equipped with a locking screw technology, the MIS enabled NCB Polyaxial Locking Plate System offers options to deal with complex fractures of the Proximal Humerus, the Distal Femur and the Proximal Tibia. All NCB Plates are made of Protasul ®-64 Titanium Alloy.",
+      "tag": "остеосинтез пластина с угловой стабильностью накостный остеосинтез оскольчатый перелом травматология околосуставной перелом перелом бедра мыщелки бедра"
+    },
+    {
+      "name": "NCB Polyaxial Locking Plate System for the Proximal Lateral Tibia",
+      "icon": "../IMG/Products/NCB-Polyaxial-Locking-Plate-System-Proximal-Lateral-Tibia.jpg",
+      "description": "These next-generation locking plates enhance flexibility during surgery, with polyaxial screw placement (30°)cone and improved angular stability. Equipped with a locking screw technology, the MIS enabled NCB Polyaxial Locking Plate System offers options to deal with complex fractures of the Proximal Humerus, the Distal Femur and the Proximal Tibia. All NCB Plates are made of Protasul ®-64 Titanium Alloy.",
+      "tag": "остеосинтез пластина с угловой стабильностью накостный остеосинтез оскольчатый перелом травматология околосуставной перелом перелом голени мыщелки голени"
+    },
+    {
+        "name": "NCB Polyaxial Locking Plate System for the Proximal Lateral Humerus",
+      "icon": "../IMG/Products/NCB-Polyaxial-Locking-Plate-System-Proximal-Lateral-Humerus.jpg",
+      "description": "These next-generation locking plates enhance flexibility during surgery, with polyaxial screw placement (30°)cone and improved angular stability. Equipped with a locking screw technology, the MIS enabled NCB Polyaxial Locking Plate System offers options to deal with complex fractures of the Proximal Humerus, the Distal Femur and the Proximal Tibia. All NCB Plates are made of Protasul ®-64 Titanium Alloy.",
+      "tag": "остеосинтез пластина с угловой стабильностью накостный остеосинтез оскольчатый перелом травматология околосуставной перелом перелом плеча"
+    },
+    {
+      "name": "CPT",
+      "icon": "../IMG/Products/CPT.png",
+      "description": "The collarless, polished, double-taper design concept used in the CPT Hip System has proven itself clinically in more than 25 years of use.¹  This distinctive design philosophy is based on the use of natural compressive forces to help ensure that the implant is firmly seated and wedged within the cement mantle.  The CPT System, in cobalt-chromium² and stainless steel has achieved long-term clinical success since its introduction in the early 1990s.",
+      "tag": "Цементная ножка Тазобедренный сустав Эндопротез Костный цемент Имплантант Замена сустава Полированная ножка"
+    },
+    {
+      "name": "Universal Clamp™",
+      "icon": "../IMG/Products/Universal-Clamp.png",
+      "description": "The Universal Clamp Spinal Fixation System provides a stable interface between spinal anatomy and the rod through a pedicle-sparing band passage technique. The result is a spinal implant system that provides segmental stability and allows compression, distraction, derotation and translation while sparing the pedicles and reducing implant/bone contact stress.  It can work alongside hooks, screws and wires, enabling surgeons to perform translation, reduction, distraction and compression in situ.  And it's backed by the training service and expertise you've come to expect from Zimmer Spine.",
+      "tag": "Идиопатический сколиоз Врожденный сколиоз Вторичный сколиоз Нейромышечный сколиоз Дегенеративный сколиоз  Инфекция позвоночника Опухоль позвонка"
+    },
+    {
+      "name": "Ardis",
+      "icon": "../IMG/Products/Ardis.png",
+      "description": "This self-distracting posterior interbody fusion device is designed to facilitate efficient, versatile and reproducible spinal fusion procedures. The name Ardis, Greek for “point of an arrow,” well suits this system whose implant has a “ double-bulleted” nose providing for an easier insertion. This multipurpose PEEK-OPTIMA* spinal device can be used in a variety of surgical approaches including TLIFs and PLIFs and is ideal for open, mini-open or MIS techniques. Ardis, which is available in a comprehensive range of sizes and has a convex shape, facilitates an individual fit to the patient. The system also features low-profile and glare-resistant instrumentation that allows for excellent visibility during any procedure, regardless of the approach. A threaded inserter with a secondary knob for an enhanced instrument/implant connection gives the surgeon more precision, control and confidence during implantation.",
+      "tag": "Спондилодез Остеохондроз Спондилолистез Ретролистез Заболевание межпозвонковых дисков Дегенеративные заболевания дисков Дисковая нестабильность"
+    },
+    {
+      "name": "Fidji-Lumbar",
+      "icon": "../IMG/Products/Fidji-Lumbar-ALIF.png",
+      "description": "The versatile Fidji lumbar interbody fusion system consists of PEEK cages which are applicable for the posterior, anterior, lateral and anterolateral approach. The implants associate novel material characteristics with anatomic shapes and are available in various designs and sizes.",
+      "tag": "Спондилолистез Дегенеративные заболевания дисков Заболевание межпозвонковых дисков Позвонковая нестабильность Дисковая нестабильность"
+    },
+    {
+      "name": "Dynesys Top-Loading",
+      "icon": "../IMG/Products/Dynesys-TL.png",
+      "description": "The Dynesys Dynamic Stabilization System was designed as a more physiologic system of spine stabilization. The system: Holds the segments in a more natural anatomic position using non-rigid materials, Preserves natural anatomical structures as much as possible, Constrains spinal motion ('internal splint')",
+      "tag": "Динамическая фиксация  Первичная дископатия Спондилоартроз Гипомобильная дископатия Дегенеративный ретролистез Дегенеративный антелистезом Дегенеративный спондилолистез Полисегментарный стеноз Олистез Антелистез"
+    },
+    {
+      "name": "Dynesys",
+      "icon": "../IMG/Products/Dynesys.png",
+      "description": "The Dynesys Dynamic Stabilization System was designed as a more physiologic system of spine stabilization. The system: Holds the segments in a more natural anatomic position using non-rigid materials, Preserves natural anatomical structures as much as possible, Constrains spinal motion ('internal splint')",
+      "tag": "Динамическая фиксация  Первичная дископатия Спондилоартроз Гипомобильная дископатия Дегенеративный ретролистез Дегенеративный антелистезом Дегенеративный спондилолистез Полисегментарный стеноз Олистез Антелистез"
+    },
+    {
+      "name": "Astrid® Modular Forefoot System",
+      "icon": "../IMG/Products/astrid.jpg",
+      "description": "The Astrid System consists of original implants such as snap-off screws, self-tapping double-threaded compression screws, straight or slanting staples, anatomical minipin plates and one-quarter tubular plates. The appropriate instrument set for each implant makes it easier to position them in place",
+      "tag": "варус вальгус пластика нижних конечностей деформация пальцев нижних конечностей остеосинтез винт герберта винт барука скобы для стопы травматология"
+    },
+    {
+      "name": "UniWallis",
+      "icon": "../IMG/Products/uniwallis.jpg",
+      "description": "The principles of the UniWallis and Wallis implants are the same: the spacer controls movements in extension and the band controls movements in flexion.  In addition to the advantages it shares with the Wallis implant, the UniWallis implant offers surgeons the ability to perform surgery from a unilateral approach, preserving the supraspinous ligament.",
+      "tag": "Рецидивирующая грыжа Грыжа диска Остеохондроз Дегенеративные поражения Стеноз позвоночного канала  Динамическая фиксация "
+    },
+    {
+      "name": "MDN Intramedullary System",
+      "icon": "../IMG/Products/MDN.jpg",
+      "description": "The tibial interlocking nail uses the closed technique during insertion as well as the ability to lock the nail proximally and distally to resist axial forces and shortening of the tibia. M/DN Tibial Interlocking Nails range in diameters from 6mm to 15mm and lengths from 18cm to 46cm",
+      "tag": "перелом стержень остеосинтез гвоздь для фиксации переломов метафиз диафиз оскольчатый перелом травматология"
+    },
+    {
+      "name": "Sirus",
+      "icon": "../IMG/Products/Sirus.jpg",
+      "description": "The femoral nail Sirus Anatomichnyj, multifunctional, made of titanium alloy. Sirus system - one of the most successful in the market. Combining high quality, anatomic, and ease of use, Sirus nails meet all modern requirements. Simple and reliable tool fits in a briefcase - and for femoral and tibial nails for. Realizing that the osteosynthesis of the hip - operation, which should take into account a number of factors, a Zimmer's engineers, in close collaboration with orthopedic surgeons have created this handy and reliable nail.",
+      "tag": "анатомическая форма штифта перелом стержень остеосинтез гвоздь для фиксации переломов ноги оскольчатый перелом травматология"
+    },
+    {
+      "name": "Zimmer Natural Nail",
+      "icon": "../IMG/Products/Zimmer-Natural-Nail.png",
+      "description": "The Zimmer Natural Nail System is a next generation of intramedullary nails. They are characterized by their anatomic shape, which is intended to replicate the natural anatomic shape of the various long bones in the human skeleton. These nails have been designed for specific applications to help restore the shape of the fractured bone to its natural, pre-injured state.",
+      "tag": "анатомическая форма штифта перелом стержень остеосинтез оскольчатый перелом травматология"
+    },
+    {
+      "name": "Trinica",
+      "icon": "../IMG/Products/Trinica.png",
+      "description": "Experience the perfect ending to a lumbar fusion procedure with the Trinica Anterior Lumbar Plate (ALP) System.  The bone deficit-filling design is available in multiple plate configurations and allows for enhanced bone-plate interface, which can increase stabilization and reduce effective profile.  To further meet anatomical variations, the Trinica ALP System plates accept both fixed and variable screws.  Complete the procedure with one twist of the wrist – lock the plate with the innovative Secure-Twist® Locking Mechanism anti-migration system – the perfect ending.",
+      "tag": "Перелом позвонка Опухоль позвоночника Остеохондроз Псевдоартроз Спондилолистез Сколиоз Лорднозная деформация Спинальный стеноз"
+    },
+    {
+      "name": "Trinica Select",
+      "icon": "../IMG/Products/Trinica-Select.png",
+      "description": "The Trinica and Trinica Select Anterior Cervical Plate Systems are versatile spinal implant systems that provide a full range of plate and screw sizes to ensure a better anatomical fit with little or no contouring required. These anterior cervical plate systems are intended for anterior interbody screw fixation of the cervical spine, and feature the innovative Secure-Twist® Anti-Migration System, which secures up to three screws with a twist of the wrist. It also features All-Through-One instrumentation, which provides a common guide for drilling, tapping and screw placement.",
+      "tag": "Остеохондроз Перелом шейного позвонка Дегенеративные поражения диска Деформация Кифоз Нейрохирургия Опухоль позвонка"
+    },
+    {
+      "name": "Periarticular Locking Plate System - Distal Lateral Femoral Locking Plates",
+      "icon": "../IMG/Products/lateral-femoral.jpg",
+      "description": "All Radius, Humerus, Femur and Tibia plates contain locking screw holes in the plate head and alternating locking and compression screw holes in the shaft. The locking screw holes will accept either conical or locking screws.",
+      "tag": "остеосинтез пластина с угловой стабильностью накостный остеосинтез перелом бедра оскольчатый перелом травматология околосуставной перелом"
+    },
+    {
+      "name": "Zimmer® Periarticular Locking Plate System",
+      "icon": "../IMG/Products/distal-beam.jpg",
+      "description": "All Radius, Humerus, Femur and Tibia plates contain locking screw holes in the plate head and alternating locking and compression screw holes in the shaft. The locking screw holes will accept either conical or locking screws.",
+      "tag": "остеосинтез пластина с угловой стабильностью накостный остеосинтез оскольчатый перелом травматология перелом лучевой кости околосуставной перелом"
+    },
+    {
+      "name": "Zimmer® Periarticular Locking Plate System",
+      "icon": "../IMG/Products/distal-shoulder.jpg",
+      "description": "All Radius, Humerus, Femur and Tibia plates contain locking screw holes in the plate head and alternating locking and compression screw holes in the shaft. The locking screw holes will accept either conical or locking screws.",
+      "tag": "остеосинтез пластина с угловой стабильностью накостный остеосинтез оскольчатый перелом травматология околосуставной перелом перелом плеча"
+    },
+    {
+      "name": "Zimmer® Periarticular Locking Plate System",
+      "icon": "../IMG/Products/distal-g.jpg",
+      "description": "All Radius, Humerus, Femur and Tibia plates contain locking screw holes in the plate head and alternating locking and compression screw holes in the shaft. The locking screw holes will accept either conical or locking screws.",
+      "tag": "остеосинтез пластина с угловой стабильностью накостный остеосинтез оскольчатый перелом травматология перелом лучевой кости околосуставной перелом"
+    },
+    {
+      "name": "Periarticular Locking Plate System - Distal Lateral Fibular Locking Plates",
+      "icon": "../IMG/Products/lateral-fibular.jpg",
+      "description": "All Radius, Humerus, Femur and Tibia plates contain locking screw holes in the plate head and alternating locking and compression screw holes in the shaft. The locking screw holes will accept either conical or locking screws.",
+      "tag": "остеосинтез пластина с угловой стабильностью накостный остеосинтез оскольчатый перелом перелом лодыжки травматология околосуставной перелом"
+    },
+    {
+      "name": "Zimmer® Periarticular Locking Plate System",
+      "icon": "../IMG/Products/proximal-g.jpg",
+      "description": "All Radius, Humerus, Femur and Tibia plates contain locking screw holes in the plate head and alternating locking and compression screw holes in the shaft. The locking screw holes will accept either conical or locking screws.",
+      "tag": "остеосинтез пластина с угловой стабильностью накостный остеосинтез оскольчатый перелом травматология околосуставной перелом голени"
+    },
+    {
+      "name": "ITST Intramedullary System",
+      "icon": "../IMG/Products/ITST.jpg",
+      "description": "The ITST Intramedullary Nail System is designed to treat comminuted, proximal and distal fractures of the femur, including, the Intertrochanteric and Subtrochanteric regions. The implant supports the anatomic reduction and internal fixation of the femoral head and neck.",
+      "tag": "перелом шейки бедра перелом стержень остеосинтез подвертельный перелом гвоздь типа гамма травматология"
+    },
+    {
+      "name": "ULS - Universal Locking System",
+      "icon": "../IMG/Products/ULS.jpg",
+      "description": "The Zimmer® Universal Locking System (ULS) includes straight and formed plates that will accommodate standard cortical and cancellous screws, along with locking screws that have threaded heads which enable them to be threaded into plate holes. The ULS plates resemble standard plates, but have figure-8 shaped holes which will accommodate standard or locking screws on either side of the hole. As a result, the plate can be used, depending upon the fracture situation, as a compression plate, a locked internal fixator or as an internal fixation system combining both techniques. ",
+      "tag": "остеосинтез пластина с угловой стабильностью накостный остеосинтез перелом ключицы перелом предплечья перелом лодыжки перелом таза травматология"
+    },
+    {
+      "name": "Instinct Java",
+      "icon": "../IMG/Products/java.png",
+      "description": "Zimmer Spine’s Instinct Java System is a pedicle screw system designed to provide you with a versatile solution to treat multiple pathologies in a proven design. Screws feature asymmetrical and cancellous threads, improving cortical and cancellous bone fixation and resistance to screw pull-out. The raised dimples and recesses of the screw heads lock the screws securely to the instrumentation and provide numerous options for reduction. In addition, the optimized blocker design limits crossthreading and head splay. The sound design of the Instinct Java System provides you with the tools you need to treat your patients effectively.",
+      "tag": "Рецидивирующая грыжа Грыжа диска Остеохондроз Дегенеративные поражения Стеноз позвоночного канала Динамическая фиксация "
+    },
+    {
+      "name": "PathFinder NXT",
+      "icon": "../IMG/Products/PathFinder-NXT.png",
+      "description": "The PathFinder NXT ® Minimally Invasive Pedicle Screw System is the next step forward in MIS. Backed by a legacy of clinical success with the original PathFinder ® System, the PathFinder NXT System offers enhanced procedural freedom and streamlined workflow for a broad range of MIS procedures. By offering intuitive and versatile implants and instrumentation, the PathFinder NXT System provides spine surgeons a solution to address multiple pathologies with a less invasive approach.",
+      "tag": "Минимально-инвазивная хирургия Стабилизация позвонков Остеохондроз Дегенеративный спондилолистез  Перелом позвонка Вывих позвонка  Сколиоз Кифоз  Лордоз Деформация позвоночника"
+    },
+    {
+      "name": "Nex-Link",
+      "icon": "../IMG/Products/Nex-Link.png",
+      "description": "These posterior cervical spinal systems form a robust and complete posterior cervico-thoracic system.  Nex-Link Spinal Fixation System and Nex-Link OCT System feature a strong occipital fixation option and a full range of screw diameters and hooks compatible with a 4.0mm diameter rod.",
+      "tag": "Шейный остеохондроз Спондилолистез Мультисегментарный спинальный стеноз Перелом шейного позвонка Атланто-аксиальный перелом Смещение шейных позвонков"
+    },
+    {
+      "name": "Fidji-Neck",
+      "icon": "../IMG/Products/Fidji-Neck.png",
+      "description": "Cervical cages Fidji designed primarily to restore the height of the intervertebral gap after resection of the intervertebral disc. Cervical cages Fidji designed for anterior cervical discectomy and fusion procedures in patients with single- or multi-level spondylosyndesis formed on the degenerative instability postdiskektomicheskogo syndrome, post-traumatic instability at the level of C2-C7 disks. Do implants have lordotic bend, and their anatomical shape corresponds to the vertebral endplates. Removable blade projecting above and below Cage ensures primary stability of the implant. Toothed surface Cage prevents reverse course, acting as an additional stabilizer. Available implants of various heights, with holes for placement of bone graft or a substitute.",
+      "tag": "Дискэктомии Спондилодез Дегенеративной нестабильности Посттравматической нестабильности  Многоуровневый спондилодез Одноуровневый спондилодез"
+    }
+  ]
 }
