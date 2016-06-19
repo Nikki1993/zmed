@@ -21,8 +21,8 @@
       name: 'Спина',
       tag: 'позвоночник'
     },{
-      name: 'Спина',
-      tag: 'позвоночник'
+      name: 'Все',
+      tag: ''
     }];
 
     vm.openFilter = function($mdOpenMenu, ev) {
