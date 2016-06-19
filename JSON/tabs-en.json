@@ -1,28 +1,34 @@
 {
-  "tabs": [{
-    "tabName": "Hip",
-    "heading": "Heading",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus magna, fringilla eget sollicitudin id, consectetur id risus. Sed non condimentum neque, eget pulvinar magna. Nam posuere, neque nec tempor suscipit, leo magna malesuada tellus, quis elementum tortor ipsum non augue. Cras id auctor sapien, et dictum erat. Vestibulum efficitur lacus ac nisi tempus euismod. Sed turpis lorem, tempor congue ligula a, imperdiet sagittis justo. Curabitur eu sollicitudin nisl. Suspendisse dignissim tincidunt massa nec feugiat.",
-    "image": "../IMG/placeholder.svg"
-  }, {
-    "tabName": "Knee",
-    "heading": "Heading",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus magna, fringilla eget sollicitudin id, consectetur id risus. Sed non condimentum neque, eget pulvinar magna. Nam posuere, neque nec tempor suscipit, leo magna malesuada tellus, quis elementum tortor ipsum non augue. Cras id auctor sapien, et dictum erat. Vestibulum efficitur lacus ac nisi tempus euismod. Sed turpis lorem, tempor congue ligula a, imperdiet sagittis justo. Curabitur eu sollicitudin nisl. Suspendisse dignissim tincidunt massa nec feugiat.",
-    "image": "../IMG/placeholder.svg"
-  }, {
-    "tabName": "Elbow",
-    "heading": "Heading ",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus magna, fringilla eget sollicitudin id, consectetur id risus. Sed non condimentum neque, eget pulvinar magna. Nam posuere, neque nec tempor suscipit, leo magna malesuada tellus, quis elementum tortor ipsum non augue. Cras id auctor sapien, et dictum erat. Vestibulum efficitur lacus ac nisi tempus euismod. Sed turpis lorem, tempor congue ligula a, imperdiet sagittis justo. Curabitur eu sollicitudin nisl. Suspendisse dignissim tincidunt massa nec feugiat.",
-    "image": "../IMG/placeholder.svg"
-  }, {
-    "tabName": "Shoulder",
-    "heading": "Heading",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus magna, fringilla eget sollicitudin id, consectetur id risus. Sed non condimentum neque, eget pulvinar magna. Nam posuere, neque nec tempor suscipit, leo magna malesuada tellus, quis elementum tortor ipsum non augue. Cras id auctor sapien, et dictum erat. Vestibulum efficitur lacus ac nisi tempus euismod. Sed turpis lorem, tempor congue ligula a, imperdiet sagittis justo. Curabitur eu sollicitudin nisl. Suspendisse dignissim tincidunt massa nec feugiat.",
-    "image": "../IMG/placeholder.svg"
-  }, {
-    "tabName": "Spine",
-    "heading": "Heading",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus magna, fringilla eget sollicitudin id, consectetur id risus. Sed non condimentum neque, eget pulvinar magna. Nam posuere, neque nec tempor suscipit, leo magna malesuada tellus, quis elementum tortor ipsum non augue. Cras id auctor sapien, et dictum erat. Vestibulum efficitur lacus ac nisi tempus euismod. Sed turpis lorem, tempor congue ligula a, imperdiet sagittis justo. Curabitur eu sollicitudin nisl. Suspendisse dignissim tincidunt massa nec feugiat.",
-    "image": "../IMG/placeholder.svg"
-  }]
+  "tabs": [
+    {
+      "tabName": "Hip",
+      "heading": "NexGen ® LPS - CR-Flex Gender",
+      "description": "The Zimmer Gender Solutions NexGen High-Flex Knee Implants compensate for the most important differences between women’s and men’s knees.",
+      "image": "../IMG/Products/NexGen-LPS-CR-Flex-Gender.jpg"
+    },
+    {
+      "tabName": "Knee",
+      "heading": "NexGen® CR Flex",
+      "description": "This enhancement of the highly successful NexGen® CR Knee safely accommodates flexion up to 1550, while maintaining the kinematic function that allows natural femoral rollback. Specific design features of the CR-Flex Knee help maintain adequate tibiofemoral contact during high flexion and provide greater clearance for the patellar tendon. The option of Minus size femoral components provides an additional means of balancing the flexion and extension gaps, without additional bone loss or soft tissue release.",
+      "image": "../IMG/Products/NexGen-CR-Flex.png"
+    },
+    {
+      "tabName": "Elbow",
+      "heading": "Coonrad Morrey Total Elbow ",
+      "description": "For complete patient-matching flexibility, the Coonrad/Morrey Total Elbow is unsurpassed in interchangeability and design. The Coonrad/Morrey Total Elbow has a long-term clinical use for treatments spanning rheumatoid and degenerative arthritis2,5  to trauma reconstruction where less radical procedures are unwarranted.",
+      "image": "../IMG/Products/Coonrad-Morrey-Total-Elbow.png"
+    },
+    {
+      "tabName": "Shoulder",
+      "heading": "Anatomical Shoulder",
+      "description": "The Anatomical Shoulder System allows the shoulder implant to be tailored to the patient's individual anatomy. The modularity and design of the Anatomical Shoulder System provides an accurate and reproducible reconstruction of the glenohumeral joint, thus restoring the normal kinematics of the limb. This can lead to advanced rehabilitation and an expanded range of motion while placing fewer demands on the soft tissues and on the anchoring of the prosthesis.",
+      "image": "../IMG/Products/Anatomical-Shoulder.png"
+    },
+    {
+      "tabName": "Spine",
+      "heading": "NCB Periprosthetic Femur System",
+      "description": "The NCB (Non-Contact Bridging) Periprosthetic Femur Plate System is a line of polyaxial locking plates for the treatment of femur fractures, particularly periprosthetic femur fractures. Innovative plate designs combined with the polyaxial NCB Locking Plate Technology offer solutions for fixation of particularly complex periprosthetic fractures. The system consists of a Proximal Femur plate, a Distal Femur plate, and a Curved Femur Shaft plate.",
+      "image": "../IMG/Products/NCB-Periprosthetic-Femur-System.png"
+    }
+  ]
 }
