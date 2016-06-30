@@ -11,19 +11,36 @@
 
     var vm = this;
 
-    vm.filterOptions = [{
-      name: 'Эндопротез',
-      tag: 'Эндопротез'
-    },{
-      name: 'Травма',
-      tag: 'травматология'
-    },{
-      name: 'Спина',
-      tag: 'позвоночник'
-    },{
-      name: 'Все',
-      tag: ''
-    }];
+    console.log("Current lang is " + $translate.use());
+    if ($translate.use() === "en") {
+      vm.filterOptions = [{
+        name: 'Endoprosthesis',
+        tag: 'Эндопротез'
+      },{
+        name: 'Trauma',
+        tag: 'травматология'
+      },{
+        name: 'Spine',
+        tag: 'позвоночник'
+      },{
+        name: 'Show All',
+        tag: ''
+      }];
+    } else {
+      vm.filterOptions = [{
+        name: 'Эндопротез',
+        tag: 'Эндопротез'
+      },{
+        name: 'Травма',
+        tag: 'травматология'
+      },{
+        name: 'Спина',
+        tag: 'позвоночник'
+      },{
+        name: 'Все',
+        tag: ''
+      }];
+    }
 
     vm.openFilter = function($mdOpenMenu, ev) {
       $mdOpenMenu(ev);
