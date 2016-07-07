@@ -1,19 +1,23 @@
 {
   "items": [{
     "name": "Главная",
-    "link": "main",
+    "link": "#main",
     "icon": "home"
   }, {
     "name": "Изделия",
-    "link": "products",
+    "link": "#products",
     "icon": "shopping_cart"
   }, {
     "name": "О Нас",
-    "link": "about",
+    "link": "#about",
     "icon": "info"
   }, {
     "name": "Контакты",
-    "link": "reach",
+    "link": "#reach",
     "icon": "contacts"
+  }, {
+    "name": "Новости",
+    "link": "http://dev.zet-med.ru/index.html",
+    "icon": "news"
   }]
 }
