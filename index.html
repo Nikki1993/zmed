@@ -60,6 +60,7 @@
     <script defer src="node_modules/fg-loadcss/src/cssrelpreload.js"></script>
     <script defer src="node_modules/angular-inview/angular-inview.js"></script>
     <script defer src="node_modules/ng-lazy-render/dist/ng-lazy-render.js"></script>
+    <script defer src="node_modules/ng-youtube-embed/build/ng-youtube-embed.min.js"></script>
 
     <!-- Concatinated, uglified angularjs app -->
     <script defer src="/JS/app.js"></script>
@@ -132,6 +133,9 @@
             </div>
           </div>
         </div>
+      </md-content>
+      <md-content layout="column" layout-align="center center" layout-padding>
+        <ng-youtube-embed url="mainCtrl.youtubeLink" autoplay="false" color="white" disablekb="true" width="800"></ng-youtube-embed>
       </md-content>
       <md-content id="reach" layout="column" layout-align="center center" layout-padding>
         <h1 class="md-display-2 flex-center" translate="REACH"></h1>

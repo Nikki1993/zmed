@@ -11,6 +11,8 @@
 
     var vm = this;
 
+    vm.youtubeLink = 'https://youtu.be/E8c3orUpNWA';
+
     vm.changeLanguage = function(key) {
       $translate.use(key);
     };

@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('webApp', ['ngMaterial', 'duScroll', 'ngMessages', 'ngclipboard', 'pascalprecht.translate', 'angular-inview', 'ngLazyRender'])
+    .module('webApp', ['ngMaterial', 'duScroll', 'ngMessages', 'ngclipboard', 'pascalprecht.translate', 'angular-inview', 'ngLazyRender', 'ngYoutubeEmbed'])
     .config(themeConfiguration)
     .config(translateConfiguration);
 
