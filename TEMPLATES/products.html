@@ -1,4 +1,4 @@
-<md-dialog class="dialog-settings" aria-label="Z-med Products" layout="column" ng-cloak>
+<md-dialog class="dialog-settings" aria-label="Z-med Products" layout="column">
   <form flex="90">
     <md-toolbar flex="nogrow">
       <div class="md-toolbar-tools">
@@ -16,7 +16,7 @@
         <input type="text" ng-model="search.$" class="md-input" ng-focus="focus=true;blur=false;" ng-blur="blur=true;focus=false;" aria-label="Search for products textfield" blur-on-enter>
       </md-input-container>
       <md-select flex="15" flex-md="25" flex-xs="25" placeholder="{{'FILTER_SELECTION' | translate}}" aria-label="Filter Options" ng-model="search.tag">
-        <md-option ng-value="tags.tag" ng-repeat="tags in tabsCtrl.filterOptions">{{tags.name}}</md-option>
+        <md-option ng-repeat="tags in tabsCtrl.filterOptions" ng-value="tags.tag">{{tags.name}}</md-option>
       </md-select>
       <span flex="20" flex-md="10" flex-xs="10"></span>
     </div>

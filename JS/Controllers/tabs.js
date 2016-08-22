@@ -11,7 +11,6 @@
 
     var vm = this;
 
-    console.log("Current lang is " + $translate.use());
     if ($translate.use() === "en") {
       vm.filterOptions = [{
         name: 'Endoprosthesis',
@@ -89,12 +88,9 @@
       vm.namespace = Object.keys(response.data);
       vm.count = JsonData.setObjectCount(Object.keys(response.data[vm.namespace]).length);
 
-      console.log('vm.namespace from tabs = ' + vm.namespace);
-
       for (var property in vm.namespace) {
         if (vm.namespace.hasOwnProperty(property)) {
           vm.name = Object.keys(response.data[vm.namespace][property]);
-          console.log(vm.name);
         }
       }
     });

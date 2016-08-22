@@ -31,7 +31,13 @@
     $translatePartialLoaderProvider.addPart('products');
     $translatePartialLoaderProvider.addPart('about');
 
-    $translateProvider.preferredLanguage('ru');
+    if ($translateProvider.resolveClientLocale() != "ru_RU") {
+      $translateProvider.preferredLanguage('en');
+    } else {
+      $translateProvider.preferredLanguage('ru');
+    }
+
+
     $translateProvider.fallbackLanguage('en');
   }
 })();
