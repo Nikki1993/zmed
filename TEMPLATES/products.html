@@ -39,7 +39,7 @@
           ng-click="option=option == false ? true : false"
           ng-mouseenter="option=true"
           ng-mouseleave="option=false">
-          <img class="product-icon" ng-src="{{items.icon}}" alt="{{items.name}}"/>
+          <img class="product-icon" lazy-img="{{items.icon}}" alt="{{items.name}}"/>
           <md-content ng-show="option" class="product-description" layout-padding flex>
             {{items.description}}
           </md-content>

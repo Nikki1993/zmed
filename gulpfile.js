@@ -12,17 +12,16 @@ const ngAnnotate = require('gulp-ng-annotate');
 const plumber = require('gulp-plumber');
 const gnf = require('gulp-npm-files');
 const image = require('gulp-image');
-const pngquant = require('imagemin-pngquant');
 const webstandards = require('gulp-webstandards');
 const util = require('gulp-util');
 const jsonMinify = require('gulp-json-minify');
 
 gulp.task('default', (callback) =>  {
-  runSequence('clean:dist', ['json:minify', 'copy', 'images', 'angularjs', 'scss'], 'webstandards', 'copyNpmDependenciesOnly', 'watch', callback);
+  runSequence('clean:dist', ['json:minify', 'copy', 'images', 'angularjs', 'scss', 'copyNpmDependenciesOnly'], 'watch', callback);
 });
 
 gulp.task('build', (callback) => {
-  runSequence('clean:dist', ['json:minify', 'copy', 'images', 'angularjs', 'scss'], 'webstandards', 'copyNpmDependenciesOnly', callback);
+  runSequence('clean:dist', ['json:minify', 'copy', 'images', 'angularjs', 'scss', 'copyNpmDependenciesOnly'], 'webstandards', callback);
 });
 
 gulp.task('clean:dist', () => {
