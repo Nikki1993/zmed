@@ -4,9 +4,13 @@
   "description": "Website for Russian distributor",
   "main": "gulpfile.js",
   "devDependencies": {
-    "browser-sync": "^2.14.0",
+    "browser-sync": "^2.15.0",
     "del": "^2.2.2",
+<<<<<<< HEAD
     "eslint": "^3.4.0",
+=======
+    "eslint": "^3.5.0",
+>>>>>>> 17d1976dd7ed76aef0e8e50591bdb0b9d138ede9
     "gulp": "^3.9.1",
     "gulp-cache": "^0.4.5",
     "gulp-concat": "^2.6.0",
@@ -40,18 +44,23 @@
     "angular-animate": "^1.5.8",
     "angular-aria": "^1.5.8",
     "angular-inview": "^2.0.0",
-    "angular-material": "^1.1.0",
+    "angular-material": "^1.1.1",
     "angular-messages": "^1.5.8",
     "angular-mocks": "^1.5.8",
     "angular-route": "^1.5.8",
     "angular-sanitize": "^1.5.8",
     "angular-scroll": "^1.0.0",
-    "angular-translate": "^2.11.1",
+    "angular-translate": "^2.12.0",
     "clipboard": "^1.5.12",
     "fg-loadcss": "^1.2.0",
+<<<<<<< HEAD
     "hlg-angular-lazy-img": "^1.2.0",
     "ng-lazy-render": "^0.2.2",
     "ng-youtube-embed": "^0.3.3",
+=======
+    "ng-lazy-render": "^0.2.2",
+    "ng-youtube-embed": "^0.4.3",
+>>>>>>> 17d1976dd7ed76aef0e8e50591bdb0b9d138ede9
     "ngclipboard": "^1.1.1"
   }
 }
